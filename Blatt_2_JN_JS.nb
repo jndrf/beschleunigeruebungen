@@ -1,0 +1,281 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      9548,        271]
+NotebookOptionsPosition[      7657,        231]
+NotebookOutlinePosition[      8004,        246]
+CellTagsIndexPosition[      7961,        243]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[TextData[{
+ "Jonas Neundorf, Jan ",
+ Cell[BoxData[
+  FormBox["Skottke", TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "3133f084-5769-46b6-a60d-31775925f366"]
+}], "Text",
+ CellChangeTimes->{{3.7182721412406406`*^9, 
+  3.7182721858539257`*^9}},ExpressionUUID->"56feadb5-4d17-4366-bd96-\
+9e43f29778a8"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Blatt ",
+ Cell[BoxData[
+  FormBox["2", TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "73b91250-90ca-441e-bbc5-02a8621215c4"]
+}], "Title",
+ CellChangeTimes->{{3.718272198636761*^9, 3.718272216814357*^9}, 
+   3.718272253566593*^9},ExpressionUUID->"064b49bf-d9b5-4dc8-8bda-\
+770e3958bcd0"],
+
+Cell[TextData[{
+ "Beim  Betatron gilt die Relation ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["B", "a"], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "591d938a-73f8-4813-8f66-724c1241486d"],
+ " = ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"2", 
+    SubscriptBox["B", "g"]}], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "6e5ca073-2f44-4969-87ca-c6f0c5492d84"],
+ ", weshalb nur das F\[UDoubleDot]hrungsfeld ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["B", "g"], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "3414cd29-0f3a-4ba0-a7df-fbf7401bc9dd"],
+ " betrachtet wird. Der Impuls des Elektrons ist gegeben durch"
+}], "Text",
+ CellChangeTimes->{{3.7182730979786406`*^9, 3.718273137229497*^9}, {
+  3.71827320727409*^9, 3.7182732104740424`*^9}, {3.718273511761973*^9, 
+  3.7182736363860016`*^9}, {3.7182736676639194`*^9, 
+  3.7182737356968327`*^9}},ExpressionUUID->"b7a34c0c-a1ae-4df3-b718-\
+e9bd66d30a76"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"MomentumFromKineticEnergy", "[", "e_", "]"}], " ", "=", " ", 
+  RowBox[{
+   RowBox[{"Sqrt", "[", 
+    RowBox[{"2", "*", "m", "*", "e"}], "]"}], " ", "*", 
+   FractionBox["q", "c"]}]}]], "Input",
+ CellChangeTimes->{{3.7182737550955353`*^9, 3.7182739125750175`*^9}, 
+   3.718273967131073*^9, {3.7182751049199286`*^9, 3.7182751174642773`*^9}, {
+   3.718275672009936*^9, 3.7182757035853558`*^9}, {3.718275777284959*^9, 
+   3.718275783900159*^9}, {3.718275863047081*^9, 3.718275864796589*^9}, {
+   3.7182759428695436`*^9, 3.7182759650336366`*^9}, {3.718276084723586*^9, 
+   3.7182761148023996`*^9}, {3.7182762240234766`*^9, 
+   3.718276325168168*^9}},ExpressionUUID->"e6a5d199-ad00-43fe-a79e-\
+bccee2697bed"],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{
+   SqrtBox["2"], " ", 
+   SqrtBox[
+    RowBox[{"e", " ", "m"}]], " ", "q"}], "c"]], "Output",
+ CellChangeTimes->{
+  3.7182739135452476`*^9, 3.718273970277357*^9, 3.718275120016649*^9, 
+   3.7182756850041447`*^9, 3.7182757374853477`*^9, 3.7182757852313156`*^9, {
+   3.718275968615965*^9, 3.718275992101143*^9}, 3.718276121015951*^9, 
+   3.7182761654272966`*^9, 3.718276282100266*^9, 
+   3.718276337700193*^9},ExpressionUUID->"a1045c4b-c8cb-4e0b-88f4-\
+c676e7503d1a"]
+}, Open  ]],
+
+Cell[TextData[{
+ "Das F\[UDoubleDot]hrungsfeld in Abh\[ADoubleDot]ngigkeit vom Impuls ist",
+ StyleBox[" \t\t",
+  FontFamily->"Source Serif Pro"]
+}], "Text",
+ CellChangeTimes->{{3.718274753890603*^9, 3.7182748437722063`*^9}, {
+  3.718274876401765*^9, 
+  3.7182748770864973`*^9}},ExpressionUUID->"cc9e8319-b2f3-4430-96f0-\
+55da68eb0369"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"GuidanceFieldFromMomentum", "[", "p_", "]"}], " ", "=", " ", 
+  FractionBox["p", 
+   RowBox[{"q", "*", "r"}]]}]], "Input",
+ CellChangeTimes->{{3.71827488318573*^9, 
+  3.71827495852069*^9}},ExpressionUUID->"5d76ee47-e27c-4930-a364-\
+c3cd1113ca0d"],
+
+Cell[BoxData[
+ FractionBox["p", 
+  RowBox[{"q", " ", "r"}]]], "Output",
+ CellChangeTimes->{3.7182749715673704`*^9, 3.718275737632468*^9, 
+  3.7182759922800674`*^9, 
+  3.7182761655653152`*^9},ExpressionUUID->"a954d6b1-802f-4141-923e-\
+0d7152c8d898"]
+}, Open  ]],
+
+Cell["F\[UDoubleDot]r eine Einschussenergie von 20 keV ergibt sich", "Text",
+ CellChangeTimes->{{3.7182750146514125`*^9, 3.7182750473497553`*^9}, {
+  3.718275085639982*^9, 3.7182750894539375`*^9}, {3.7182751255018497`*^9, 
+  3.7182751270017715`*^9}},ExpressionUUID->"e84b2ac2-8c86-4f63-95a3-\
+8d4148948fb9"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"constants", " ", "=", " ", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"c", " ", "\[Rule]", " ", 
+     RowBox[{"3", "*", 
+      SuperscriptBox["10", "8"]}]}], " ", 
+    RowBox[{"(*", " ", 
+     RowBox[{
+      RowBox[{"m", "/", "s"}], " ", "Lichtgeschwindigkeit"}], " ", "*)"}], 
+    ",", " ", 
+    RowBox[{"m", "\[Rule]", " ", 
+     RowBox[{"5.11", "*", 
+      SuperscriptBox["10", "5"]}]}], " ", 
+    RowBox[{"(*", " ", 
+     RowBox[{"eV", " ", "Elektronenmasse"}], "*)"}], ",", " ", 
+    RowBox[{"q", " ", "\[Rule]", " ", 
+     RowBox[{"1.602", "*", 
+      SuperscriptBox["10", 
+       RowBox[{"-", "19"}]]}]}], 
+    RowBox[{"(*", " ", 
+     RowBox[{"C", " ", "Elementarladung"}], " ", "*)"}], ",", " ", 
+    RowBox[{"r", " ", "\[Rule]", " ", ".25"}]}], " ", 
+   RowBox[{"(*", " ", 
+    RowBox[{"m", " ", "Bahnradius"}], " ", "*)"}], "}"}]}]], "Input",
+ CellChangeTimes->{{3.7182751831568785`*^9, 3.718275390889905*^9}, {
+   3.718275589485175*^9, 3.7182756089366674`*^9}, {3.7182757125481234`*^9, 
+   3.7182757154689054`*^9}, 
+   3.7182761394800406`*^9},ExpressionUUID->"5c0a3d0b-92d9-4fa8-9d92-\
+7dc18e273129"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"c", "\[Rule]", "300000000"}], ",", 
+   RowBox[{"m", "\[Rule]", "511000.00000000006`"}], ",", 
+   RowBox[{"q", "\[Rule]", "1.602`*^-19"}], ",", 
+   RowBox[{"r", "\[Rule]", "0.25`"}]}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.718275224331089*^9, 3.7182753930424376`*^9, 3.7182756148195796`*^9, {
+   3.718275718101012*^9, 3.718275737648082*^9}, 3.7182759923011985`*^9, {
+   3.71827614215711*^9, 
+   3.7182761655809402`*^9}},ExpressionUUID->"929d41cf-4e51-478a-b5f0-\
+159b655167de"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"MomentumFromKineticEnergy", "[", "20000", "]"}], " ", "/.", " ", 
+  "constants"}]], "Input",
+ CellChangeTimes->{{3.718276343599187*^9, 
+  3.7182763646981564`*^9}},ExpressionUUID->"ab583d8b-8cc2-4601-9e24-\
+56ffe6f145e2"],
+
+Cell[BoxData["7.6345193954826`*^-23"], "Output",
+ CellChangeTimes->{{3.7182763516214685`*^9, 
+  3.718276366698098*^9}},ExpressionUUID->"8f5d1054-27f2-4074-9b35-\
+45d56496169d"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"GuidanceFieldFromMomentum", "[", 
+   RowBox[{"MomentumFromKineticEnergy", "[", "20000", "]"}], "]"}], " ", "/.",
+   " ", "constants"}]], "Input",
+ CellChangeTimes->{{3.7182763794367585`*^9, 
+  3.718276401914897*^9}},ExpressionUUID->"60a73cc4-b475-495e-8f6b-\
+363495649579"],
+
+Cell[BoxData["0.001906247040070562`"], "Output",
+ CellChangeTimes->{
+  3.7182764079353094`*^9},ExpressionUUID->"fcc4613c-2ad2-49db-ba9f-\
+576b7ab634c1"]
+}, Open  ]],
+
+Cell["\<\
+Beim Einschuss muss das F\[UDoubleDot]hrungsfeld eine St\[ADoubleDot]rke von \
+1,9 mT haben.\
+\>", "Text",
+ CellChangeTimes->{{3.718276558494791*^9, 
+  3.7182765844149985`*^9}},ExpressionUUID->"14a2d6da-443c-4424-b600-\
+8220cfcf684d"]
+}, Open  ]]
+},
+WindowSize->{927, 1028},
+WindowMargins->{{Automatic, -7}, {Automatic, 0}},
+FrontEndVersion->"11.2 for Microsoft Windows (64-bit) (September 10, 2017)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 328, 9, 34, "Text",ExpressionUUID->"56feadb5-4d17-4366-bd96-9e43f29778a8"],
+Cell[CellGroupData[{
+Cell[911, 33, 328, 9, 96, "Title",ExpressionUUID->"064b49bf-d9b5-4dc8-8bda-770e3958bcd0"],
+Cell[1242, 44, 976, 26, 58, "Text",ExpressionUUID->"b7a34c0c-a1ae-4df3-b718-e9bd66d30a76"],
+Cell[CellGroupData[{
+Cell[2243, 74, 738, 14, 58, "Input",ExpressionUUID->"e6a5d199-ad00-43fe-a79e-bccee2697bed"],
+Cell[2984, 90, 504, 12, 53, "Output",ExpressionUUID->"a1045c4b-c8cb-4e0b-88f4-c676e7503d1a"]
+}, Open  ]],
+Cell[3503, 105, 335, 8, 35, "Text",ExpressionUUID->"cc9e8319-b2f3-4430-96f0-55da68eb0369"],
+Cell[CellGroupData[{
+Cell[3863, 117, 281, 7, 45, "Input",ExpressionUUID->"5d76ee47-e27c-4930-a364-c3cd1113ca0d"],
+Cell[4147, 126, 248, 6, 49, "Output",ExpressionUUID->"a954d6b1-802f-4141-923e-0d7152c8d898"]
+}, Open  ]],
+Cell[4410, 135, 307, 4, 34, "Text",ExpressionUUID->"e84b2ac2-8c86-4f63-95a3-8d4148948fb9"],
+Cell[CellGroupData[{
+Cell[4742, 143, 1134, 29, 53, "Input",ExpressionUUID->"5c0a3d0b-92d9-4fa8-9d92-7dc18e273129"],
+Cell[5879, 174, 532, 12, 35, "Output",ExpressionUUID->"929d41cf-4e51-478a-b5f0-159b655167de"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6448, 191, 255, 6, 28, "Input",ExpressionUUID->"ab583d8b-8cc2-4601-9e24-56ffe6f145e2"],
+Cell[6706, 199, 176, 3, 32, "Output",ExpressionUUID->"8f5d1054-27f2-4074-9b35-45d56496169d"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6919, 207, 308, 7, 28, "Input",ExpressionUUID->"60a73cc4-b475-495e-8f6b-363495649579"],
+Cell[7230, 216, 152, 3, 32, "Output",ExpressionUUID->"fcc4613c-2ad2-49db-ba9f-576b7ab634c1"]
+}, Open  ]],
+Cell[7397, 222, 244, 6, 34, "Text",ExpressionUUID->"14a2d6da-443c-4424-b600-8220cfcf684d"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
