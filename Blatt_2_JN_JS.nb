@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      9548,        271]
-NotebookOptionsPosition[      7657,        231]
-NotebookOutlinePosition[      8004,        246]
-CellTagsIndexPosition[      7961,        243]
+NotebookDataLength[     10835,        304]
+NotebookOptionsPosition[      8632,        259]
+NotebookOutlinePosition[      8979,        274]
+CellTagsIndexPosition[      8936,        271]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -222,11 +222,39 @@ Cell[BoxData["0.001906247040070562`"], "Output",
 
 Cell["\<\
 Beim Einschuss muss das F\[UDoubleDot]hrungsfeld eine St\[ADoubleDot]rke von \
-1,9 mT haben.\
+1,9 mT haben. \
 \>", "Text",
- CellChangeTimes->{{3.718276558494791*^9, 
-  3.7182765844149985`*^9}},ExpressionUUID->"14a2d6da-443c-4424-b600-\
-8220cfcf684d"]
+ CellChangeTimes->{{3.718276558494791*^9, 3.7182765844149985`*^9}, {
+  3.7182766794195814`*^9, 3.7182766854678144`*^9}, {3.7182779091937323`*^9, 
+  3.718277970033702*^9}},ExpressionUUID->"14a2d6da-443c-4424-b600-\
+8220cfcf684d"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"GuidanceFieldFromMomentum", "[", 
+   RowBox[{"35", "*", 
+    SuperscriptBox["10", "6"], "*", 
+    FractionBox["q", "c"]}], "]"}], " ", "/.", " ", "constants"}]], "Input",
+ CellChangeTimes->{{3.7182779749339385`*^9, 
+  3.7182780348098316`*^9}},ExpressionUUID->"43f4b39e-6ae8-428a-a1f5-\
+5e27a555e7c8"],
+
+Cell[BoxData["0.4666666666666667`"], "Output",
+ CellChangeTimes->{{3.7182780025460243`*^9, 
+  3.718278035631976*^9}},ExpressionUUID->"01fb851a-e4ea-41e8-8417-\
+27bd96c235c5"]
+}, Open  ]],
+
+Cell["\<\
+Bei der Endenergie von 35 MeV kann in der relativistischen \
+N\[ADoubleDot]herung gerechnet werden. Man erh\[ADoubleDot]lt eine \
+Magnetfeldst\[ADoubleDot]rke von 0,47 T\
+\>", "Text",
+ CellChangeTimes->{{3.7182780495466967`*^9, 
+  3.718278166129778*^9}},ExpressionUUID->"6e151cb3-c463-4caf-88e3-\
+9ff3bc578aa2"]
 }, Open  ]]
 },
 WindowSize->{927, 1028},
@@ -271,11 +299,14 @@ Cell[CellGroupData[{
 Cell[6919, 207, 308, 7, 28, "Input",ExpressionUUID->"60a73cc4-b475-495e-8f6b-363495649579"],
 Cell[7230, 216, 152, 3, 32, "Output",ExpressionUUID->"fcc4613c-2ad2-49db-ba9f-576b7ab634c1"]
 }, Open  ]],
-Cell[7397, 222, 244, 6, 34, "Text",ExpressionUUID->"14a2d6da-443c-4424-b600-8220cfcf684d"]
+Cell[7397, 222, 346, 7, 34, "Text",ExpressionUUID->"14a2d6da-443c-4424-b600-8220cfcf684d"],
+Cell[CellGroupData[{
+Cell[7768, 233, 335, 8, 42, "Input",ExpressionUUID->"43f4b39e-6ae8-428a-a1f5-5e27a555e7c8"],
+Cell[8106, 243, 174, 3, 32, "Output",ExpressionUUID->"01fb851a-e4ea-41e8-8417-27bd96c235c5"]
+}, Open  ]],
+Cell[8295, 249, 321, 7, 34, "Text",ExpressionUUID->"6e151cb3-c463-4caf-88e3-9ff3bc578aa2"]
 }, Open  ]]
 }
 ]
 *)
-
-(* End of internal cache information *)
 
