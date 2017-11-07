@@ -1,0 +1,12 @@
+Jonas Neundorf, Jan Skottke
+
+Blatt 3
+Definiere eine Funktion, die das System einen Schritt weiterentwickelt. Alle Impulse sind auf den Anfangsimpuls Subscript[p, 0] normiert.
+schritt[{x_, px_,z_,  pz_}] = Module[{x, px, z, pz},
+x2 = x + px*deltaZ;
+px2 = px - k*x2*pz*deltaZ;
+z2 = z + pz*deltaZ;
+Return[{x2, z2, px2, pz}] (* Keine B-Feld-Komponente in z-Richtung, daher keine Impulsänderung in z-Richtung *)
+]
+
+
