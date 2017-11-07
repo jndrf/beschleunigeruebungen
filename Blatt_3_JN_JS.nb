@@ -2,7 +2,9 @@ Jonas Neundorf, Jan Skottke
 
 Blatt 3
 Definiere eine Funktion, die das System einen Schritt weiterentwickelt. Alle Impulse sind auf den Anfangsimpuls Subscript[p, 0] normiert.
-schritt[{x_, px_,z_,  pz_}] = Module[{x, px, z, pz},
+In[1]:= schritt[{ax_, apx_,az_,  apz_}] := Module[{x, px, z, pz},
+deltaZ = 0.1;
+k = .001;(* 1.602*10^-19 *g/p0;*)
 x2 = x + px*deltaZ;
 px2 = px - k*x2*pz*deltaZ;
 z2 = z + pz*deltaZ;
@@ -10,3 +12,11 @@ Return[{x2, z2, px2, pz}] (* Keine B-Feld-Komponente in z-Richtung, daher keine 
 ]
 
 
+Um nun den Verlauf zu simulieren, muss eine Anfangsverteilung aufgestellt werden. z kann beliebig gewählt werden, Subscript[p, z] ist aufgrund der Normierung gleich 1. Subscript[x, ] und Subscript[p, x] sollten einer Normalverteilung um 0 mit kleiner Standardabweichung folgen. Es sei nun, um ein Gefühl für die Größen zu kriegen, Subscript[p, x] = 0,01, x= 0.
+
+In[2]:= NestList [schritt, {x, px, z, pz}, 10] /. {x->0, px->0.01, z->0, pz->1}
+Out[2]= {{0,0.01,0,1},{0.1 px$3243+x$3243,0.1 pz$3243+z$3243,px$3243-0.0001 pz$3243 (0.1 px$3243+x$3243),pz$3243},{0.1 px$3244+x$3244,0.1 pz$3244+z$3244,px$3244-0.0001 pz$3244 (0.1 px$3244+x$3244),pz$3244},{0.1 px$3245+x$3245,0.1 pz$3245+z$3245,px$3245-0.0001 pz$3245 (0.1 px$3245+x$3245),pz$3245},{0.1 px$3246+x$3246,0.1 pz$3246+z$3246,px$3246-0.0001 pz$3246 (0.1 px$3246+x$3246),pz$3246},{0.1 px$3247+x$3247,0.1 pz$3247+z$3247,px$3247-0.0001 pz$3247 (0.1 px$3247+x$3247),pz$3247},{0.1 px$3248+x$3248,0.1 pz$3248+z$3248,px$3248-0.0001 pz$3248 (0.1 px$3248+x$3248),pz$3248},{0.1 px$3249+x$3249,0.1 pz$3249+z$3249,px$3249-0.0001 pz$3249 (0.1 px$3249+x$3249),pz$3249},{0.1 px$3250+x$3250,0.1 pz$3250+z$3250,px$3250-0.0001 pz$3250 (0.1 px$3250+x$3250),pz$3250},{0.1 px$3251+x$3251,0.1 pz$3251+z$3251,px$3251-0.0001 pz$3251 (0.1 px$3251+x$3251),pz$3251},{0.1 px$3252+x$3252,0.1 pz$3252+z$3252,px$3252-0.0001 pz$3252 (0.1 px$3252+x$3252),pz$3252}}
+In[3]:= 
+Ich glaub, da sollten überall Zahlen stehen, keine Variablennamen.
+In[4]:= 
+In[5]:= 
