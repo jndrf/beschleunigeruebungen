@@ -1,22 +1,242 @@
-Jonas Neundorf, Jan Skottke
+(* Content-type: application/vnd.wolfram.mathematica *)
 
-Blatt 3
-Definiere eine Funktion, die das System einen Schritt weiterentwickelt. Alle Impulse sind auf den Anfangsimpuls Subscript[p, 0] normiert.
-In[1]:= schritt[{ax_, apx_,az_,  apz_}] := Module[{x, px, z, pz},
-deltaZ = 0.1;
-k = .001;(* 1.602*10^-19 *g/p0;*)
-x2 = x + px*deltaZ;
-px2 = px - k*x2*pz*deltaZ;
-z2 = z + pz*deltaZ;
-Return[{x2, z2, px2, pz}] (* Keine B-Feld-Komponente in z-Richtung, daher keine Impulsänderung in z-Richtung *)
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      8499,        234]
+NotebookOptionsPosition[      7567,        211]
+NotebookOutlinePosition[      7916,        226]
+CellTagsIndexPosition[      7873,        223]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Blatt 3", "Subsubsection",
+ CellChangeTimes->{{3.7190781146684265`*^9, 3.7190781249878206`*^9}, {
+  3.719080332637045*^9, 
+  3.719080333067487*^9}},ExpressionUUID->"1a70ace2-eeee-4e3b-9bdd-\
+f47d070bfc1a"],
+
+Cell["Jonas Neundorf, Jan Skottke", "Text",
+ CellChangeTimes->{{3.7190781293398485`*^9, 
+  3.7190781382360272`*^9}},ExpressionUUID->"9fba03b3-eb16-4bb9-918c-\
+f8bef76bcb7a"],
+
+Cell[TextData[{
+ "Definiere eine Funktion, die das System einen Schritt weiterentwickelt. \
+Alle Impulse sind auf den Anfangsimpuls ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["p", "0"], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "35e8253a-8aa3-4fda-a0d2-73a0b24022d1"],
+ " normiert."
+}], "Text",
+ CellChangeTimes->{{3.7190781433073792`*^9, 3.7190781899476204`*^9}, {
+  3.7190793172599945`*^9, 
+  3.719079332508047*^9}},ExpressionUUID->"eaf46551-811d-491e-8e6e-\
+c93909a56c83"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"schritt", "[", 
+   RowBox[{"{", 
+    RowBox[{"x_", ",", " ", "px_", ",", " ", "z_", ",", " ", "pz_"}], "}"}], 
+   "]"}], " ", ":=", " ", 
+  RowBox[{"Module", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"x2", ",", " ", "px2", ",", " ", "z2"}], "}"}], ",", "\n", "  ", 
+    RowBox[{
+     RowBox[{"deltaZ", " ", "=", " ", "0.1"}], ";", "\n", "  ", 
+     RowBox[{"k", " ", "=", " ", ".001"}], ";", 
+     RowBox[{"(*", 
+      RowBox[{
+       RowBox[{"1.602", "*", 
+        SuperscriptBox["10", 
+         RowBox[{"-", "19"}]], "*", 
+        RowBox[{"g", "/", "p0"}]}], ";"}], "*)"}], "\[IndentingNewLine]", 
+     RowBox[{"x2", ":=", 
+      RowBox[{"x", "+", 
+       RowBox[{"px", "*", "deltaZ"}]}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{"px2", ":=", 
+      RowBox[{"px", "-", 
+       RowBox[{"k", "*", "x2", "*", "pz", "*", "deltaZ"}]}]}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"z2", ":=", 
+      RowBox[{"z", "+", 
+       RowBox[{"pz", "*", "deltaZ"}]}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{"Return", "[", 
+      RowBox[{"{", 
+       RowBox[{"x2", ",", "z2", ",", "px2", ",", "pz"}], "}"}], "]"}]}]}], 
+   RowBox[{"(*", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"Keine", " ", "B"}], "-", 
+      RowBox[{"Feld", " ", "Komponente", " ", "in", " ", "z"}], "-", 
+      "Richtung"}], ",", " ", 
+     RowBox[{
+      RowBox[{
+      "daher", " ", "keine", " ", "Impuls\[ADoubleDot]nderung", " ", "in", 
+       " ", "z"}], "-", "Richtung"}]}], "*)"}], "\[IndentingNewLine]", 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.719078197438006*^9, 3.7190783993246617`*^9}, {
+  3.719078635133865*^9, 3.7190786375652995`*^9}, {3.719078863404498*^9, 
+  3.7190788813414516`*^9}, {3.7190796503326855`*^9, 3.719079707548753*^9}, {
+  3.7190797853255067`*^9, 3.719079795741188*^9}, {3.7190798625085597`*^9, 
+  3.7190798647968173`*^9}, {3.719080064252819*^9, 
+  3.719080083292845*^9}},ExpressionUUID->"0b6b26c8-11e9-4b5c-b849-\
+6415b199458d"],
+
+Cell[TextData[{
+ "Um nun den Verlauf zu simulieren, muss eine Anfangsverteilung aufgestellt \
+werden. z kann beliebig gew\[ADoubleDot]hlt werden, ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["p", "z"], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "a0736c64-cf22-4666-9e56-ce13d214b798"],
+ " ist aufgrund der Normierung gleich 1. ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["x", "0"], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "d6ce0fc0-f073-4aed-8e5e-f064c2b61e6f"],
+ " und ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["p", "x"], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "c9ae75ec-cf3b-4482-9f8b-1542da886ec9"],
+ " sollten einer Normalverteilung um 0 mit kleiner Standardabweichung folgen. \
+Es sei nun, um ein Gef\[UDoubleDot]hl f\[UDoubleDot]r die \
+Gr\[ODoubleDot]\[SZ]en zu kriegen, ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["p", "x"], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "794aaba1-2dc6-43fd-9861-bc94d20f11f8"],
+ "=0.01, x=0."
+}], "Text",
+ CellChangeTimes->{{3.7190784055483046`*^9, 3.719078539068701*^9}, {
+  3.7190793376122246`*^9, 
+  3.7190793701250563`*^9}},ExpressionUUID->"d3c01547-a6c5-41f4-9444-\
+89c46a4288c5"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"NestList", "[", 
+   RowBox[{"schritt", ",", 
+    RowBox[{"{", 
+     RowBox[{"x", ",", "px", ",", "z", ",", "pz"}], "}"}], ",", "10"}], "]"}],
+   "/.", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"x", "\[Rule]", "0"}], ",", 
+    RowBox[{"px", "\[Rule]", "0.01"}], ",", 
+    RowBox[{"z", "\[Rule]", "0"}], ",", 
+    RowBox[{"pz", "\[Rule]", "1"}]}], "}"}]}]], "Input",
+ CellChangeTimes->{{3.719078541917644*^9, 3.719078609276264*^9}, {
+   3.7190787150208135`*^9, 3.7190787276949763`*^9}, {3.719078801180629*^9, 
+   3.719078805278325*^9}, 3.719079063324976*^9, {3.7190790967173853`*^9, 
+   3.719079110076295*^9}, {3.7190791906369495`*^9, 3.7190792567991714`*^9}, {
+   3.7190796307646675`*^9, 3.7190796368439035`*^9}, {3.7190802695175695`*^9, 
+   3.719080281403764*^9}},ExpressionUUID->"4843ad1e-af6c-474d-bd46-\
+a5698ec29f6e"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"0", ",", "0.01`", ",", "0", ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"0.001`", ",", "0.1`", ",", "0.0099999`", ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "0.011000000000000003`", ",", "0.1099999`", ",", "0.0999989`", ",", "1"}],
+     "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "0.021999990000000004`", ",", "0.1999989`", ",", "0.109997700001`", ",", 
+     "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "0.04199988`", ",", "0.20999770000100001`", ",", "0.199994700012`", ",", 
+     "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "0.06299965000010001`", ",", "0.29999470001200007`", ",", 
+     "0.209991400036`", ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "0.09299912000130003`", ",", "0.30999140003600006`", ",", 
+     "0.29998540009999997`", ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "0.12399826000490002`", ",", "0.39998540009999994`", ",", 
+     "0.3099790002099996`", ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "0.16399680001490002`", ",", "0.40997900020999956`", ",", 
+     "0.39996900041999844`", ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "0.20499470003589998`", ",", "0.4999690004199984`", ",", 
+     "0.40995850073999596`", ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "0.25499160007789984`", ",", "0.5099585007399959`", ",", 
+     "0.4999435012599906`", ",", "1"}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.7190788063440437`*^9, {3.7190788727494698`*^9, 3.7190788832972946`*^9}, 
+   3.71907906389908*^9, {3.7190791055937805`*^9, 3.719079110637116*^9}, 
+   3.7190792587344885`*^9, {3.7190796321565504`*^9, 3.7190796376104994`*^9}, {
+   3.71907967637766*^9, 3.7190797104104214`*^9}, 3.7190798671616526`*^9, 
+   3.7190800894524856`*^9, 3.719080284372013*^9, 
+   3.7190803371278615`*^9},ExpressionUUID->"8b6334ce-302c-4934-b21b-\
+57aa9fa0a373"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{1920, 1037},
+WindowMargins->{{-8, Automatic}, {Automatic, -8}},
+FrontEndVersion->"11.2 for Microsoft Windows (64-bit) (September 10, 2017)",
+StyleDefinitions->"Default.nb"
 ]
+(* End of Notebook Content *)
 
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 211, 4, 44, "Subsubsection",ExpressionUUID->"1a70ace2-eeee-4e3b-9bdd-f47d070bfc1a"],
+Cell[794, 28, 173, 3, 34, "Text",ExpressionUUID->"9fba03b3-eb16-4bb9-918c-f8bef76bcb7a"],
+Cell[970, 33, 505, 13, 34, "Text",ExpressionUUID->"eaf46551-811d-491e-8e6e-c93909a56c83"],
+Cell[1478, 48, 1975, 49, 162, "Input",ExpressionUUID->"0b6b26c8-11e9-4b5c-b849-6415b199458d"],
+Cell[3456, 99, 1244, 33, 56, "Text",ExpressionUUID->"d3c01547-a6c5-41f4-9444-89c46a4288c5"],
+Cell[CellGroupData[{
+Cell[4725, 136, 855, 19, 28, "Input",ExpressionUUID->"4843ad1e-af6c-474d-bd46-a5698ec29f6e"],
+Cell[5583, 157, 1956, 50, 52, "Output",ExpressionUUID->"8b6334ce-302c-4934-b21b-57aa9fa0a373"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
 
-Um nun den Verlauf zu simulieren, muss eine Anfangsverteilung aufgestellt werden. z kann beliebig gewählt werden, Subscript[p, z] ist aufgrund der Normierung gleich 1. Subscript[x, ] und Subscript[p, x] sollten einer Normalverteilung um 0 mit kleiner Standardabweichung folgen. Es sei nun, um ein Gefühl für die Größen zu kriegen, Subscript[p, x] = 0,01, x= 0.
-
-In[2]:= NestList [schritt, {x, px, z, pz}, 10] /. {x->0, px->0.01, z->0, pz->1}
-Out[2]= {{0,0.01,0,1},{0.1 px$3243+x$3243,0.1 pz$3243+z$3243,px$3243-0.0001 pz$3243 (0.1 px$3243+x$3243),pz$3243},{0.1 px$3244+x$3244,0.1 pz$3244+z$3244,px$3244-0.0001 pz$3244 (0.1 px$3244+x$3244),pz$3244},{0.1 px$3245+x$3245,0.1 pz$3245+z$3245,px$3245-0.0001 pz$3245 (0.1 px$3245+x$3245),pz$3245},{0.1 px$3246+x$3246,0.1 pz$3246+z$3246,px$3246-0.0001 pz$3246 (0.1 px$3246+x$3246),pz$3246},{0.1 px$3247+x$3247,0.1 pz$3247+z$3247,px$3247-0.0001 pz$3247 (0.1 px$3247+x$3247),pz$3247},{0.1 px$3248+x$3248,0.1 pz$3248+z$3248,px$3248-0.0001 pz$3248 (0.1 px$3248+x$3248),pz$3248},{0.1 px$3249+x$3249,0.1 pz$3249+z$3249,px$3249-0.0001 pz$3249 (0.1 px$3249+x$3249),pz$3249},{0.1 px$3250+x$3250,0.1 pz$3250+z$3250,px$3250-0.0001 pz$3250 (0.1 px$3250+x$3250),pz$3250},{0.1 px$3251+x$3251,0.1 pz$3251+z$3251,px$3251-0.0001 pz$3251 (0.1 px$3251+x$3251),pz$3251},{0.1 px$3252+x$3252,0.1 pz$3252+z$3252,px$3252-0.0001 pz$3252 (0.1 px$3252+x$3252),pz$3252}}
-In[3]:= 
-Ich glaub, da sollten überall Zahlen stehen, keine Variablennamen.
-In[4]:= 
-In[5]:= 
