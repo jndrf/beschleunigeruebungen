@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     10932,        288]
-NotebookOptionsPosition[      8893,        248]
-NotebookOutlinePosition[      9240,        263]
-CellTagsIndexPosition[      9197,        260]
+NotebookDataLength[     13050,        350]
+NotebookOptionsPosition[     10693,        305]
+NotebookOutlinePosition[     11040,        320]
+CellTagsIndexPosition[     10997,        317]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -237,13 +237,70 @@ cbbc87990779"]
 Cell["\<\
 Der normierte Energiezuwachs p in einem Beschleuniger sollte gr\[ODoubleDot]\
 \[SZ]er als 0 sein, genau wie die \[CapitalADoubleDot]nderung p von \[Gamma]. \
-Daraus folgt \[Nu] > 0 und \[Mu] > \[Nu].\
+Daraus folgt \[Nu] > 0 und \[Mu] > \[Nu]. Bei jedem Umlauf wird der gleiche \
+Anteil der Ruheenergie hinzugewonnen.\
 \>", "Text",
  CellChangeTimes->{{3.7201037000221167`*^9, 3.7201038010947104`*^9}, {
   3.7201042480982533`*^9, 3.720104268771694*^9}, {3.7201044068861976`*^9, 
-  3.720104409194453*^9}, {3.7201070431111345`*^9, 
-  3.720107054695589*^9}},ExpressionUUID->"6239edc8-3ba1-4431-94ff-\
-b5e4190b030e"]
+  3.720104409194453*^9}, {3.7201070431111345`*^9, 3.720107054695589*^9}, {
+  3.720107091411165*^9, 
+  3.7201071169356*^9}},ExpressionUUID->"6239edc8-3ba1-4431-94ff-b5e4190b030e"],
+
+Cell[TextData[{
+ "Die Bedingungen f\[UDoubleDot]r \[Mu] und \[Nu] erfordern, dass ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["T", "0"], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "7098b3fd-924d-4bf8-b2bc-47c20444c0cd"],
+ " der Hochfrequenzperiode entspricht. Man erh\[ADoubleDot]lt damit f\
+\[UDoubleDot]r das resonante B-Feld"
+}], "Text",
+ CellChangeTimes->{{3.7201073367844915`*^9, 
+  3.720107475736761*^9}},ExpressionUUID->"26482c94-25fa-436a-aea4-\
+d092b8710e75"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Solve", "[", 
+  RowBox[{
+   RowBox[{"gt1", " ", "//.", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"\[Mu]", "\[Rule]", "1"}], " ", ",", " ", 
+      RowBox[{"t1", " ", "\[Rule]", " ", 
+       FractionBox[
+        RowBox[{"2", "*", "Pi", "*", 
+         RowBox[{"(", 
+          RowBox[{"einj", "+", 
+           RowBox[{"p", "*", "m", "*", 
+            SuperscriptBox["c", "2"]}]}], ")"}]}], 
+        RowBox[{"q", "*", 
+         SuperscriptBox["c", "2"], "*", "b"}]]}]}], "}"}]}], ",", " ", "b"}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.720107479305521*^9, 
+  3.7201075916800127`*^9}},ExpressionUUID->"8480d9d2-39ff-4b0c-a5fd-\
+515367dcf95a"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{"b", "\[Rule]", 
+    FractionBox[
+     RowBox[{"2", " ", 
+      RowBox[{"(", 
+       RowBox[{"einj", "+", 
+        RowBox[{
+         SuperscriptBox["c", "2"], " ", "m", " ", "p"}]}], ")"}], " ", 
+      "\[Pi]"}], 
+     RowBox[{
+      SuperscriptBox["c", "2"], " ", "q", " ", "thf"}]]}], "}"}], 
+  "}"}]], "Output",
+ CellChangeTimes->{
+  3.7201075932487183`*^9},ExpressionUUID->"f60c8e0f-6521-42c3-bf91-\
+f7f98d5073cf"]
+}, Open  ]]
 }, Open  ]]
 },
 WindowSize->{927, 1028},
@@ -288,7 +345,12 @@ Cell[CellGroupData[{
 Cell[7284, 205, 638, 15, 45, "Input",ExpressionUUID->"5901a521-4dfa-4c7a-bd64-4c48bcc79f36"],
 Cell[7925, 222, 434, 11, 53, "Output",ExpressionUUID->"fa5530dc-91cc-4e72-8f31-cbbc87990779"]
 }, Open  ]],
-Cell[8374, 236, 503, 9, 56, "Text",ExpressionUUID->"6239edc8-3ba1-4431-94ff-b5e4190b030e"]
+Cell[8374, 236, 622, 10, 56, "Text",ExpressionUUID->"6239edc8-3ba1-4431-94ff-b5e4190b030e"],
+Cell[8999, 248, 496, 12, 34, "Text",ExpressionUUID->"26482c94-25fa-436a-aea4-d092b8710e75"],
+Cell[CellGroupData[{
+Cell[9520, 264, 668, 19, 68, "Input",ExpressionUUID->"8480d9d2-39ff-4b0c-a5fd-515367dcf95a"],
+Cell[10191, 285, 474, 16, 113, "Output",ExpressionUUID->"f60c8e0f-6521-42c3-bf91-f7f98d5073cf"]
+}, Open  ]]
 }, Open  ]]
 }
 ]
