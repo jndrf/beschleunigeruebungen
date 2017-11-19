@@ -1,0 +1,262 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      9392,        254]
+NotebookOptionsPosition[      7447,        215]
+NotebookOutlinePosition[      7796,        230]
+CellTagsIndexPosition[      7753,        227]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Blatt 5 - Jonas Neundorf, Jan Skottke", "Title",
+ CellChangeTimes->{{3.720074434776555*^9, 3.720074451719534*^9}, {
+  3.7200751741701007`*^9, 
+  3.72007517573737*^9}},ExpressionUUID->"9e1b9eb8-a30c-477f-ad12-\
+f70262b77566"],
+
+Cell["Zyklotronfrequenz", "Text",
+ CellChangeTimes->{{3.7200745019763255`*^9, 
+  3.720074515048366*^9}},ExpressionUUID->"6cea334e-e4a0-467e-97a7-\
+8ade801b56ad"],
+
+Cell[BoxData[
+ RowBox[{"\[Omega]z", ":=", 
+  FractionBox[
+   RowBox[{"e", "*", "b"}], 
+   RowBox[{"\[Gamma]", "*", "m"}]]}]], "Input",
+ CellChangeTimes->{{3.720074519207*^9, 
+  3.720074542761155*^9}},ExpressionUUID->"a537491f-60ef-49c3-8fc9-\
+0eefca4ab498"],
+
+Cell["Umlaufzeit f\[UDoubleDot]r ein Teilchen mit \[Gamma]=1", "Text",
+ CellChangeTimes->{{3.7200767010360446`*^9, 3.7200767107949123`*^9}, {
+  3.720076897034726*^9, 
+  3.7200769070838327`*^9}},ExpressionUUID->"d9831876-6976-4f77-ac74-\
+b7ec50a3494a"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"t0", "=", 
+  FractionBox[
+   RowBox[{"2", "*", "Pi", "*", "me"}], 
+   RowBox[{"e", "*", "b"}]]}]], "Input",
+ CellChangeTimes->{{3.7200767129119396`*^9, 3.7200767229716268`*^9}, {
+   3.720076909035133*^9, 3.7200769211002426`*^9}, 3.7200770216277184`*^9, 
+   3.7200882912748194`*^9, {3.720089126395534*^9, 
+   3.720089130107102*^9}},ExpressionUUID->"9f011621-63bb-4f74-b675-\
+c94cad94c60b"],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{"2", " ", "me", " ", "\[Pi]"}], 
+  RowBox[{"b", " ", "e"}]]], "Output",
+ CellChangeTimes->{
+  3.7200770221985083`*^9, 3.720088291717353*^9, 3.720088403284069*^9, 
+   3.7200884818737297`*^9, 3.7200890755181227`*^9, {3.7200891270796757`*^9, 
+   3.720089157533335*^9}, 3.72009019792962*^9, 
+   3.7200905493943834`*^9},ExpressionUUID->"14a8380a-933b-4563-8ba2-\
+2b58d474ac26"]
+}, Open  ]],
+
+Cell["Umlaufzeit f\[UDoubleDot]r ein Teilchen mit \[Gamma] >1", "Text",
+ CellChangeTimes->{{3.720074627467189*^9, 3.720074665131029*^9}, {
+   3.720075301736907*^9, 3.7200753033052964`*^9}, {3.720089027243046*^9, 
+   3.720089038874978*^9}, 
+   3.7200891986187716`*^9},ExpressionUUID->"7bdcc1db-3b85-4267-bbde-\
+276c58d84843"],
+
+Cell[BoxData[
+ RowBox[{"t", ":=", 
+  FractionBox[
+   RowBox[{"2", "*", "Pi", "*", "\[Gamma]", "*", "me"}], 
+   RowBox[{"e", "*", "b"}]]}]], "Input",
+ CellChangeTimes->{{3.720074670170772*^9, 3.7200746853852425`*^9}, {
+  3.7200881178027053`*^9, 3.720088127723997*^9}, {3.720088362155379*^9, 
+  3.720088377946469*^9}, {3.7200891946040382`*^9, 
+  3.7200892132115993`*^9}},ExpressionUUID->"32c857bb-1f7d-433c-b376-\
+4a68b60fe3ab"],
+
+Cell["\<\
+1. Gleichung f\[UDoubleDot]r die gilt, dass die 1. Umlaufzeit gleich ein \
+ganzzahliges Vielfaches (\[Mu]) der HF-Periodendauer ist\
+\>", "Text",
+ CellChangeTimes->{{3.7200902845403056`*^9, 
+  3.7200903338841085`*^9}},ExpressionUUID->"1c8381a7-b3d9-4a61-b8b9-\
+73f9692e13e6"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"gt1", "=", " ", 
+  RowBox[{
+   RowBox[{"t1", "\[Equal]", " ", 
+    RowBox[{"\[Mu]", "*", "thf"}]}], " ", "//.", 
+   RowBox[{"t1", "\[Rule]", " ", 
+    FractionBox[
+     RowBox[{"2", "*", "Pi", "*", 
+      RowBox[{"(", 
+       RowBox[{"einj", "+", "\[CapitalDelta]e"}], ")"}]}], 
+     RowBox[{"e", "*", 
+      SuperscriptBox["c", "2"], "*", "b"}]]}]}]}]], "Input",
+ CellChangeTimes->{{3.7200892737107544`*^9, 3.7200893933714447`*^9}, 
+   3.720089562763603*^9, 3.7200898060289736`*^9, {3.7200899390850167`*^9, 
+   3.7200899486202197`*^9}, {3.7200903374052334`*^9, 
+   3.7200903413891087`*^9}},ExpressionUUID->"dfa89c7b-858b-453f-9dda-\
+d16d2a419000"],
+
+Cell[BoxData[
+ RowBox[{
+  FractionBox[
+   RowBox[{"2", " ", "\[Pi]", " ", 
+    RowBox[{"(", 
+     RowBox[{"einj", "+", "\[CapitalDelta]e"}], ")"}]}], 
+   RowBox[{"b", " ", 
+    SuperscriptBox["c", "2"], " ", "e"}]], "\[Equal]", 
+  RowBox[{"thf", " ", "\[Mu]"}]}]], "Output",
+ CellChangeTimes->{
+  3.7200893484516554`*^9, {3.7200893806533337`*^9, 3.720089394213498*^9}, 
+   3.7200898068429165`*^9, {3.7200899409061103`*^9, 3.7200899489526033`*^9}, 
+   3.720090197951153*^9, 
+   3.7200905515892763`*^9},ExpressionUUID->"953d846d-ebcb-4c44-8fbf-\
+dcd1f3a08a7e"]
+}, Open  ]],
+
+Cell["\<\
+2. Gleichung f\[UDoubleDot]r die gilt, dass die \[CapitalADoubleDot]nderung \
+der Umlaufzeit bei jedem Durchgang ein ganzzahliges Vielfaches (\[Nu]) der \
+HF-Periodendauer ist. \[Nu] muss aber nicht gleich \[Mu] sein.\
+\>", "Text",
+ CellChangeTimes->{{3.7200903635647078`*^9, 
+  3.72009041961296*^9}},ExpressionUUID->"15d1dd39-8745-487f-ba3c-\
+a128cca7f6db"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"g\[CapitalDelta]t", " ", "=", " ", 
+  RowBox[{
+   RowBox[{"\[CapitalDelta]t", " ", "\[Equal]", " ", 
+    RowBox[{"\[Nu]", "*", "thf"}]}], "//.", 
+   RowBox[{"\[CapitalDelta]t", "\[Rule]", " ", 
+    FractionBox[
+     RowBox[{"2", "*", "Pi", "*", "\[CapitalDelta]e"}], 
+     RowBox[{"e", "*", 
+      SuperscriptBox["c", "2"], "*", "b"}]]}]}]}]], "Input",
+ CellChangeTimes->{{3.7200894231338124`*^9, 3.720089452588134*^9}, 
+   3.720089812237641*^9, {3.720089952348776*^9, 3.7200899527321205`*^9}, {
+   3.720090344365074*^9, 
+   3.7200903446848073`*^9}},ExpressionUUID->"615c5d6f-0615-4e37-a60c-\
+9e38d3fc9bb3"],
+
+Cell[BoxData[
+ RowBox[{
+  FractionBox[
+   RowBox[{"2", " ", "\[Pi]", " ", "\[CapitalDelta]e"}], 
+   RowBox[{"b", " ", 
+    SuperscriptBox["c", "2"], " ", "e"}]], "\[Equal]", 
+  RowBox[{"thf", " ", "\[Nu]"}]}]], "Output",
+ CellChangeTimes->{{3.720089448407361*^9, 3.720089453110329*^9}, 
+   3.720089813002088*^9, 3.7200899531506457`*^9, 3.720090197963176*^9, 
+   3.7200905516318364`*^9},ExpressionUUID->"08dab79c-24ed-459d-9718-\
+0ccc7490349c"]
+}, Open  ]],
+
+Cell["\<\
+Benutzte beide Gleichung, welche oben definiert wurden, um  thf zu \
+eliminieren und dann nach \[CapitalDelta]e umzuformen\
+\>", "Text",
+ CellChangeTimes->{{3.72009045449314*^9, 
+  3.7200905217097816`*^9}},ExpressionUUID->"d221e907-7481-4a51-adab-\
+f559ed2955fc"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Simplify", "[", 
+  RowBox[{
+   RowBox[{"Solve", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"gt1", ",", "g\[CapitalDelta]t"}], "}"}], ",", 
+     RowBox[{"{", "\[CapitalDelta]e", "}"}], ",", 
+     RowBox[{"{", "thf", "}"}]}], "]"}], "[", 
+   RowBox[{"[", 
+    RowBox[{"1", ",", "1"}], "]"}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.7200901347665434`*^9, 3.7200901775005054`*^9}, {
+  3.7200902089576664`*^9, 3.720090210893495*^9}, {3.7200902583171167`*^9, 
+  3.7200902618844123`*^9}, {3.720090348653252*^9, 
+  3.7200903490532513`*^9}},ExpressionUUID->"5901a521-4dfa-4c7a-bd64-\
+4c48bcc79f36"],
+
+Cell[BoxData[
+ RowBox[{"\[CapitalDelta]e", "\[Rule]", 
+  FractionBox[
+   RowBox[{"einj", " ", "\[Nu]"}], 
+   RowBox[{"\[Mu]", "-", "\[Nu]"}]]}]], "Output",
+ CellChangeTimes->{{3.7200901781726723`*^9, 3.7200902112561474`*^9}, 
+   3.7200902625711813`*^9, 
+   3.7200905516668787`*^9},ExpressionUUID->"bfb158be-c136-441b-825c-\
+381e1b65f8b4"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{1920, 1037},
+WindowMargins->{{-8, Automatic}, {Automatic, -8}},
+FrontEndVersion->"11.2 for Microsoft Windows (64-bit) (September 10, 2017)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 230, 4, 96, "Title",ExpressionUUID->"9e1b9eb8-a30c-477f-ad12-f70262b77566"],
+Cell[813, 28, 161, 3, 34, "Text",ExpressionUUID->"6cea334e-e4a0-467e-97a7-8ade801b56ad"],
+Cell[977, 33, 257, 7, 54, "Input",ExpressionUUID->"a537491f-60ef-49c3-8fc9-0eefca4ab498"],
+Cell[1237, 42, 251, 4, 34, "Text",ExpressionUUID->"d9831876-6976-4f77-ac74-b7ec50a3494a"],
+Cell[CellGroupData[{
+Cell[1513, 50, 412, 9, 52, "Input",ExpressionUUID->"9f011621-63bb-4f74-b675-c94cad94c60b"],
+Cell[1928, 61, 410, 9, 56, "Output",ExpressionUUID->"14a8380a-933b-4563-8ba2-2b58d474ac26"]
+}, Open  ]],
+Cell[2353, 73, 324, 5, 34, "Text",ExpressionUUID->"7bdcc1db-3b85-4267-bbde-276c58d84843"],
+Cell[2680, 80, 426, 9, 52, "Input",ExpressionUUID->"32c857bb-1f7d-433c-b376-4a68b60fe3ab"],
+Cell[3109, 91, 285, 6, 34, "Text",ExpressionUUID->"1c8381a7-b3d9-4a61-b8b9-73f9692e13e6"],
+Cell[CellGroupData[{
+Cell[3419, 101, 672, 16, 54, "Input",ExpressionUUID->"dfa89c7b-858b-453f-9dda-d16d2a419000"],
+Cell[4094, 119, 558, 14, 59, "Output",ExpressionUUID->"953d846d-ebcb-4c44-8fbf-dcd1f3a08a7e"]
+}, Open  ]],
+Cell[4667, 136, 368, 7, 34, "Text",ExpressionUUID->"15d1dd39-8745-487f-ba3c-a128cca7f6db"],
+Cell[CellGroupData[{
+Cell[5060, 147, 631, 14, 54, "Input",ExpressionUUID->"615c5d6f-0615-4e37-a60c-9e38d3fc9bb3"],
+Cell[5694, 163, 443, 10, 58, "Output",ExpressionUUID->"08dab79c-24ed-459d-9718-0ccc7490349c"]
+}, Open  ]],
+Cell[6152, 176, 273, 6, 34, "Text",ExpressionUUID->"d221e907-7481-4a51-adab-f559ed2955fc"],
+Cell[CellGroupData[{
+Cell[6450, 186, 628, 15, 28, "Input",ExpressionUUID->"5901a521-4dfa-4c7a-bd64-4c48bcc79f36"],
+Cell[7081, 203, 338, 8, 58, "Output",ExpressionUUID->"bfb158be-c136-441b-825c-381e1b65f8b4"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
