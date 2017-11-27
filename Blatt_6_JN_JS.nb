@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     11508,        332]
-NotebookOptionsPosition[     10081,        278]
-NotebookOutlinePosition[     10576,        299]
-CellTagsIndexPosition[     10490,        294]
+NotebookDataLength[     12946,        379]
+NotebookOptionsPosition[     11255,        316]
+NotebookOutlinePosition[     11750,        337]
+CellTagsIndexPosition[     11664,        332]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -27,7 +27,15 @@ Cell[CellGroupData[{
 
 Cell["Der \[OpenCurlyDoubleQuote]pill-box\[CloseCurlyDoubleQuote] Resonator", \
 "Section",
- CellChangeTimes->{{3.7207771043070183`*^9, 3.720777112899365*^9}}],
+ CellChangeTimes->{{3.7207771043070183`*^9, 3.720777112899365*^9}, {
+  3.720781633138386*^9, 3.7207816369732227`*^9}}],
+
+Cell["\<\
+Aufgrund der Zylindersymmetrie des Resonators bietet es sich an, \
+Zylinderkoordinaten zu benutzen.\
+\>", "Text",
+ CellChangeTimes->{{3.720781642020694*^9, 3.720781656941358*^9}, {
+  3.720781713142508*^9, 3.720781725860688*^9}}],
 
 Cell[CellGroupData[{
 
@@ -123,7 +131,7 @@ Cell[BoxData[
    RowBox[{"e", "[", "r", "]"}]}]}]], "Output",
  CellChangeTimes->{{3.720777544136931*^9, 3.7207775738371973`*^9}, 
    3.720777616108781*^9, 3.720778941512588*^9, 3.72077931443958*^9, 
-   3.720779969765596*^9, 3.720780595221612*^9}]
+   3.720779969765596*^9, 3.720780595221612*^9, 3.720781786765645*^9}]
 }, Open  ]],
 
 Cell["und l\[ODoubleDot]se sie.", "Text",
@@ -165,7 +173,7 @@ StyleBox[\\\"1\\\", \\\"TR\\\"]], \\\",\\\", StyleBox[\\\"\[Ellipsis]\\\", \\\
 Cell[CellGroupData[{
 
 Cell[BoxData[
- RowBox[{"sol", "=", 
+ RowBox[{"solrad", "=", 
   RowBox[{
    RowBox[{"DSolve", "[", 
     RowBox[{
@@ -187,7 +195,8 @@ Cell[BoxData[
   3.720777903089151*^9}, {3.720777946579248*^9, 3.720777954114916*^9}, {
   3.720778256333249*^9, 3.720778318980392*^9}, {3.7207783618163137`*^9, 
   3.720778445159507*^9}, {3.720778539274529*^9, 3.720778545285589*^9}, {
-  3.720778683956497*^9, 3.720778686312154*^9}}],
+  3.720778683956497*^9, 3.720778686312154*^9}, {3.7207809486712418`*^9, 
+  3.720780948869522*^9}}],
 
 Cell[BoxData[
  RowBox[{"{", 
@@ -203,7 +212,28 @@ Cell[BoxData[
    3.7207779042027607`*^9, 3.7207779560995197`*^9, 3.720778259100583*^9, 
    3.720778321231924*^9, {3.720778369773611*^9, 3.7207784476882133`*^9}, 
    3.7207785764642143`*^9, 3.720778686825365*^9, 3.720778941866383*^9, 
-   3.720779314624606*^9, 3.720779969907299*^9, 3.72078059567782*^9}]
+   3.720779314624606*^9, 3.720779969907299*^9, 3.72078059567782*^9, 
+   3.720780949538404*^9, 3.720781787133086*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"sol", " ", "=", " ", 
+  RowBox[{
+   RowBox[{"e", "[", 
+    RowBox[{"r", ",", "t"}], "]"}], " ", "//.", " ", "solrad"}]}]], "Input",
+ CellChangeTimes->{{3.7207809556767397`*^9, 3.720780976262937*^9}}],
+
+Cell[BoxData[
+ RowBox[{"e0", " ", 
+  RowBox[{"BesselJ", "[", 
+   RowBox[{"0", ",", 
+    FractionBox[
+     RowBox[{"r", " ", "\[Omega]"}], "c"]}], "]"}], " ", 
+  RowBox[{"Cos", "[", 
+   RowBox[{"t", " ", "\[Omega]"}], "]"}]}]], "Output",
+ CellChangeTimes->{3.720780979174924*^9, 3.7207817871844673`*^9}]
 }, Open  ]],
 
 Cell["\<\
@@ -263,7 +293,7 @@ Cell[BoxData[
    RowBox[{"lResonator", "\[Rule]", 
     RowBox[{"1.3063702868327658`", " ", "R"}]}], "}"}], "}"}]], "Output",
  CellChangeTimes->{{3.7207800414159517`*^9, 3.720780059032477*^9}, 
-   3.720780595841859*^9}]
+   3.720780595841859*^9, 3.720781787403138*^9}]
 }, Open  ]],
 
 Cell["\<\
@@ -272,6 +302,14 @@ Die Resonatorl\[ADoubleDot]nge ist das 1,3-fache des Radius, also k\
 \>", "Text",
  CellChangeTimes->{{3.720780124589807*^9, 3.7207801506216803`*^9}, {
   3.720780372797418*^9, 3.72078038455516*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Berechnung des Magnetfeldes", "Subsection",
+ CellChangeTimes->{{3.720780666657001*^9, 3.720780671208075*^9}}],
+
+Cell["", "Text"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
@@ -287,13 +325,13 @@ StyleDefinitions->"Default.nb"
 (*CellTagsOutline
 CellTagsIndex->{
  "Info43720782541-3206417"->{
-  Cell[4179, 132, 1836, 30, 73, "Print",
+  Cell[4493, 140, 1836, 30, 73, "Print",
    CellTags->"Info43720782541-3206417"]}
  }
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"Info43720782541-3206417", 10384, 288}
+ {"Info43720782541-3206417", 11558, 326}
  }
 *)
 (*NotebookFileOutline
@@ -301,36 +339,45 @@ Notebook[{
 Cell[CellGroupData[{
 Cell[580, 22, 123, 1, 93, "Title"],
 Cell[CellGroupData[{
-Cell[728, 27, 158, 2, 65, "Section"],
+Cell[728, 27, 209, 3, 65, "Section"],
+Cell[940, 32, 238, 5, 33, "Text"],
 Cell[CellGroupData[{
-Cell[911, 33, 161, 3, 45, "Subsection"],
-Cell[1075, 38, 111, 1, 33, "Text"],
-Cell[1189, 41, 463, 13, 41, "Input"],
-Cell[1655, 56, 119, 1, 33, "Text"],
-Cell[1777, 59, 385, 10, 34, "Input"],
-Cell[2165, 71, 115, 1, 33, "Text"],
+Cell[1203, 41, 161, 3, 45, "Subsection"],
+Cell[1367, 46, 111, 1, 33, "Text"],
+Cell[1481, 49, 463, 13, 41, "Input"],
+Cell[1947, 64, 119, 1, 33, "Text"],
+Cell[2069, 67, 385, 10, 34, "Input"],
+Cell[2457, 79, 115, 1, 33, "Text"],
 Cell[CellGroupData[{
-Cell[2305, 76, 752, 20, 36, "Input"],
-Cell[3060, 98, 946, 27, 51, "Output"]
+Cell[2597, 84, 752, 20, 36, "Input"],
+Cell[3352, 106, 968, 27, 51, "Output"]
 }, Open  ]],
-Cell[4021, 128, 155, 2, 33, "Text"],
-Cell[4179, 132, 1836, 30, 73, "Print",
+Cell[4335, 136, 155, 2, 33, "Text"],
+Cell[4493, 140, 1836, 30, 73, "Print",
  CellTags->"Info43720782541-3206417"],
 Cell[CellGroupData[{
-Cell[6040, 166, 1034, 23, 56, "Input"],
-Cell[7077, 191, 682, 14, 47, "Output"]
-}, Open  ]],
-Cell[7774, 208, 205, 4, 33, "Text"],
-Cell[7982, 214, 545, 13, 51, "Input"]
+Cell[6354, 174, 1088, 24, 56, "Input"],
+Cell[7445, 200, 730, 15, 47, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[8564, 232, 184, 2, 45, "Subsection"],
-Cell[8751, 236, 290, 5, 33, "Text"],
-Cell[CellGroupData[{
-Cell[9066, 245, 452, 12, 51, "Input"],
-Cell[9521, 259, 249, 6, 32, "Output"]
+Cell[8212, 220, 223, 5, 34, "Input"],
+Cell[8438, 227, 302, 8, 47, "Output"]
 }, Open  ]],
-Cell[9785, 268, 256, 5, 33, "Text"]
+Cell[8755, 238, 205, 4, 33, "Text"],
+Cell[8963, 244, 545, 13, 51, "Input"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[9545, 262, 184, 2, 45, "Subsection"],
+Cell[9732, 266, 290, 5, 33, "Text"],
+Cell[CellGroupData[{
+Cell[10047, 275, 452, 12, 51, "Input"],
+Cell[10502, 289, 271, 6, 32, "Output"]
+}, Open  ]],
+Cell[10788, 298, 256, 5, 33, "Text"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[11081, 308, 115, 1, 45, "Subsection"],
+Cell[11199, 311, 16, 0, 33, "Text"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
