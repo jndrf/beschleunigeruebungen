@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     34473,        906]
-NotebookOptionsPosition[     28935,        802]
-NotebookOutlinePosition[     29497,        823]
-CellTagsIndexPosition[     29410,        818]
+NotebookDataLength[     37097,        984]
+NotebookOptionsPosition[     31201,        873]
+NotebookOutlinePosition[     31763,        894]
+CellTagsIndexPosition[     31676,        889]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -796,6 +796,77 @@ Cell[BoxData[
    3.7209364738817616`*^9},ExpressionUUID->"d6703ea8-4317-4249-9460-\
 7b13d5408920"]
 }, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Berechnung der Ohm\[CloseCurlyQuote]schen Verlustleistung", "Subsection",
+ CellChangeTimes->{{3.720936799611085*^9, 
+  3.720936810289488*^9}},ExpressionUUID->"99b8b141-40d5-4a51-b281-\
+7da2749ae387"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"pDiss", " ", "=", " ", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     FractionBox[
+      SubscriptBox["R", "s"], "2"], "*", " ", 
+     RowBox[{"Integrate", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{
+         RowBox[{"h", "[", 
+          RowBox[{"r", ",", " ", "t"}], "]"}], " ", "//.", "hfield"}], " ", "//.",
+         " ", 
+        RowBox[{"r", "\[Rule]", " ", "R"}]}], ",", " ", 
+       RowBox[{"{", 
+        RowBox[{"\[Phi]", ",", " ", "0", ",", " ", 
+         RowBox[{"2", "*", "Pi"}]}], "}"}]}], "]"}]}], " ", "+", " ", 
+    RowBox[{
+     SubscriptBox["R", "s"], "*", 
+     RowBox[{"Integrate", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"h", "[", 
+         RowBox[{"r", ",", " ", "t"}], "]"}], " ", "//.", "hfield"}], " ", 
+       ",", " ", 
+       RowBox[{"{", 
+        RowBox[{"r", ",", " ", "0", ",", " ", "R"}], "}"}]}], "]"}]}]}], " ", 
+   "//", "FullSimplify"}]}]], "Input",
+ CellChangeTimes->{{3.720936814710703*^9, 3.7209368844544816`*^9}, {
+  3.72093693279156*^9, 3.720937046620535*^9}, {3.7209370926343904`*^9, 
+  3.7209370950187254`*^9}},ExpressionUUID->"bb6fb733-52d8-4e52-8cbb-\
+61be36e7e0c6"],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{"c", " ", 
+   SuperscriptBox["e0", "2"], " ", "\[Epsilon]", " ", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"c", " ", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"-", "1"}], "+", 
+        RowBox[{"BesselJ", "[", 
+         RowBox[{"0", ",", 
+          FractionBox[
+           RowBox[{"R", " ", "\[Omega]"}], "c"]}], "]"}]}], ")"}]}], "-", 
+     RowBox[{"\[Pi]", " ", "\[Omega]", " ", 
+      RowBox[{"BesselJ", "[", 
+       RowBox[{"1", ",", 
+        FractionBox[
+         RowBox[{"R", " ", "\[Omega]"}], "c"]}], "]"}]}]}], ")"}], " ", 
+   RowBox[{"Sin", "[", 
+    RowBox[{"t", " ", "\[Omega]"}], "]"}], " ", 
+   SubscriptBox["R", "s"]}], "\[Omega]"]], "Output",
+ CellChangeTimes->{3.720937047567395*^9, 
+  3.720937096903966*^9},ExpressionUUID->"dbb7090a-8b6f-4513-841d-\
+ceabd8c9525b"]
+}, Open  ]]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
@@ -817,7 +888,7 @@ CellTagsIndex->{
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"Info123720940073-7049972", 29248, 812}
+ {"Info123720940073-7049972", 31514, 883}
  }
 *)
 (*NotebookFileOutline
@@ -904,6 +975,13 @@ Cell[26814, 743, 211, 4, 53, "Subsection",ExpressionUUID->"84fbd79d-23bc-4d20-aa
 Cell[CellGroupData[{
 Cell[27050, 751, 1433, 35, 162, "Input",ExpressionUUID->"d5f12972-7d44-478a-950b-023dded47020"],
 Cell[28486, 788, 397, 8, 35, "Output",ExpressionUUID->"d6703ea8-4317-4249-9460-7b13d5408920"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[28932, 802, 205, 3, 53, "Subsection",ExpressionUUID->"99b8b141-40d5-4a51-b281-7da2749ae387"],
+Cell[CellGroupData[{
+Cell[29162, 809, 1152, 32, 119, "Input",ExpressionUUID->"bb6fb733-52d8-4e52-8cbb-61be36e7e0c6"],
+Cell[30317, 843, 832, 24, 89, "Output",ExpressionUUID->"dbb7090a-8b6f-4513-841d-ceabd8c9525b"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
