@@ -1,0 +1,219 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      5952,        211]
+NotebookOptionsPosition[      5177,        179]
+NotebookOutlinePosition[      5515,        194]
+CellTagsIndexPosition[      5472,        191]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell["Jonas Neundorf, Jan Skottke", "Text",
+ CellChangeTimes->{{3.721460253691348*^9, 3.7214602779649467`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Blatt 7", "Title",
+ CellChangeTimes->{{3.721460283891692*^9, 3.72146028587579*^9}}],
+
+Cell["\<\
+Allgemein gilt f\[UDoubleDot]r das Magnetfeld eines geraden Leiters im Vakuum\
+\
+\>", "Text",
+ CellChangeTimes->{{3.72146270322261*^9, 3.721462741222694*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"B", "[", "r_", "]"}], " ", "=", " ", 
+  FractionBox[
+   RowBox[{
+    SubscriptBox["\[Mu]", "0"], "*", " ", "i"}], 
+   RowBox[{"2", "*", "Pi", "*", "r"}]]}]], "Input",
+ CellChangeTimes->{{3.721462748892725*^9, 3.721462816939663*^9}, {
+  3.721462848611199*^9, 3.7214628734911613`*^9}}],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{"i", " ", 
+   SubscriptBox["\[Mu]", "0"]}], 
+  RowBox[{"2", " ", "\[Pi]", " ", "r"}]]], "Output",
+ CellChangeTimes->{{3.7214627933637323`*^9, 3.7214628743540277`*^9}, 
+   3.7214636198928823`*^9}]
+}, Open  ]],
+
+Cell["\<\
+wobei i die Stromst\[ADoubleDot]rke bezeichent. In kartesischen Koordinaten \
+ausgedr\[UDoubleDot]ckt ist das\
+\>", "Text",
+ CellChangeTimes->{{3.721462880125556*^9, 3.721462924146318*^9}, {
+  3.721463006978963*^9, 3.721463035817697*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"B", "[", 
+   RowBox[{"x_", ",", " ", "y_"}], "]"}], " ", "=", " ", 
+  RowBox[{
+   RowBox[{"B", "[", 
+    RowBox[{"Sqrt", "[", 
+     RowBox[{
+      SuperscriptBox["x", "2"], "+", " ", 
+      SuperscriptBox["y", "2"]}], "]"}], "]"}], " ", "*", " ", 
+   RowBox[{"{", 
+    RowBox[{
+     FractionBox["x", 
+      RowBox[{"Sqrt", "[", 
+       RowBox[{
+        SuperscriptBox["x", "2"], "+", " ", 
+        SuperscriptBox["y", "2"]}], "]"}]], ",", " ", 
+     FractionBox["y", 
+      RowBox[{"Sqrt", "[", 
+       RowBox[{
+        SuperscriptBox["x", "2"], "+", " ", 
+        SuperscriptBox["y", "2"]}], "]"}]]}], "}"}]}]}]], "Input",
+ CellChangeTimes->{{3.7214630419593143`*^9, 3.7214631092419643`*^9}, {
+  3.721463248588736*^9, 3.72146330775299*^9}, {3.721463352515044*^9, 
+  3.7214633837133904`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   FractionBox[
+    RowBox[{"i", " ", "x", " ", 
+     SubscriptBox["\[Mu]", "0"]}], 
+    RowBox[{"2", " ", "\[Pi]", " ", 
+     RowBox[{"(", 
+      RowBox[{
+       SuperscriptBox["x", "2"], "+", 
+       SuperscriptBox["y", "2"]}], ")"}]}]], ",", 
+   FractionBox[
+    RowBox[{"i", " ", "y", " ", 
+     SubscriptBox["\[Mu]", "0"]}], 
+    RowBox[{"2", " ", "\[Pi]", " ", 
+     RowBox[{"(", 
+      RowBox[{
+       SuperscriptBox["x", "2"], "+", 
+       SuperscriptBox["y", "2"]}], ")"}]}]]}], "}"}]], "Output",
+ CellChangeTimes->{3.7214633895740757`*^9, 3.721463620016542*^9}]
+}, Open  ]],
+
+Cell[TextData[{
+ "Diese Formeln gehen davon aus, dass sich der Leiter im Ursprung befindet. \
+Befindet er sich nicht dort, sondern an einem Punkt ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"{", 
+    RowBox[{
+     SubscriptBox["x", "p"], ",", " ", 
+     SubscriptBox["y", "p"]}], "}"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", so wird daraus"
+}], "Text",
+ CellChangeTimes->{{3.721463419776185*^9, 3.721463479584008*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ StyleBox[
+  RowBox[{
+   RowBox[{"B", "[", 
+    RowBox[{"x_", ",", " ", "y_", ",", " ", "xp_", ",", " ", "yp_"}], "]"}], 
+   " ", "=", " ", 
+   RowBox[{"B", "[", 
+    RowBox[{
+     RowBox[{"x", " ", "-", " ", "xp"}], ",", " ", 
+     RowBox[{"y", " ", "-", " ", "yp"}]}], "]"}]}], "Input"]], "Input",
+ CellChangeTimes->{3.721463584616847*^9}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   FractionBox[
+    RowBox[{"i", " ", 
+     RowBox[{"(", 
+      RowBox[{"x", "-", "xp"}], ")"}], " ", 
+     SubscriptBox["\[Mu]", "0"]}], 
+    RowBox[{"2", " ", "\[Pi]", " ", 
+     RowBox[{"(", 
+      RowBox[{
+       SuperscriptBox[
+        RowBox[{"(", 
+         RowBox[{"x", "-", "xp"}], ")"}], "2"], "+", 
+       SuperscriptBox[
+        RowBox[{"(", 
+         RowBox[{"y", "-", "yp"}], ")"}], "2"]}], ")"}]}]], ",", 
+   FractionBox[
+    RowBox[{"i", " ", 
+     RowBox[{"(", 
+      RowBox[{"y", "-", "yp"}], ")"}], " ", 
+     SubscriptBox["\[Mu]", "0"]}], 
+    RowBox[{"2", " ", "\[Pi]", " ", 
+     RowBox[{"(", 
+      RowBox[{
+       SuperscriptBox[
+        RowBox[{"(", 
+         RowBox[{"x", "-", "xp"}], ")"}], "2"], "+", 
+       SuperscriptBox[
+        RowBox[{"(", 
+         RowBox[{"y", "-", "yp"}], ")"}], "2"]}], ")"}]}]]}], "}"}]], "Output",\
+
+ CellChangeTimes->{{3.721463597771408*^9, 3.721463620056417*^9}}]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.721462829161131*^9, 3.721462844731655*^9}}]
+}, Open  ]]
+},
+WindowSize->{928, 1148},
+WindowMargins->{{Automatic, 0}, {0, Automatic}},
+FrontEndVersion->"11.0 for Linux x86 (64-bit) (September 21, 2016)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 111, 1, 33, "Text"],
+Cell[CellGroupData[{
+Cell[694, 25, 89, 1, 93, "Title"],
+Cell[786, 28, 168, 4, 33, "Text"],
+Cell[CellGroupData[{
+Cell[979, 36, 318, 8, 54, "Input"],
+Cell[1300, 46, 233, 6, 51, "Output"]
+}, Open  ]],
+Cell[1548, 55, 248, 5, 33, "Text"],
+Cell[CellGroupData[{
+Cell[1821, 64, 827, 24, 58, "Input"],
+Cell[2651, 90, 611, 19, 56, "Output"]
+}, Open  ]],
+Cell[3277, 112, 433, 12, 57, "Text"],
+Cell[CellGroupData[{
+Cell[3735, 128, 355, 10, 34, "Input"],
+Cell[4093, 140, 961, 32, 56, "Output"]
+}, Open  ]],
+Cell[5069, 175, 92, 1, 65, "Input"]
+}, Open  ]]
+}
+]
+*)
+
