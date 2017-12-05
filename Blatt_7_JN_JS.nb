@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      8320,        267]
-NotebookOptionsPosition[      7504,        234]
-NotebookOutlinePosition[      7842,        249]
-CellTagsIndexPosition[      7799,        246]
+NotebookDataLength[     10781,        338]
+NotebookOptionsPosition[      9700,        297]
+NotebookOutlinePosition[     10038,        312]
+CellTagsIndexPosition[      9995,        309]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -25,6 +25,22 @@ Cell[CellGroupData[{
 
 Cell["Blatt 7", "Title",
  CellChangeTimes->{{3.721460283891692*^9, 3.72146028587579*^9}}],
+
+Cell["Definieren wir zun\[ADoubleDot]chst die Konstanten.", "Text",
+ CellChangeTimes->{{3.721465412677577*^9, 3.721465430529738*^9}}],
+
+Cell[BoxData[
+ RowBox[{"constants", " ", "=", " ", 
+  RowBox[{"{", 
+   RowBox[{
+    SubscriptBox["\[Mu]", "0"], "\[Rule]", " ", 
+    RowBox[{"\[AliasDelimiter]", 
+     RowBox[{
+      RowBox[{"*", "Pi", "*", 
+       SuperscriptBox["10", 
+        RowBox[{"-", "7"}]]}], "}"}]}]}]}]}]], "Input",
+ CellChangeTimes->{{3.721465433317203*^9, 3.721465483258334*^9}},
+ EmphasizeSyntaxErrors->True],
 
 Cell["\<\
 Allgemein gilt f\[UDoubleDot]r das Magnetfeld eines geraden Leiters im Vakuum\
@@ -50,7 +66,7 @@ Cell[BoxData[
    SubscriptBox["\[Mu]", "0"]}], 
   RowBox[{"2", " ", "\[Pi]", " ", "r"}]]], "Output",
  CellChangeTimes->{{3.7214627933637323`*^9, 3.7214628743540277`*^9}, 
-   3.7214636198928823`*^9, 3.721464899152567*^9}]
+   3.7214636198928823`*^9, 3.721464899152567*^9, 3.721465564730315*^9}]
 }, Open  ]],
 
 Cell["\<\
@@ -108,7 +124,7 @@ Cell[BoxData[
        SuperscriptBox["x", "2"], "+", 
        SuperscriptBox["y", "2"]}], ")"}]}]]}], "}"}]], "Output",
  CellChangeTimes->{3.7214633895740757`*^9, 3.721463620016542*^9, 
-  3.72146489932434*^9}]
+  3.72146489932434*^9, 3.721465564735427*^9}]
 }, Open  ]],
 
 Cell[TextData[{
@@ -172,7 +188,7 @@ Cell[BoxData[
          RowBox[{"y", "-", "yp"}], ")"}], "2"]}], ")"}]}]]}], "}"}]], "Output",\
 
  CellChangeTimes->{{3.721463597771408*^9, 3.721463620056417*^9}, 
-   3.721464899419917*^9}]
+   3.721464899419917*^9, 3.721465564808099*^9}]
 }, Open  ]],
 
 Cell["\<\
@@ -229,7 +245,54 @@ Cell[BoxData[
   3.721464184904335*^9, 3.721464244197755*^9}, {3.721464298500003*^9, 
   3.721464342781892*^9}, {3.7214644015740137`*^9, 3.72146441837388*^9}, {
   3.7214645066291523`*^9, 3.72146472914028*^9}, {3.721464761957193*^9, 
-  3.721464775444077*^9}, {3.721464812853553*^9, 3.7214648713243628`*^9}}]
+  3.721464775444077*^9}, {3.721464812853553*^9, 3.7214648713243628`*^9}, {
+  3.7214655512911654`*^9, 3.721465561226403*^9}}],
+
+Cell["Plotten wir nun dieses Feld.", "Text",
+ CellChangeTimes->{{3.721465060794529*^9, 3.7214650911468277`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"StreamPlot", "[", 
+  RowBox[{
+   RowBox[{"multiConductorField", "[", 
+    RowBox[{
+     FractionBox["Pi", "2"], ",", "20", ",", " ", "x", ",", " ", "y", ",", 
+     " ", "R"}], "]"}], ",", " ", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", " ", 
+     RowBox[{"-", "R"}], ",", " ", "R"}], "}"}], ",", " ", 
+   RowBox[{"{", 
+    RowBox[{"y", ",", " ", 
+     RowBox[{"-", "R"}], ",", " ", "R"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.7214650938284197`*^9, 3.721465264794746*^9}}],
+
+Cell[BoxData[
+ TemplateBox[{
+  "StreamPlot","plln",
+   "\"Limiting value \\!\\(\\*RowBox[{\\\"-\\\", \\\"R\\\"}]\\) in \
+\\!\\(\\*RowBox[{\\\"{\\\", RowBox[{\\\"x\\\", \\\",\\\", RowBox[{\\\"-\\\", \
+\\\"R\\\"}], \\\",\\\", \\\"R\\\"}], \\\"}\\\"}]\\) is not a machine-sized \
+real number.\"",2,5,2,16655315566089664181,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.721465296151147*^9, 3.721465565432033*^9}],
+
+Cell[BoxData[
+ RowBox[{"StreamPlot", "[", 
+  RowBox[{
+   RowBox[{"multiConductorField", "[", 
+    RowBox[{
+     FractionBox["\[Pi]", "2"], ",", "20", ",", "x", ",", "y", ",", "R"}], 
+    "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", 
+     RowBox[{"-", "R"}], ",", "R"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"y", ",", 
+     RowBox[{"-", "R"}], ",", "R"}], "}"}]}], "]"}]], "Output",
+ CellChangeTimes->{3.721465296151966*^9, 3.721465565559822*^9}]
+}, Open  ]]
 }, Open  ]]
 },
 WindowSize->{928, 1148},
@@ -251,23 +314,31 @@ Notebook[{
 Cell[558, 20, 111, 1, 33, "Text"],
 Cell[CellGroupData[{
 Cell[694, 25, 89, 1, 93, "Title"],
-Cell[786, 28, 168, 4, 33, "Text"],
+Cell[786, 28, 133, 1, 33, "Text"],
+Cell[922, 31, 388, 11, 41, "Input"],
+Cell[1313, 44, 168, 4, 33, "Text"],
 Cell[CellGroupData[{
-Cell[979, 36, 318, 8, 54, "Input"],
-Cell[1300, 46, 255, 6, 51, "Output"]
+Cell[1506, 52, 318, 8, 54, "Input"],
+Cell[1827, 62, 277, 6, 51, "Output"]
 }, Open  ]],
-Cell[1570, 55, 248, 5, 33, "Text"],
+Cell[2119, 71, 248, 5, 33, "Text"],
 Cell[CellGroupData[{
-Cell[1843, 64, 827, 24, 58, "Input"],
-Cell[2673, 90, 635, 20, 56, "Output"]
+Cell[2392, 80, 827, 24, 58, "Input"],
+Cell[3222, 106, 657, 20, 56, "Output"]
 }, Open  ]],
-Cell[3323, 113, 433, 12, 57, "Text"],
+Cell[3894, 129, 433, 12, 57, "Text"],
 Cell[CellGroupData[{
-Cell[3781, 129, 355, 10, 34, "Input"],
-Cell[4139, 141, 987, 33, 56, "Output"]
+Cell[4352, 145, 355, 10, 34, "Input"],
+Cell[4710, 157, 1009, 33, 56, "Output"]
 }, Open  ]],
-Cell[5141, 177, 449, 7, 55, "Text"],
-Cell[5593, 186, 1895, 45, 236, "Input"]
+Cell[5734, 193, 449, 7, 55, "Text"],
+Cell[6186, 202, 1946, 46, 203, "Input"],
+Cell[8135, 250, 112, 1, 33, "Text"],
+Cell[CellGroupData[{
+Cell[8272, 255, 503, 13, 54, "Input"],
+Cell[8778, 270, 434, 8, 23, "Message"],
+Cell[9215, 280, 457, 13, 78, "Output"]
+}, Open  ]]
 }, Open  ]]
 }
 ]
