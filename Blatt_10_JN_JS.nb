@@ -1,0 +1,297 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      8959,        289]
+NotebookOptionsPosition[      8007,        252]
+NotebookOutlinePosition[      8367,        268]
+CellTagsIndexPosition[      8324,        265]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Blatt 10", "Title",
+ CellChangeTimes->{{3.724627760526423*^9, 3.724627783030912*^9}}],
+
+Cell["Jonas Neundorf & Jan Skottke", "Text",
+ CellChangeTimes->{{3.724627788556157*^9, 3.724627808751066*^9}, {
+  3.724627852511548*^9, 3.724627882396863*^9}}],
+
+Cell[TextData[StyleBox["Phasenvorschub", "Subsubsection"]], "Text",
+ CellChangeTimes->{{3.724628455481729*^9, 3.7246284662505827`*^9}}],
+
+Cell["\<\
+Zun\[ADoubleDot]chst definieren wir die Linse und den Driftweg.\
+\>", "Text",
+ CellChangeTimes->{{3.72463029539354*^9, 3.724630312593461*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"mF", "[", "f_", "]"}], " ", ":=", " ", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"1", ",", " ", "0"}], "}"}], ",", " ", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"-", "1"}], "/", "f"}], ",", " ", "1"}], "}"}]}], "}"}], 
+  RowBox[{"(*", " ", 
+   RowBox[{"d\[UDoubleDot]nne", " ", "Linse"}], " ", "*)"}]}]], "Input",
+ CellChangeTimes->{{3.7246284723997602`*^9, 3.724628514651175*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"m0", "[", "L_", "]"}], " ", ":=", " ", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"1", ",", " ", "L"}], "}"}], ",", " ", 
+    RowBox[{"{", 
+     RowBox[{"0", ",", " ", "1"}], "}"}]}], "}"}], " ", 
+  RowBox[{"(*", " ", "Driftmatrix", " ", "*)"}]}]], "Input",
+ CellChangeTimes->{{3.721824894098403*^9, 3.721824930084595*^9}},
+ ExpressionUUID -> "8e789c9d-0f45-4aa0-8940-8024fe025a89"],
+
+Cell["\<\
+Berechne nun die Gesamtmatrix der FODO-Struktur.\
+\>", "Text",
+ CellChangeTimes->{{3.724630329729753*^9, 3.724630358041649*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"fodo", " ", "=", " ", 
+  RowBox[{
+   RowBox[{"m0", "[", "L", "]"}], ".", 
+   RowBox[{"mF", "[", 
+    RowBox[{"-", "f"}], "]"}], ".", 
+   RowBox[{"m0", "[", "L", "]"}], ".", 
+   RowBox[{"mF", "[", "f", "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.724628578018908*^9, 3.724628650689705*^9}, {
+   3.7246300832060432`*^9, 3.72463010421006*^9}, {3.724630149331834*^9, 
+   3.724630149765604*^9}, 3.724630216114932*^9}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"1", "+", 
+      FractionBox["L", "f"], "-", 
+      FractionBox[
+       RowBox[{"L", "+", 
+        RowBox[{"L", " ", 
+         RowBox[{"(", 
+          RowBox[{"1", "+", 
+           FractionBox["L", "f"]}], ")"}]}]}], "f"]}], ",", 
+     RowBox[{"L", "+", 
+      RowBox[{"L", " ", 
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         FractionBox["L", "f"]}], ")"}]}]}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      FractionBox["1", "f"], "-", 
+      FractionBox[
+       RowBox[{"1", "+", 
+        FractionBox["L", "f"]}], "f"]}], ",", 
+     RowBox[{"1", "+", 
+      FractionBox["L", "f"]}]}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.7246288133087177`*^9, {3.724630093870405*^9, 3.724630151245081*^9}, 
+   3.724630224837776*^9, 3.7246304993333483`*^9}]
+}, Open  ]],
+
+Cell["\<\
+Alternativ l\[ADoubleDot]sst sich die Entwicklung der Koordinaten auch mit \
+den Twiss-Parametern beschreiben. Nach dem Durchqueren einer FODO-Zelle \
+sollen sie die gleichen Werte wie vorher haben, damit vereinfacht sich die \
+Matrix zu\
+\>", "Text",
+ CellChangeTimes->{{3.724630364905293*^9, 3.724630421992776*^9}}],
+
+Cell[BoxData[
+ RowBox[{"mM", ":=", " ", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"Cos", "[", "\[Phi]", "]"}], "+", 
+       RowBox[{"\[Alpha]", "*", 
+        RowBox[{"Sin", "[", "\[Phi]", "]"}]}]}], ",", 
+      RowBox[{"\[Beta]", "*", 
+       RowBox[{"Sin", "[", "\[Phi]", "]"}]}]}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{
+       FractionBox[
+        RowBox[{"1", "+", 
+         SuperscriptBox["\[Alpha]", "2"]}], "\[Beta]"], "*", 
+       RowBox[{"Sin", "[", "\[Phi]", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"Cos", "[", "\[Phi]", "]"}], "-", 
+       RowBox[{"\[Alpha]", "*", 
+        RowBox[{"Sin", "[", "\[Phi]", "]"}]}]}]}], "}"}]}], "}"}]}]], "Input",\
+
+ CellChangeTimes->{{3.724628869176921*^9, 3.724628888542951*^9}, {
+  3.724628960170396*^9, 3.724629234217255*^9}}],
+
+Cell["\<\
+Da beide Matritzen die gleiche Transformation beschreiben, m\[UDoubleDot]ssen \
+sie gleich sein. Damit ist auch ihre Spur gleich. Daraus l\[ADoubleDot]sst \
+sich der Phasenvorschub berechnen.\
+\>", "Text",
+ CellChangeTimes->{{3.724630437256967*^9, 3.724630487880505*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Solve", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"Tr", "[", "mM", "]"}], " ", "==", 
+     RowBox[{"Tr", "[", "fodo", "]"}]}], ",", "\[Phi]"}], "]"}], "//", 
+  RowBox[{"FullSimplify", "//.", 
+   RowBox[{
+    FractionBox["L", "f"], "\[Rule]", " ", "\[Kappa]"}]}]}]], "Input",
+ CellChangeTimes->{{3.724629286675235*^9, 3.724629364018797*^9}, {
+  3.724629473008172*^9, 3.724629495647291*^9}, {3.724629847030032*^9, 
+  3.724629848589191*^9}, {3.724630029925671*^9, 3.7246300667742577`*^9}, {
+  3.724630187510005*^9, 3.724630203819674*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"\[Phi]", "\[Rule]", 
+     RowBox[{"ConditionalExpression", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", 
+         RowBox[{"ArcCos", "[", 
+          RowBox[{"1", "-", 
+           FractionBox[
+            SuperscriptBox["L", "2"], 
+            RowBox[{"2", " ", 
+             SuperscriptBox["f", "2"]}]]}], "]"}]}], "+", 
+        RowBox[{"2", " ", "\[Pi]", " ", 
+         RowBox[{"C", "[", "1", "]"}]}]}], ",", 
+       RowBox[{
+        RowBox[{"C", "[", "1", "]"}], "\[Element]", "Integers"}]}], "]"}]}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\[Phi]", "\[Rule]", 
+     RowBox[{"ConditionalExpression", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"ArcCos", "[", 
+         RowBox[{"1", "-", 
+          FractionBox[
+           SuperscriptBox["L", "2"], 
+           RowBox[{"2", " ", 
+            SuperscriptBox["f", "2"]}]]}], "]"}], "+", 
+        RowBox[{"2", " ", "\[Pi]", " ", 
+         RowBox[{"C", "[", "1", "]"}]}]}], ",", 
+       RowBox[{
+        RowBox[{"C", "[", "1", "]"}], "\[Element]", "Integers"}]}], "]"}]}], 
+    "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{{3.7246294885085573`*^9, 3.724629496702619*^9}, 
+   3.724629850102851*^9, {3.724630032850301*^9, 3.72463005180908*^9}, 
+   3.724630121476152*^9, {3.7246301889783983`*^9, 3.724630225596923*^9}, 
+   3.724630499813149*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"rule", "=", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"\[Phi]", "\[Rule]", " ", 
+     RowBox[{"ArcCos", "[", 
+      RowBox[{"1", "-", 
+       FractionBox[
+        SuperscriptBox["L", "2"], 
+        RowBox[{"2", "*", 
+         SuperscriptBox["f", "2"]}]]}], "]"}]}], "//.", 
+    RowBox[{
+     FractionBox[
+      SuperscriptBox["L", "2"], 
+      SuperscriptBox["f", "2"]], "\[Rule]", " ", 
+     SuperscriptBox["\[Kappa]", "2"]}]}], "}"}], " "}]], "Input",
+ CellChangeTimes->{{3.724629863391621*^9, 3.7246300241251097`*^9}, 
+   3.724630068981196*^9}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\[Phi]", "\[Rule]", 
+   RowBox[{"ArcCos", "[", 
+    RowBox[{"1", "-", 
+     FractionBox[
+      SuperscriptBox["\[Kappa]", "2"], "2"]}], "]"}]}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.72462990290958*^9, 3.724629942440281*^9, {3.724629990743881*^9, 
+   3.724630025128839*^9}, 3.724630069592622*^9, 3.724630121499413*^9, 
+   3.724630225601099*^9, 3.724630499817058*^9}]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{928, 1148},
+WindowMargins->{{Automatic, -10}, {Automatic, -10}},
+ShowSelection->True,
+FrontEndVersion->"9.0 for Linux x86 (64-bit) (February 7, 2013)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 91, 1, 92, "Title"],
+Cell[674, 25, 159, 2, 30, "Text"],
+Cell[836, 29, 135, 1, 37, "Text"],
+Cell[974, 32, 152, 3, 31, "Text"],
+Cell[1129, 37, 456, 13, 32, "Input"],
+Cell[1588, 52, 434, 11, 32, "Input"],
+Cell[2025, 65, 138, 3, 30, "Text"],
+Cell[CellGroupData[{
+Cell[2188, 72, 434, 10, 32, "Input"],
+Cell[2625, 84, 868, 29, 58, "Output"]
+}, Open  ]],
+Cell[3508, 116, 327, 6, 51, "Text"],
+Cell[3838, 124, 847, 25, 61, "Input"],
+Cell[4688, 151, 281, 5, 50, "Text"],
+Cell[CellGroupData[{
+Cell[4994, 160, 572, 13, 55, "Input"],
+Cell[5569, 175, 1390, 39, 99, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6996, 219, 570, 17, 61, "Input"],
+Cell[7569, 238, 410, 10, 85, "Output"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
