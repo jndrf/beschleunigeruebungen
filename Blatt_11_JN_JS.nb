@@ -1,0 +1,18 @@
+In[1]:=
+Blatt 11
+
+Definiton der Matrizen
+
+Out[1]= 11 Blatt
+Out[3]= Definiton der Matrizen
+In[5]:= mD[Ld_, ρ_] := {{Cos[θ], ρ*Sin[θ], ρ(1 - Cos[θ])}, {-1/ρ Sin[θ], Cos[θ], Sin[θ]}, {0, 0, 1}}//.θ->Ld/ρ
+mF[f_] := {{1, 0, 0}, {-1/f, 1, 0}, {0, 0, 1}}(* dünne Linse *)
+m0[L_] := {{1, L, 0}, {0, 1, 0}, {0, 0, 1}} (* Driftmatrix *)
+Erste Aufgabe
+In[10]:= mBend = mD[L, rho].m0[d].mF[fQ].m0[d].mD[L, rho] //FullSimplify;
+In[11]:= eq = {0, 0, 1} == mBend.{0, 0, 1}
+Out[11]= {0,0,1}=={-((2 Sin[L/(2 rho)] ((d-2 fQ) Cos[L/(2 rho)]+rho Sin[L/(2 rho)]) (d Cos[L/rho]+rho Sin[L/rho]))/fQ),((rho Cos[L/rho]-d Sin[L/rho]) (rho (-1+Cos[L/rho])-(d-2 fQ) Sin[L/rho]))/(fQ rho),1}
+Zwei Gleichungen für eine unbekannte, das sollte lösbar sein.
+In[13]:= Solve[eq, fQ] //FullSimplify
+Out[13]= {{fQ->1/2 (d+rho Tan[L/(2 rho)])}}
+Es ist tatsächlich lösbar.
