@@ -30,8 +30,8 @@ Out[24]= 	{rho-rho Cos[s/rho],Sin[s/rho],1}	L>s
 0.{0,0,1}	True
 
 
-In[26]:= dispersion[s][[1]] //FullSimplify
-Out[26]= {{{rho-rho Cos[s/rho],Sin[s/rho],1},L>s},{{rho-rho Cos[L/rho],Sin[L/rho],1},(L<s&&d+L>s)||(d+L<s&&2 d+L>s)},{{(1/fQ)(-Cos[L/rho] ((-d+fQ) rho Cos[s/rho]+d (rho+(d-2 fQ) Sin[s/rho]))+rho (fQ+Sin[L/rho] (rho (-1+Cos[s/rho])+(-d+fQ) Sin[s/rho]))),(1/(fQ rho))(rho Cos[L/rho] (rho (-1+Cos[s/rho])+(-d+fQ) Sin[s/rho])+Sin[L/rho] ((-d+fQ) rho Cos[s/rho]+d (rho+(d-2 fQ) Sin[s/rho]))),1},2 d+L<s&&2 (d+L)>s}}
+In[43]:= dispersion[s][[1]] //FullSimplify
+Out[43]= {{{rho-rho Cos[s/rho],Sin[s/rho],1},L>s},{{rho-rho Cos[L/rho],Sin[L/rho],1},(L<s&&d+L>s)||(d+L<s&&2 d+L>s)},{{(1/fQ)(-Cos[L/rho] ((-d+fQ) rho Cos[s/rho]+d (rho+(d-2 fQ) Sin[s/rho]))+rho (fQ+Sin[L/rho] (rho (-1+Cos[s/rho])+(-d+fQ) Sin[s/rho]))),(1/(fQ rho))(rho Cos[L/rho] (rho (-1+Cos[s/rho])+(-d+fQ) Sin[s/rho])+Sin[L/rho] ((-d+fQ) rho Cos[s/rho]+d (rho+(d-2 fQ) Sin[s/rho]))),1},2 d+L<s&&2 (d+L)>s}}
 Plot[capitalD[x].{0, 0, 1}//.L ->10 //. rho-> 1000 //d-> 1, {x, 0, 22}]
 During evaluation of In[12]:= Dot::rect: Nonrectangular tensor encountered.
 During evaluation of In[12]:= Piecewise::pairs: The first argument <<1>>.{0,0,1} of Piecewise is not a list of pairs.
