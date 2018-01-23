@@ -9,10 +9,36 @@ In[5]:= mD[Ld_, ρ_] := {{Cos[θ], ρ*Sin[θ], ρ(1 - Cos[θ])}, {-1/ρ Sin[θ],
 mF[f_] := {{1, 0, 0}, {-1/f, 1, 0}, {0, 0, 1}}(* dünne Linse *)
 m0[L_] := {{1, L, 0}, {0, 1, 0}, {0, 0, 1}} (* Driftmatrix *)
 Erste Aufgabe
-In[10]:= mBend = mD[L, rho].m0[d].mF[fQ].m0[d].mD[L, rho] //FullSimplify;
-In[11]:= eq = {0, 0, 1} == mBend.{0, 0, 1}
-Out[11]= {0,0,1}=={-((2 Sin[L/(2 rho)] ((d-2 fQ) Cos[L/(2 rho)]+rho Sin[L/(2 rho)]) (d Cos[L/rho]+rho Sin[L/rho]))/fQ),((rho Cos[L/rho]-d Sin[L/rho]) (rho (-1+Cos[L/rho])-(d-2 fQ) Sin[L/rho]))/(fQ rho),1}
+In[8]:= mBend = mD[L, rho].m0[d].mF[fQ].m0[d].mD[L, rho] //FullSimplify;
+In[9]:= eq = {0, 0, 1} == mBend.{0, 0, 1}
+Out[9]= {0,0,1}=={-((2 Sin[L/(2 rho)] ((d-2 fQ) Cos[L/(2 rho)]+rho Sin[L/(2 rho)]) (d Cos[L/rho]+rho Sin[L/rho]))/fQ),((rho Cos[L/rho]-d Sin[L/rho]) (rho (-1+Cos[L/rho])-(d-2 fQ) Sin[L/rho]))/(fQ rho),1}
 Zwei Gleichungen für eine unbekannte, das sollte lösbar sein.
-In[13]:= Solve[eq, fQ] //FullSimplify
-Out[13]= {{fQ->1/2 (d+rho Tan[L/(2 rho)])}}
+In[10]:= Solve[eq, fQ] //FullSimplify
+Out[10]= {{fQ->1/2 (d+rho Tan[L/(2 rho)])}}
 Es ist tatsächlich lösbar.
+Zweite Aufgabe
+In[18]:= capitalD[s_] = mD[s, rho]//FullSimplify	s < L
+mD[L, rho].m0[s]//FullSimplify	L<s<L+d
+mD[L, rho].m0[d].mF[fQ].m0[s]//FullSimplify	L+d <s< L+2d
+mD[L, rho].m0[d].mF[fQ].m0[d].mD[s, rho]//FullSimplify	L + 2d < s < 2L +2d
+
+ ;
+In[24]:= dispersion[s_] = capitalD[s].{0, 0, 1} //FullSimplify
+Out[24]= 	{rho-rho Cos[s/rho],Sin[s/rho],1}	L>s
+{rho-rho Cos[L/rho],Sin[L/rho],1}	(L<s&&d+L>s)||(d+L<s&&2 d+L>s)
+{(1/fQ)(-Cos[L/rho] ((-d+fQ) rho Cos[s/rho]+d (rho+(d-2 fQ) Sin[s/rho]))+rho (fQ+Sin[L/rho] (rho (-1+Cos[s/rho])+(-d+fQ) Sin[s/rho]))),(1/(fQ rho))(rho Cos[L/rho] (rho (-1+Cos[s/rho])+(-d+fQ) Sin[s/rho])+Sin[L/rho] ((-d+fQ) rho Cos[s/rho]+d (rho+(d-2 fQ) Sin[s/rho]))),1}	2 d+L<s&&2 (d+L)>s
+0.{0,0,1}	True
+
+
+In[26]:= dispersion[s][[1]] //FullSimplify
+Out[26]= {{{rho-rho Cos[s/rho],Sin[s/rho],1},L>s},{{rho-rho Cos[L/rho],Sin[L/rho],1},(L<s&&d+L>s)||(d+L<s&&2 d+L>s)},{{(1/fQ)(-Cos[L/rho] ((-d+fQ) rho Cos[s/rho]+d (rho+(d-2 fQ) Sin[s/rho]))+rho (fQ+Sin[L/rho] (rho (-1+Cos[s/rho])+(-d+fQ) Sin[s/rho]))),(1/(fQ rho))(rho Cos[L/rho] (rho (-1+Cos[s/rho])+(-d+fQ) Sin[s/rho])+Sin[L/rho] ((-d+fQ) rho Cos[s/rho]+d (rho+(d-2 fQ) Sin[s/rho]))),1},2 d+L<s&&2 (d+L)>s}}
+Plot[capitalD[x].{0, 0, 1}//.L ->10 //. rho-> 1000 //d-> 1, {x, 0, 22}]
+During evaluation of In[12]:= Dot::rect: Nonrectangular tensor encountered.
+During evaluation of In[12]:= Piecewise::pairs: The first argument <<1>>.{0,0,1} of Piecewise is not a list of pairs.
+During evaluation of In[12]:= Dot::rect: Nonrectangular tensor encountered.
+During evaluation of In[12]:= Dot::rect: Nonrectangular tensor encountered.
+During evaluation of In[12]:= General::stop: Further output of Dot::rect will be suppressed during this calculation.
+During evaluation of In[12]:= Piecewise::pairs: The first argument {{{{Cos[0.449429 Power[<<2>>]],rho Sin[Times[<<2>>]],rho (1+Times[<<2>>])},{-(Sin[Times[<<2>>]]/rho),Cos[0.449429 Power[<<2>>]],Sin[0.449429 Power[<<2>>]]},{0,0,1}},0.449429<L},<<1>>,{{<<1>>},0.449429<2 d+L},{<<1>>,0.449429<2 d+2 L}}.{0,0,1} of Piecewise is not a list of pairs.
+During evaluation of In[12]:= Piecewise::pairs: The first argument {<<1>>}.{0,0,1} of Piecewise is not a list of pairs.
+During evaluation of In[12]:= General::stop: Further output of Piecewise::pairs will be suppressed during this calculation.
+Out[12]= 
