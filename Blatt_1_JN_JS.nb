@@ -1,0 +1,86 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      2089,         78]
+NotebookOptionsPosition[      1611,         56]
+NotebookOutlinePosition[      1949,         71]
+CellTagsIndexPosition[      1906,         68]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell["Jonas Neundorf, Jan Skottke", "Text",
+ CellChangeTimes->{{3.732251308807271*^9, 3.732251314264056*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Blatt 1", "Title",
+ CellChangeTimes->{{3.7322513214630833`*^9, 3.732251323646744*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Felder einer gleichf\[ODoubleDot]rmig bewegten Ladung", "Chapter",
+ CellChangeTimes->{{3.732251328742491*^9, 3.732251344928637*^9}}],
+
+Cell["\<\
+Das elektrische Feld ist rotationssymmetrisch um die x-Achse, es gibt also \
+neben der x-Komponente noch eine radiale.\
+\>", "Text",
+ CellChangeTimes->{{3.732251357862351*^9, 3.732251418882992*^9}}],
+
+Cell[TextData[{
+ "Das E-Feld wird in Vorw\[ADoubleDot]rtsrichtung unter dem Winkel \[Theta] = \
+",
+ Cell[BoxData[
+  FormBox[
+   FractionBox["1", 
+    RowBox[{"2", "\[Gamma]"}]], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "zur Bewegungsrichtung emittiert. Genau in Bewegungsrichtung wird kein \
+E-Feld abgestrahlt."
+}], "Text",
+ CellChangeTimes->{{3.732251732652752*^9, 3.732251848973442*^9}}],
+
+Cell["", "Text"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{928, 1148},
+WindowMargins->{{Automatic, 0}, {0, Automatic}},
+FrontEndVersion->"11.0 for Linux x86 (64-bit) (September 21, 2016)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 109, 1, 33, "Text"],
+Cell[CellGroupData[{
+Cell[692, 25, 92, 1, 93, "Title"],
+Cell[CellGroupData[{
+Cell[809, 30, 138, 1, 66, "Chapter"],
+Cell[950, 33, 208, 4, 55, "Text"],
+Cell[1161, 39, 403, 11, 66, "Text"],
+Cell[1567, 52, 16, 0, 33, "Text"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
