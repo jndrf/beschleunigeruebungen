@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      2089,         78]
-NotebookOptionsPosition[      1611,         56]
-NotebookOutlinePosition[      1949,         71]
-CellTagsIndexPosition[      1906,         68]
+NotebookDataLength[      8089,        277]
+NotebookOptionsPosition[      6787,        225]
+NotebookOutlinePosition[      7125,        240]
+CellTagsIndexPosition[      7082,        237]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -30,6 +30,11 @@ Cell[CellGroupData[{
 
 Cell["Felder einer gleichf\[ODoubleDot]rmig bewegten Ladung", "Chapter",
  CellChangeTimes->{{3.732251328742491*^9, 3.732251344928637*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Fragen", "Subchapter",
+ CellChangeTimes->{{3.732252052117342*^9, 3.732252053021339*^9}}],
 
 Cell["\<\
 Das elektrische Feld ist rotationssymmetrisch um die x-Achse, es gibt also \
@@ -48,9 +53,173 @@ Cell[TextData[{
  "zur Bewegungsrichtung emittiert. Genau in Bewegungsrichtung wird kein \
 E-Feld abgestrahlt."
 }], "Text",
- CellChangeTimes->{{3.732251732652752*^9, 3.732251848973442*^9}}],
+ CellChangeTimes->{{3.732251732652752*^9, 3.732251848973442*^9}}]
+}, Open  ]],
 
-Cell["", "Text"]
+Cell[CellGroupData[{
+
+Cell["Beobachter auf der y-Achse", "Subchapter",
+ CellChangeTimes->{{3.732252101942062*^9, 3.732252107518043*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Formeln", "Section",
+ CellChangeTimes->{{3.7322521425101557`*^9, 3.732252143718257*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"constants", " ", "=", " ", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"q", " ", "\[Rule]", " ", 
+     RowBox[{
+      RowBox[{"-", "1.602"}], "*", 
+      SuperscriptBox["10", 
+       RowBox[{"-", "19"}]]}]}], ",", " ", 
+    RowBox[{"\[Epsilon]0", " ", "->", " ", 
+     FractionBox["1", 
+      RowBox[{
+       SuperscriptBox["c", "2"], "*", "\[Mu]0"}]]}], ",", " ", 
+    RowBox[{"c", "\[Rule]", " ", 
+     RowBox[{"3", "*", 
+      SuperscriptBox["10", "8"]}]}], ",", " ", 
+    RowBox[{"\[Mu]0", " ", "\[Rule]", 
+     RowBox[{"4", "*", "\[Pi]", "*", 
+      SuperscriptBox["10", 
+       RowBox[{"-", "7"}]]}]}]}], "}"}]}]], "Input",
+ CellChangeTimes->{{3.732253127997985*^9, 3.732253195257133*^9}, {
+  3.732253226613805*^9, 3.7322533094865837`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"q", "\[Rule]", 
+    RowBox[{"-", "1.602`*^-19"}]}], ",", 
+   RowBox[{"\[Epsilon]0", "\[Rule]", 
+    FractionBox["1", 
+     RowBox[{
+      SuperscriptBox["c", "2"], " ", "\[Mu]0"}]]}], ",", 
+   RowBox[{"c", "\[Rule]", "300000000"}], ",", 
+   RowBox[{"\[Mu]0", "\[Rule]", 
+    FractionBox["\[Pi]", "2500000"]}]}], "}"}]], "Output",
+ CellChangeTimes->{3.732253331816494*^9, 3.732256043577187*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"eCoulomb", "[", 
+   RowBox[{"{", 
+    RowBox[{"x_", ",", " ", "y_", ",", " ", "z_"}], "}"}], "]"}], " ", ":=", 
+  " ", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"x", ",", " ", "y", ",", " ", "z"}], "}"}], "*", 
+    FractionBox["1", 
+     RowBox[{"4", "*", "\[Pi]", "*", "\[Epsilon]0"}]], "*", 
+    FractionBox["q", 
+     SuperscriptBox[
+      RowBox[{"(", 
+       RowBox[{
+        SuperscriptBox["x", "2"], "+", 
+        SuperscriptBox["y", "2"], "+", 
+        SuperscriptBox["z", "2"]}], ")"}], 
+      FractionBox["3", "2"]]]}], " ", "/;", " ", 
+   RowBox[{"(*", 
+    RowBox[{"Ruhesystem", " ", "des", " ", "Elektrons"}], "*)"}]}]}]], "Input",\
+
+ CellChangeTimes->{{3.732252153538609*^9, 3.732252153592729*^9}, {
+   3.732252260012479*^9, 3.732252371033834*^9}, {3.7322524433385353`*^9, 
+   3.7322524557544193`*^9}, {3.732253442968102*^9, 3.732253451551399*^9}, 
+   3.732253704111616*^9, {3.732255336008504*^9, 3.732255336274259*^9}, {
+   3.732255472963294*^9, 3.732255473234997*^9}, {3.732255509571723*^9, 
+   3.732255599029426*^9}, {3.732255661815152*^9, 3.732255691222465*^9}, {
+   3.73225605614502*^9, 3.732256056419396*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"coordinateTransformX", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"x_", ",", " ", "y_", ",", " ", "z_"}], "}"}], ",", " ", 
+    "\[Gamma]_", ",", "t_"}], "]"}], " ", ":=", " ", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"x", "-", " ", 
+     RowBox[{"c", "*", "t", "*", 
+      RowBox[{"(", 
+       RowBox[{"1", "-", 
+        FractionBox["1", 
+         SuperscriptBox["\[Gamma]", "2"]]}], ")"}], "\[Gamma]"}]}], ",", " ", 
+    "y", ",", " ", "z"}], "}"}]}]], "Input",
+ CellChangeTimes->{{3.732253003314982*^9, 3.732253090217795*^9}, {
+  3.732255054539324*^9, 3.732255085097391*^9}, {3.7322556990229673`*^9, 
+  3.732255875505417*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"eCoulomb", "[", "2", "]"}], " ", "//.", " ", 
+  "constants"}]], "Input",
+ CellChangeTimes->{{3.732253319768343*^9, 3.732253327486326*^9}, {
+   3.732253391128015*^9, 3.732253394446423*^9}, 3.732253706751923*^9}],
+
+Cell[BoxData[
+ RowBox[{"eCoulomb", "[", "2", "]"}]], "Output",
+ CellChangeTimes->{3.732256043826223*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"eCoulomb", "[", "2", "]"}]], "Input",
+ CellChangeTimes->{{3.732253708591237*^9, 3.7322537085922823`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"eCoulomb", "[", "2", "]"}]], "Output",
+ CellChangeTimes->{3.7322560438778753`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"{", 
+   RowBox[{"a", ",", " ", "b", ",", " ", "c"}], "}"}], "*", "3"}]], "Input",
+ CellChangeTimes->{{3.732253473084021*^9, 3.732253477518859*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"3", " ", "a"}], ",", 
+   RowBox[{"3", " ", "b"}], ",", 
+   RowBox[{"3", " ", "c"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.732253478581519*^9, 3.7322560439340897`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"{", 
+   RowBox[{"1", ",", " ", "2", ",", " ", "3"}], "}"}], "*", 
+  RowBox[{"Exp", "[", "2", "]"}]}]], "Input",
+ CellChangeTimes->{{3.732253482123454*^9, 3.7322534999427557`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   SuperscriptBox["\[ExponentialE]", "2"], ",", 
+   RowBox[{"2", " ", 
+    SuperscriptBox["\[ExponentialE]", "2"]}], ",", 
+   RowBox[{"3", " ", 
+    SuperscriptBox["\[ExponentialE]", "2"]}]}], "}"}]], "Output",
+ CellChangeTimes->{3.7322535011383963`*^9, 3.732256043994061*^9}]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
 }, Open  ]]
 }, Open  ]]
 },
@@ -75,9 +244,39 @@ Cell[CellGroupData[{
 Cell[692, 25, 92, 1, 93, "Title"],
 Cell[CellGroupData[{
 Cell[809, 30, 138, 1, 66, "Chapter"],
-Cell[950, 33, 208, 4, 55, "Text"],
-Cell[1161, 39, 403, 11, 66, "Text"],
-Cell[1567, 52, 16, 0, 33, "Text"]
+Cell[CellGroupData[{
+Cell[972, 35, 94, 1, 64, "Subchapter"],
+Cell[1069, 38, 208, 4, 55, "Text"],
+Cell[1280, 44, 403, 11, 66, "Text"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1720, 60, 114, 1, 64, "Subchapter"],
+Cell[CellGroupData[{
+Cell[1859, 65, 94, 1, 65, "Section"],
+Cell[CellGroupData[{
+Cell[1978, 70, 767, 21, 56, "Input"],
+Cell[2748, 93, 445, 12, 51, "Output"]
+}, Open  ]],
+Cell[3208, 108, 1177, 29, 93, "Input"],
+Cell[4388, 139, 670, 18, 56, "Input"],
+Cell[CellGroupData[{
+Cell[5083, 161, 245, 5, 32, "Input"],
+Cell[5331, 168, 104, 2, 32, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5472, 175, 129, 2, 32, InheritFromParent],
+Cell[5604, 179, 106, 2, 32, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5747, 186, 182, 4, 34, "Input"],
+Cell[5932, 192, 221, 6, 34, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6190, 203, 214, 5, 34, "Input"],
+Cell[6407, 210, 316, 8, 38, "Output"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
 }, Open  ]]
 }, Open  ]]
 }
