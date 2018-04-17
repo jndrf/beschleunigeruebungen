@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     15230,        405]
-NotebookOptionsPosition[     13740,        376]
-NotebookOutlinePosition[     14089,        391]
-CellTagsIndexPosition[     14046,        388]
+NotebookDataLength[     15769,        418]
+NotebookOptionsPosition[     14278,        389]
+NotebookOutlinePosition[     14627,        404]
+CellTagsIndexPosition[     14584,        401]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -284,7 +284,7 @@ Cell[BoxData[
   RowBox[{"Module", "[", 
    RowBox[{
     RowBox[{"{", 
-     RowBox[{"test", ",", "\[Omega]norm", ",", "\[Omega]c"}], "}"}], ",", 
+     RowBox[{"tc", ",", "\[Omega]norm", ",", "\[Omega]c"}], "}"}], ",", 
     "\[IndentingNewLine]", 
     RowBox[{
      RowBox[{"\[Omega]c", "=", 
@@ -296,6 +296,9 @@ Cell[BoxData[
      "\[IndentingNewLine]", 
      RowBox[{"\[Omega]norm", "=", 
       RowBox[{"\[Omega]", "/", "\[Omega]c"}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{"tc", "=", 
+      FractionBox["R", 
+       RowBox[{"c", "*", "\[Gamma]"}]]}], ";", "\[IndentingNewLine]", 
      RowBox[{"If", "[", 
       RowBox[{
        RowBox[{"\[Theta]", "\[Equal]", "0"}], ",", 
@@ -325,8 +328,13 @@ Cell[BoxData[
                     RowBox[{"r", "[", 
                     RowBox[{"\[Tau]", "[", 
                     RowBox[{"t", ",", "\[Theta]"}], "]"}], "]"}], "/", 
-                    "c"}]}]}], ")"}]}], "]"}]}], ",", "\[Tau]"}], "]"}], 
-            "]"}], "2"]}], "//.", "constants"}], "]"}], ",", 
+                    "c"}]}]}], ")"}]}], "]"}]}], ",", 
+              RowBox[{"{", 
+               RowBox[{"t", ",", 
+                RowBox[{"40", "*", "tc"}], ",", 
+                RowBox[{
+                 RowBox[{"-", "40"}], "*", "tc"}]}], "}"}]}], "]"}], "]"}], 
+           "2"]}], "//.", "constants"}], "]"}], ",", 
        RowBox[{"Evaluate", "[", 
         RowBox[{
          RowBox[{
@@ -353,8 +361,13 @@ Cell[BoxData[
                     RowBox[{"r", "[", 
                     RowBox[{"\[Tau]", "[", 
                     RowBox[{"t", ",", "\[Theta]"}], "]"}], "]"}], "/", 
-                    "c"}]}]}], ")"}]}], "]"}]}], ",", "\[Tau]"}], "]"}], 
-            "]"}], "2"]}], "//.", "constants"}], "]"}]}], "]"}], ";", 
+                    "c"}]}]}], ")"}]}], "]"}]}], ",", 
+              RowBox[{"{", 
+               RowBox[{"t", ",", 
+                RowBox[{"40", "*", "tc"}], ",", 
+                RowBox[{
+                 RowBox[{"-", "40"}], "*", "tc"}]}], "}"}]}], "]"}], "]"}], 
+           "2"]}], "//.", "constants"}], "]"}]}], "]"}], ";", 
      "\[IndentingNewLine]", 
      RowBox[{"Return", "[", "test", "]"}]}]}], "\[IndentingNewLine]", 
    "]"}]}]], "Input",
@@ -368,8 +381,8 @@ Cell[BoxData[
    3.7328750077380605`*^9, 3.7328750130334635`*^9}, {3.732975449564483*^9, 
    3.732975475675622*^9}, {3.7329755279170117`*^9, 3.7329756144769597`*^9}, 
    3.732975691115909*^9, {3.7329757227637396`*^9, 3.7329757884920816`*^9}, {
-   3.732975857035572*^9, 
-   3.732975862987316*^9}},ExpressionUUID->"7a1e76cd-2c87-4e1b-b7fc-\
+   3.732975857035572*^9, 3.732975862987316*^9}, {3.7329761340606446`*^9, 
+   3.732976229003995*^9}},ExpressionUUID->"7a1e76cd-2c87-4e1b-b7fc-\
 340f36790f84"]
 }, Open  ]]
 }, Open  ]]
@@ -404,7 +417,7 @@ Cell[5257, 152, 369, 9, 28, "Input",ExpressionUUID->"ec661830-9f7f-4131-af89-e76
 Cell[5629, 163, 1233, 31, 65, "Input",ExpressionUUID->"79db133d-1ece-42c1-a627-2791da69ff66"],
 Cell[6865, 196, 933, 26, 57, "Input",ExpressionUUID->"d40283d4-5fe9-4fae-bd96-8a568bdd847b"],
 Cell[7801, 224, 1905, 53, 56, "Input",ExpressionUUID->"1abc9f4f-19e4-4236-b07c-5f47c649af8f"],
-Cell[9709, 279, 4003, 93, 237, "Input",ExpressionUUID->"7a1e76cd-2c87-4e1b-b7fc-340f36790f84"]
+Cell[9709, 279, 4541, 106, 306, "Input",ExpressionUUID->"7a1e76cd-2c87-4e1b-b7fc-340f36790f84"]
 }, Open  ]]
 }, Open  ]]
 }
