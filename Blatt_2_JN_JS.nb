@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     17962,        500]
-NotebookOptionsPosition[     16766,        455]
-NotebookOutlinePosition[     17104,        470]
-CellTagsIndexPosition[     17061,        467]
+NotebookDataLength[     19467,        520]
+NotebookOptionsPosition[     18384,        479]
+NotebookOutlinePosition[     18722,        494]
+CellTagsIndexPosition[     18679,        491]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -307,13 +307,15 @@ Cell["Definiere ein Modul um die Strahlungsleistung zu berechnen", \
 Cell[BoxData[
  RowBox[{
   RowBox[{"d2I", "[", 
-   RowBox[{"\[Theta]_", ",", "\[Tau]_"}], "]"}], ":=", 
+   RowBox[{"\[Theta]_", ",", "\[Tau]_", ",", 
+    RowBox[{"n_:", "20000"}]}], "]"}], ":=", 
   RowBox[{"Module", "[", 
    RowBox[{
     RowBox[{"{", 
      RowBox[{
      "\[Tau]c", ",", "\[Omega]c", ",", "\[Sigma]table", ",", "pitable", ",", 
-      "phasetable"}], "}"}], ",", "\[IndentingNewLine]", 
+      "phasetable", ",", "total", ",", "integral"}], "}"}], ",", 
+    "\[IndentingNewLine]", 
     RowBox[{
      RowBox[{"\[Omega]c", "=", 
       RowBox[{
@@ -346,8 +348,8 @@ Cell[BoxData[
           RowBox[{"40", "*", "\[Tau]c"}], ",", 
           RowBox[{"(", 
            FractionBox[
-            RowBox[{"40", "*", "\[Tau]c", "*", "2"}], "20000"], ")"}]}], 
-         "}"}]}], "]"}]}], ";", 
+            RowBox[{"40", "*", "\[Tau]c", "*", "2"}], "n"], ")"}]}], "}"}]}], 
+       "]"}]}], ";", 
      RowBox[{"(*", 
       RowBox[{
        RowBox[{"berechne", " ", "die", " ", "\[Sigma]"}], "-", 
@@ -365,8 +367,8 @@ Cell[BoxData[
           RowBox[{"40", "*", "\[Tau]c"}], ",", 
           RowBox[{"(", 
            FractionBox[
-            RowBox[{"40", "*", "\[Tau]c", "*", "2"}], "20000"], ")"}]}], 
-         "}"}]}], "]"}]}], ";", 
+            RowBox[{"40", "*", "\[Tau]c", "*", "2"}], "n"], ")"}]}], "}"}]}], 
+       "]"}]}], ";", 
      RowBox[{"(*", 
       RowBox[{
        RowBox[{"berechne", " ", "die", " ", "\[Pi]"}], "-", 
@@ -377,9 +379,7 @@ Cell[BoxData[
       RowBox[{"Table", "[", 
        RowBox[{
         RowBox[{"phase", "[", 
-         RowBox[{"i", ",", 
-          FractionBox["1", 
-           RowBox[{"2", "*", "\[Gamma]"}]], ",", 
+         RowBox[{"i", ",", "\[Theta]", ",", 
           RowBox[{"j", "*", "\[Omega]c"}]}], "]"}], ",", 
         RowBox[{"{", 
          RowBox[{"i", ",", 
@@ -388,22 +388,59 @@ Cell[BoxData[
           RowBox[{"40", "*", "\[Tau]c"}], ",", 
           RowBox[{"(", 
            FractionBox[
-            RowBox[{"40", "*", "\[Tau]c", "*", "2"}], "20000"], ")"}]}], 
-         "}"}], ",", 
+            RowBox[{"40", "*", "\[Tau]c", "*", "2"}], "n"], ")"}]}], "}"}], 
+        ",", 
         RowBox[{"{", 
          RowBox[{"j", ",", "0.05", ",", "5", ",", "0.05"}], "}"}]}], "]"}]}], 
      ";", 
      RowBox[{"(*", 
       RowBox[{
+      "berechne", " ", "den", " ", "Phasenfaktor", " ", "im", " ", 
+       "Zeiterintervall", " ", "\[Tau]c", " ", "und", " ", "zu", " ", "den", 
+       " ", "verschiedenen", " ", "Frequenzpunkten", " ", "\[Omega]"}], 
+      "*)"}], "\[IndentingNewLine]", 
+     RowBox[{"total", "=", 
+      RowBox[{"Total", "[", 
+       RowBox[{"\[Sigma]table", "*", "pitable", "*", "phasetable"}], "]"}]}], 
+     ";", " ", 
+     RowBox[{"(*", 
+      RowBox[{
        RowBox[{
-        RowBox[{
-         RowBox[{"PR\[CapitalUDoubleDot]FEN", "!!"}], "!!"}], "!"}], " ", "-",
-        " ", 
+       "gibt", " ", "zur\[UDoubleDot]ck", " ", "mit", " ", "den", " ", 
+        "Werten", " ", "des", " ", 
+        RowBox[{"Integrals", ".", " ", "Jeder"}], " ", "Eintrag", " ", "ist", 
+        " ", "ein", " ", "\[Omega]"}], "-", "Wert"}], "*)"}], 
+     RowBox[{"(*", 
+      RowBox[{
        RowBox[{
-       "berechne", " ", "den", " ", "Phasenfaktor", " ", "im", " ", 
-        "Zeiterintervall", " ", "tc", " ", "und", " ", "zu", " ", "den", " ", 
-        "Frequenzpunkten", " ", "\[Omega]"}]}], "*)"}], "\[IndentingNewLine]", 
-     RowBox[{"Return", "[", "test", "]"}]}]}], "\[IndentingNewLine]", 
+       "Multipliziere", " ", "den", " ", "Phasenfaktor", " ", "mit", " ", 
+        "dem", " ", "\[Sigma]"}], "-", " ", 
+       RowBox[{"und", " ", "\[Pi]"}], "-", 
+       RowBox[{
+       "Term", " ", "und", " ", "bestime", " ", "die", " ", "Summe", " ", 
+        "der", " ", "einzelnen", " ", "\[Omega]"}], "-", "Werte"}], "*)"}], 
+     "\[IndentingNewLine]", 
+     RowBox[{"integral", "=", 
+      RowBox[{
+       RowBox[{
+        FractionBox[
+         SuperscriptBox["q", "2"], 
+         RowBox[{"16", 
+          SuperscriptBox["\[Pi]", "3"], "*", "\[Epsilon]0", "*", "c"}]], "*", 
+        
+        RowBox[{"Map", "[", 
+         RowBox[{"Abs", ",", " ", 
+          RowBox[{"total", "*", 
+           FractionBox[
+            RowBox[{"80", "*", "\[Tau]c"}], "n"]}]}], "]"}]}], "//.", 
+       "constants"}]}], ";", 
+     RowBox[{"(*", 
+      RowBox[{
+      "Berechne", " ", "das", " ", "Integral", " ", "in", " ", "dem", " ", 
+       "die", " ", "Schrittweite", " ", "dazu", " ", "multipliziert", " ", 
+       RowBox[{"wird", ".", " ", "Zur\[UDoubleDot]ckgegeben"}], " ", "wird", 
+       " ", "eine", " ", "Liste"}], "*)"}], "\[IndentingNewLine]", 
+     RowBox[{"Return", "[", "integral", "]"}]}]}], "\[IndentingNewLine]", 
    "]"}]}]], "Input",
  CellChangeTimes->{{3.7328708908122272`*^9, 3.7328710044585724`*^9}, {
    3.7328712326669044`*^9, 3.7328712874342747`*^9}, {3.732871717323298*^9, 
@@ -424,31 +461,18 @@ Cell[BoxData[
    3.7329810194366393`*^9}, {3.7329813866701264`*^9, 3.732981549949634*^9}, {
    3.7329816111506767`*^9, 3.732981615053689*^9}, {3.7329819182849216`*^9, 
    3.732981927868888*^9}, {3.7330364725237007`*^9, 3.733036473714314*^9}, {
-   3.73303749652108*^9, 3.733037534384816*^9}, 3.733037609062806*^9},
- ExpressionUUID -> "7a1e76cd-2c87-4e1b-b7fc-340f36790f84"],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{"Table", "[", 
-  RowBox[{"i", ",", 
-   RowBox[{"{", 
-    RowBox[{"i", ",", 
-     RowBox[{"-", "5"}], ",", "5", ",", "1"}], "}"}]}], "]"}]], "Input",
- CellChangeTimes->{{3.7330361562824907`*^9, 3.733036177234029*^9}}],
-
-Cell[BoxData[
- RowBox[{"{", 
-  RowBox[{
-   RowBox[{"-", "5"}], ",", 
-   RowBox[{"-", "4"}], ",", 
-   RowBox[{"-", "3"}], ",", 
-   RowBox[{"-", "2"}], ",", 
-   RowBox[{"-", "1"}], ",", "0", ",", "1", ",", "2", ",", "3", ",", "4", ",", 
-   "5"}], "}"}]], "Output",
- CellChangeTimes->{{3.73303617188868*^9, 3.7330361777816057`*^9}, 
-   3.733036487303459*^9}]
-}, Open  ]]
+   3.73303749652108*^9, 3.733037534384816*^9}, 3.733037609062806*^9, {
+   3.733038051612796*^9, 3.73303805328469*^9}, {3.733039176584071*^9, 
+   3.733039213218158*^9}, {3.73303924359153*^9, 3.733039387079211*^9}, {
+   3.733039941557639*^9, 3.733039969260663*^9}, {3.733040266539757*^9, 
+   3.733040309763411*^9}, {3.733040369971332*^9, 3.733040454298933*^9}, {
+   3.7330408334493923`*^9, 3.733040853161429*^9}, {3.733042573140449*^9, 
+   3.733042607018133*^9}, {3.733042659804079*^9, 3.733042734391704*^9}, {
+   3.733042996016815*^9, 3.733043012469936*^9}, {3.7330434967187243`*^9, 
+   3.733043517086625*^9}, {3.7330437887411337`*^9, 3.7330439489548073`*^9}, 
+   3.733044140961063*^9, {3.7330443298905354`*^9, 3.733044332899132*^9}, {
+   3.7330443631789007`*^9, 3.733044367441921*^9}},
+ ExpressionUUID -> "7a1e76cd-2c87-4e1b-b7fc-340f36790f84"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
@@ -494,11 +518,7 @@ Cell[9951, 277, 694, 19, 34, "Input"]
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[10682, 301, 212, 3, 35, "Subsubsection"],
-Cell[10897, 306, 5195, 121, 424, "Input"],
-Cell[CellGroupData[{
-Cell[16117, 431, 239, 6, 34, "Input"],
-Cell[16359, 439, 355, 10, 34, "Output"]
-}, Open  ]]
+Cell[10897, 306, 7447, 168, 607, "Input"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
