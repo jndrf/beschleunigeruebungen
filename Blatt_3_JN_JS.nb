@@ -1,0 +1,157 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      5236,        149]
+NotebookOptionsPosition[      4257,        127]
+NotebookOutlinePosition[      4604,        142]
+CellTagsIndexPosition[      4561,        139]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Blatt 3 - Berechnung der D\[ADoubleDot]mpfungszeiten im FODO Lattice", \
+"Title",
+ CellChangeTimes->{{3.733150260850556*^9, 3.733150267458297*^9}, {
+  3.7331503011552844`*^9, 
+  3.7331503144025855`*^9}},ExpressionUUID->"93bbad7c-f06f-43d7-9405-\
+864be9d6e68b"],
+
+Cell["Jonas Neundorf & Jan Skottke", "Text",
+ CellChangeTimes->{{3.733150270690807*^9, 
+  3.733150283127518*^9}},ExpressionUUID->"35f4395c-b0da-40de-80a0-\
+494156ecd658"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"constans", "=", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"c", "\[Rule]", " ", 
+      RowBox[{"3.", "*", 
+       SuperscriptBox["10", "8"]}]}], ",", " ", 
+     RowBox[{"q", "\[Rule]", " ", 
+      RowBox[{"1.602", "*", 
+       SuperscriptBox["10", 
+        RowBox[{"-", "19"}]]}]}], ",", 
+     RowBox[{"m", "\[Rule]", " ", "0.511"}], ",", 
+     RowBox[{"r0", "\[Rule]", " ", 
+      RowBox[{"2.818", "*", 
+       SuperscriptBox["10", 
+        RowBox[{"-", "15"}]]}]}]}], "}"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.7331503207570624`*^9, 3.7331503509464016`*^9}, 
+   3.73315064304441*^9, {3.73315107837197*^9, 
+   3.733151114802534*^9}},ExpressionUUID->"173db715-a89e-4256-b66b-\
+1030d455bf48"],
+
+Cell[BoxData[
+ RowBox[{"c\[Gamma]", ":=", 
+  FractionBox[
+   RowBox[{"4", "*", "Pi", "*", "r0"}], 
+   RowBox[{"3", "*", 
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{"m", "*", 
+       SuperscriptBox["c", "2"]}], ")"}], "3"]}]]}]], "Input",
+ CellChangeTimes->{{3.7331511224684105`*^9, 
+  3.733151151123005*^9}},ExpressionUUID->"5c1c813d-6d0d-4731-acf5-\
+d0c3ec0bf661"],
+
+Cell[BoxData[
+ RowBox[{"pmit", ":=", 
+  RowBox[{
+   FractionBox[
+    RowBox[{"c", "*", "c\[Gamma]", "*", 
+     SuperscriptBox["e0", "4"]}], 
+    RowBox[{"2", "*", "Pi"}]], "*", 
+   RowBox[{"(", 
+    RowBox[{"1", "/", 
+     SuperscriptBox["\[Rho]0", "2"]}], ")"}], " ", 
+   RowBox[{"(*", 
+    RowBox[{"mittlere", " ", "Strahlungsleistung"}], "*)"}]}]}]], "Input",
+ CellChangeTimes->{{3.7331508029158072`*^9, 3.7331508436039977`*^9}, {
+  3.733150874885406*^9, 3.7331508857480135`*^9}, {3.733150961619841*^9, 
+  3.7331509621167183`*^9}, {3.733151055395378*^9, 
+  3.7331510558588657`*^9}},ExpressionUUID->"8a0aa2eb-2ef1-4f76-8a84-\
+935b88063130"],
+
+Cell[BoxData[
+ RowBox[{"\[Tau]0", ":=", 
+  RowBox[{"e0", "/", "pmit", " ", 
+   RowBox[{"(*", "D\[ADoubleDot]mpfungszeitkonstante", "*)"}]}]}]], "Input",
+ CellChangeTimes->{{3.7331506009849887`*^9, 3.7331506214910736`*^9}, {
+  3.733150889122817*^9, 
+  3.7331509076666*^9}},ExpressionUUID->"68acedda-7590-41a0-bfdd-9190f3140de0"],
+
+Cell[BoxData[
+ RowBox[{"p", ":=", 
+  RowBox[{
+   FractionBox["1", 
+    RowBox[{"2", "*", "Pi"}]], "*", 
+   SuperscriptBox["q", "2"], "*", 
+   SuperscriptBox["c", "3"], "*", "c\[Gamma]", "*", 
+   SuperscriptBox["e", "2"], "*", 
+   SuperscriptBox["b", "2"], " ", 
+   RowBox[{"(*", 
+    RowBox[{"instantane", " ", "Strahlungsleistung"}], "*)"}]}]}]], "Input",
+ CellChangeTimes->{{3.733150716677743*^9, 3.733150791251198*^9}, {
+  3.7331509113790426`*^9, 3.7331509301472645`*^9}, {3.7331510507871914`*^9, 
+  3.7331510514272594`*^9}},ExpressionUUID->"da9ef240-f000-4dbd-b194-\
+e4e2866b3f66"],
+
+Cell[BoxData[
+ RowBox[{"u0", ":=", 
+  RowBox[{"c\[Gamma]", "*", 
+   SuperscriptBox["e0", "4"], "*", "r", "*", 
+   RowBox[{"(", 
+    RowBox[{"1", "/", 
+     SuperscriptBox["\[Rho]0", "2"]}], ")"}], " ", 
+   RowBox[{"(*", 
+    RowBox[{"Synchrotronstrahlungsenergie", " ", "pro", " ", "Umlauf"}], 
+    "*)"}]}]}]], "Input",
+ CellChangeTimes->{{3.7331507989177294`*^9, 3.733150800402248*^9}, {
+  3.733150941106363*^9, 3.733151009587099*^9}, {3.733151042787691*^9, 
+  3.733151045651335*^9}},ExpressionUUID->"3af07c20-077c-4eaf-ba55-\
+8f1be50d0dba"]
+}, Open  ]]
+},
+WindowSize->{958, 1028},
+WindowMargins->{{Automatic, -7}, {Automatic, 0}},
+FrontEndVersion->"11.2 for Microsoft Windows (64-bit) (September 10, 2017)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 266, 5, 156, "Title",ExpressionUUID->"93bbad7c-f06f-43d7-9405-864be9d6e68b"],
+Cell[849, 29, 170, 3, 34, "Text",ExpressionUUID->"35f4395c-b0da-40de-80a0-494156ecd658"],
+Cell[1022, 34, 732, 20, 32, "Input",ExpressionUUID->"173db715-a89e-4256-b66b-1030d455bf48"],
+Cell[1757, 56, 375, 11, 57, "Input",ExpressionUUID->"5c1c813d-6d0d-4731-acf5-d0c3ec0bf661"],
+Cell[2135, 69, 642, 16, 54, "Input",ExpressionUUID->"8a0aa2eb-2ef1-4f76-8a84-935b88063130"],
+Cell[2780, 87, 327, 6, 28, "Input",ExpressionUUID->"68acedda-7590-41a0-bfdd-9190f3140de0"],
+Cell[3110, 95, 585, 14, 51, "Input",ExpressionUUID->"da9ef240-f000-4dbd-b194-e4e2866b3f66"],
+Cell[3698, 111, 543, 13, 32, "Input",ExpressionUUID->"3af07c20-077c-4eaf-ba55-8f1be50d0dba"]
+}, Open  ]]
+}
+]
+*)
+
