@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     15491,        423]
-NotebookOptionsPosition[     13312,        385]
-NotebookOutlinePosition[     13659,        400]
-CellTagsIndexPosition[     13616,        397]
+NotebookDataLength[     17770,        487]
+NotebookOptionsPosition[     15144,        441]
+NotebookOutlinePosition[     15491,        456]
+CellTagsIndexPosition[     15448,        453]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -380,6 +380,62 @@ Cell[BoxData[
    3.7334711166479254`*^9, 3.7334712128988333`*^9, 
    3.7334719992511954`*^9},ExpressionUUID->"9d7d937a-db2e-44f8-a546-\
 2db77e9b611a"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Zahlenbeispiele", "Chapter",
+ CellChangeTimes->{{3.7334722563272104`*^9, 
+  3.733472260380315*^9}},ExpressionUUID->"a116271f-9596-4280-9b9e-\
+f349c6cc8b7b"],
+
+Cell["\<\
+Aus dem Phasenvorschub \[Mu], der hier stets gleich 90\[Degree] sei, l\
+\[ADoubleDot]sst sich der FODO-Parameter \[Kappa] berechnen:\
+\>", "Text",
+ CellChangeTimes->{{3.7334722781268215`*^9, 3.7334723052640996`*^9}, {
+  3.73347299047643*^9, 
+  3.733473008097042*^9}},ExpressionUUID->"acc43dc5-be36-4ca4-91d7-\
+650c8e666cdf"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Solve", "[", 
+  RowBox[{
+   RowBox[{"0", "\[Equal]", " ", 
+    RowBox[{"1", " ", "-", " ", 
+     FractionBox["1", "\[Kappa]"], " ", "+", " ", 
+     FractionBox["1", 
+      RowBox[{"2", 
+       SuperscriptBox["\[Kappa]", "2"]}]]}]}], " ", ",", " ", "\[Kappa]"}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.7334723075939283`*^9, 3.7334724023282394`*^9}, {
+  3.7334724428412585`*^9, 3.7334724538042765`*^9}, {3.7334728172672806`*^9, 
+  3.733472837017088*^9}, {3.733472878748421*^9, 3.7334729216254516`*^9}, {
+  3.733472975830117*^9, 3.7334729815972147`*^9}, {3.7334740619416094`*^9, 
+  3.7334740622448206`*^9}},ExpressionUUID->"4615ca85-488d-400a-84bb-\
+d7509501a060"],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"\[Kappa]", "\[Rule]", 
+      RowBox[{
+       FractionBox["1", "2"], "-", 
+       FractionBox["\[ImaginaryI]", "2"]}]}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"\[Kappa]", "\[Rule]", 
+      RowBox[{
+       FractionBox["1", "2"], "+", 
+       FractionBox["\[ImaginaryI]", "2"]}]}], "}"}]}], "}"}], 
+  TraditionalForm]], "Output",
+ CellChangeTimes->{3.7334729244583397`*^9, 3.7334730131650047`*^9, 
+  3.7334740634067307`*^9},ExpressionUUID->"5ad4e3f1-0f98-435a-bdac-\
+d6da2132755d"]
+}, Open  ]]
 }, Open  ]]
 }, Open  ]]
 },
@@ -423,6 +479,14 @@ Cell[11833, 346, 887, 18, 85, "Text",ExpressionUUID->"1df5a0e1-9d71-45b3-8d97-d5
 Cell[CellGroupData[{
 Cell[12745, 368, 256, 6, 45, "Input",ExpressionUUID->"2c56638f-c179-4040-9952-d1a32ff0138a"],
 Cell[13004, 376, 280, 5, 32, "Output",ExpressionUUID->"9d7d937a-db2e-44f8-a546-2db77e9b611a"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[13321, 386, 162, 3, 67, "Chapter",ExpressionUUID->"a116271f-9596-4280-9b9e-f349c6cc8b7b"],
+Cell[13486, 391, 334, 7, 34, "Text",ExpressionUUID->"acc43dc5-be36-4ca4-91d7-650c8e666cdf"],
+Cell[CellGroupData[{
+Cell[13845, 402, 688, 15, 70, "Input",ExpressionUUID->"4615ca85-488d-400a-84bb-d7509501a060"],
+Cell[14536, 419, 568, 17, 114, "Output",ExpressionUUID->"5ad4e3f1-0f98-435a-bdac-d6da2132755d"]
+}, Open  ]]
 }, Open  ]]
 }, Open  ]]
 }
