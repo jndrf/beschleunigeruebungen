@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     14015,        395]
-NotebookOptionsPosition[     12208,        361]
-NotebookOutlinePosition[     12555,        376]
-CellTagsIndexPosition[     12512,        373]
+NotebookDataLength[     14367,        404]
+NotebookOptionsPosition[     12467,        369]
+NotebookOutlinePosition[     12814,        384]
+CellTagsIndexPosition[     12771,        381]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -355,7 +355,15 @@ Cell[BoxData[
  CellChangeTimes->{3.734134731835904*^9, 3.7341347695866613`*^9, 
   3.734134857190422*^9, 
   3.73413498153611*^9},ExpressionUUID->"c8af1335-3587-44a0-9502-9d6597333046"]
-}, Open  ]]
+}, Open  ]],
+
+Cell["\<\
+Der gesamte Term geht mit \[Theta]. Somit w\[UDoubleDot]rde ein \[Theta]->0 \
+die Emittanz minimieren.\
+\>", "Text",
+ CellChangeTimes->{{3.7341350776692257`*^9, 
+  3.7341351071683593`*^9}},ExpressionUUID->"eddbeb58-1b15-440c-a5c2-\
+5a9ece41260f"]
 }, Open  ]]
 }, Open  ]]
 },
@@ -394,7 +402,8 @@ Cell[10053, 293, 187, 3, 44, "Subsubsection",ExpressionUUID->"e9f440ef-689f-44fc
 Cell[CellGroupData[{
 Cell[10265, 300, 905, 23, 57, "Input",ExpressionUUID->"c971a031-23f6-46a4-bb23-f5ffdc70e94e"],
 Cell[11173, 325, 995, 31, 73, "Output",ExpressionUUID->"c8af1335-3587-44a0-9502-9d6597333046"]
-}, Open  ]]
+}, Open  ]],
+Cell[12183, 359, 256, 6, 34, "Text",ExpressionUUID->"eddbeb58-1b15-440c-a5c2-5a9ece41260f"]
 }, Open  ]]
 }, Open  ]]
 }
