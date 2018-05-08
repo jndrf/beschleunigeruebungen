@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     12000,        318]
-NotebookOptionsPosition[     10297,        285]
-NotebookOutlinePosition[     10646,        300]
-CellTagsIndexPosition[     10603,        297]
+NotebookDataLength[     18843,        515]
+NotebookOptionsPosition[     15610,        456]
+NotebookOutlinePosition[     15959,        471]
+CellTagsIndexPosition[     15916,        468]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -70,6 +70,13 @@ Cell[BoxData[
    3.734133621761384*^9}},ExpressionUUID->"173db715-a89e-4256-b66b-\
 1030d455bf48"],
 
+Cell[CellGroupData[{
+
+Cell["Berechnung der Dispersionfunktion", "Section",
+ CellChangeTimes->{{3.734790328580213*^9, 
+  3.7347903346747885`*^9}},ExpressionUUID->"44dec455-dd13-42df-8a37-\
+324b210522ff"],
+
 Cell["Definiere die Matritzen f\[UDoubleDot]r die Magnete:", "Text",
  CellChangeTimes->{{3.7346864823209066`*^9, 
   3.7346865026895423`*^9}},ExpressionUUID->"6d78e088-7db3-4e3b-ad93-\
@@ -100,34 +107,38 @@ Cell[BoxData[
  RowBox[{
   RowBox[{"mD", "[", 
    RowBox[{"s_", ",", " ", "\[Rho]_"}], "]"}], " ", ":=", " ", 
-  RowBox[{
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"{", 
-      RowBox[{
-       RowBox[{"Cos", "[", "\[Theta]", "]"}], ",", " ", 
-       RowBox[{"\[Rho]", "*", 
-        RowBox[{"Sin", "[", "\[Theta]", "]"}]}], ",", " ", 
-       RowBox[{"\[Rho]", 
-        RowBox[{"(", 
-         RowBox[{"1", " ", "-", " ", 
-          RowBox[{"Cos", "[", "\[Theta]", "]"}]}], ")"}]}]}], "}"}], ",", " ", 
-     RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"Cos", "[", 
+       FractionBox["s", "\[Rho]"], "]"}], ",", " ", 
+      RowBox[{"\[Rho]", "*", 
+       RowBox[{"Sin", "[", 
+        FractionBox["s", "\[Rho]"], "]"}]}], ",", " ", 
+      RowBox[{"\[Rho]", "*", 
+       RowBox[{"(", 
+        RowBox[{"1", " ", "-", " ", 
+         RowBox[{"Cos", "[", 
+          FractionBox["s", "\[Rho]"], "]"}]}], ")"}]}]}], "}"}], ",", " ", 
+    RowBox[{"{", 
+     RowBox[{
       RowBox[{
        RowBox[{
-        RowBox[{
-         RowBox[{"-", "1"}], "/", "\[Rho]"}], " ", 
-        RowBox[{"Sin", "[", "\[Theta]", "]"}]}], ",", " ", 
-       RowBox[{"Cos", "[", "\[Theta]", "]"}], ",", " ", 
-       RowBox[{"Sin", "[", "\[Theta]", "]"}]}], "}"}], ",", " ", 
-     RowBox[{"{", 
-      RowBox[{"0", ",", " ", "0", ",", " ", "1"}], "}"}]}], "}"}], "//.", 
-   RowBox[{"\[Theta]", "\[Rule]", 
-    RowBox[{"s", "/", "\[Rho]", " ", 
-     RowBox[{"(*", "Dipol", "*)"}]}]}]}]}]], "Input",
+        RowBox[{"-", "1"}], "/", "\[Rho]"}], "*", 
+       RowBox[{"Sin", "[", 
+        FractionBox["s", "\[Rho]"], "]"}]}], ",", " ", 
+      RowBox[{"Cos", "[", 
+       FractionBox["s", "\[Rho]"], "]"}], ",", " ", 
+      RowBox[{"Sin", "[", 
+       FractionBox["s", "\[Rho]"], "]"}]}], "}"}], ",", " ", 
+    RowBox[{"{", 
+     RowBox[{"0", ",", " ", "0", ",", " ", "1"}], "}"}]}], "}"}], 
+  RowBox[{"(*", "Dipol", "*)"}]}]], "Input",
  CellChangeTimes->{{3.7257085387348447`*^9, 3.725708562974574*^9}, {
   3.734685213939081*^9, 3.734685219329794*^9}, {3.7346858657940335`*^9, 
-  3.734685871090122*^9}},ExpressionUUID->"fa5c1aa1-077f-4d4e-a710-\
+  3.734685871090122*^9}, {3.7347909060837855`*^9, 
+  3.7347909623719416`*^9}},ExpressionUUID->"fa5c1aa1-077f-4d4e-a710-\
 70f5ab4264cc"],
 
 Cell["Definiere Dispersionsfunktionen:", "Text",
@@ -251,9 +262,9 @@ Cell[BoxData[
    3.7346858920522795`*^9, 3.7346859175598035`*^9}, 3.7346860911571856`*^9, {
    3.7346862563145123`*^9, 3.734686299004533*^9}, {3.734686406048256*^9, 
    3.7346864346066265`*^9}, {3.7346864685543137`*^9, 3.7346864766691103`*^9}, 
-   3.7346865432557087`*^9, 
-   3.734686634953203*^9},ExpressionUUID->"7ca14a98-34e0-48b1-b8d9-\
-8dbff7638283"]
+   3.7346865432557087`*^9, 3.734686634953203*^9, 3.734790969459959*^9, 
+   3.7347919560316825`*^9},ExpressionUUID->"ded964c7-58e2-42d0-b8c0-\
+17146e3886fc"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -278,8 +289,168 @@ Cell[BoxData[
        RowBox[{"2", " ", "\[Rho]"}]], "]"}]}]}], "}"}], "}"}]], "Output",
  CellChangeTimes->{{3.7346864209681063`*^9, 3.7346864367865324`*^9}, 
    3.734686476788294*^9, {3.7346865433047843`*^9, 3.7346865564513483`*^9}, 
-   3.7346866371265445`*^9},ExpressionUUID->"345eaf8f-3a52-4506-b9d4-\
-26f197969171"]
+   3.7346866371265445`*^9, 3.734790969757246*^9, 
+   3.734791956081712*^9},ExpressionUUID->"fe47a44a-0fbc-4304-939c-\
+e558e6793768"]
+}, Open  ]],
+
+Cell["\<\
+Diese Brennweite muss der Quadropol haben, damit die Dispersion am Ende \
+wieder bei {0,0,1} ist.\
+\>", "Text",
+ CellChangeTimes->{{3.734791253733697*^9, 
+  3.734791320257802*^9}},ExpressionUUID->"dc95be2f-45e3-4364-84ed-\
+1f4fbfc1b72e"],
+
+Cell[CellGroupData[{
+
+Cell["Tests", "Subsubsection",
+ CellChangeTimes->{{3.7347916652333593`*^9, 
+  3.7347916657466745`*^9}},ExpressionUUID->"867f1970-835c-4be7-a4c2-\
+26df64fe7817"],
+
+Cell["\<\
+Die berechnete Brennweite liefert das gew\[UDoubleDot]nschte Ergebnis, dass \
+die Dispersion nach dem 2. Dipol wieder bei {0,0,1} ist.\
+\>", "Text",
+ CellChangeTimes->{{3.734791703331735*^9, 
+  3.7347917478735456`*^9}},ExpressionUUID->"59038713-a92c-4673-b85b-\
+0aa287fa1328"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{"mD", "[", 
+     RowBox[{"s", ",", "\[Rho]"}], "]"}], ".", 
+    RowBox[{"mF", "[", "f", "]"}], ".", 
+    RowBox[{"mD", "[", 
+     RowBox[{"s", ",", "\[Rho]"}], "]"}], ".", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"\[Eta]", "[", "0", "]"}], ",", 
+      RowBox[{"d\[Eta]", "[", "0", "]"}], ",", "1"}], "}"}]}], "//.", 
+   "focus"}], "//", "FullSimplify"}]], "Input",
+ CellChangeTimes->{{3.73479144419423*^9, 3.734791506354701*^9}, {
+  3.734791558132197*^9, 3.734791560226376*^9}, {3.7347915993158894`*^9, 
+  3.7347916274748044`*^9}, {3.734791684837102*^9, 
+  3.734791691937871*^9}},ExpressionUUID->"aca70666-87b5-43ea-8a2c-\
+ef4d5df146bd"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{"0", ",", "0", ",", "1"}], "}"}], "}"}]], "Output",
+ CellChangeTimes->{{3.7347914516427107`*^9, 3.734791507032037*^9}, 
+   3.73479156091173*^9, 3.7347916002801223`*^9, 3.7347916452414007`*^9, {
+   3.734791685514925*^9, 3.734791692501182*^9}, 
+   3.7347919560927052`*^9},ExpressionUUID->"eec6d776-63ab-4d88-8055-\
+18872937f269"]
+}, Open  ]],
+
+Cell["Dispersion nach dem ersten Dipol:", "Text",
+ CellChangeTimes->{{3.734791807507098*^9, 
+  3.734791851105897*^9}},ExpressionUUID->"4c583fc5-1048-4fa8-8da1-\
+3f913c3f6ba9"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"mD", "[", 
+    RowBox[{"s", ",", "\[Rho]"}], "]"}], ".", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"\[Eta]", "[", "0", "]"}], ",", 
+     RowBox[{"d\[Eta]", "[", "0", "]"}], ",", "1"}], "}"}]}], "//", 
+  "FullSimplify"}]], "Input",
+ CellChangeTimes->{{3.734791570882467*^9, 3.734791572211795*^9}, {
+  3.734791776963023*^9, 
+  3.734791778738799*^9}},ExpressionUUID->"b0d51b77-eebb-445c-be70-\
+eb14dc905b29"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"\[Rho]", "-", 
+    RowBox[{"\[Rho]", " ", 
+     RowBox[{"Cos", "[", 
+      FractionBox["s", "\[Rho]"], "]"}]}]}], ",", 
+   RowBox[{"Sin", "[", 
+    FractionBox["s", "\[Rho]"], "]"}], ",", "1"}], "}"}]], "Output",
+ CellChangeTimes->{{3.7347915681716795`*^9, 3.734791572445304*^9}, 
+   3.734791779238531*^9, 
+   3.734791956106744*^9},ExpressionUUID->"fc751bde-91fe-4491-b224-\
+e0296c861b7a"]
+}, Open  ]],
+
+Cell["\<\
+Dispersion nach dem Quadropol und dem zweiten Dipol: (Hier gehen wir nur \
+davon aus, dass der Startpunkt im Quadropol liegt und NICHT im 1. Dipol, da \
+die Dispersion nach dem Quadropol und 2. Dipol ja {\[Eta],-d\[Eta]} sein \
+sollte. Und das ist sie!! :))\
+\>", "Text",
+ CellChangeTimes->{{3.7347918236982718`*^9, 
+  3.734791949698408*^9}},ExpressionUUID->"e46b5d0b-114c-476e-a453-\
+0dca80e17a09"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{"mF", "[", "f", "]"}], ".", 
+    RowBox[{"mD", "[", 
+     RowBox[{"s", ",", "\[Rho]"}], "]"}], ".", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"\[Eta]", "[", "0", "]"}], ",", 
+      RowBox[{"d\[Eta]", "[", "0", "]"}], ",", "1"}], "}"}]}], "//.", 
+   "focus"}], "//", "FullSimplify"}]], "Input",ExpressionUUID->"bb478731-3d42-\
+47e2-a9da-020b3877a610"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"\[Rho]", "-", 
+     RowBox[{"\[Rho]", " ", 
+      RowBox[{"Cos", "[", 
+       FractionBox["s", "\[Rho]"], "]"}]}]}], ",", 
+    RowBox[{"-", 
+     RowBox[{"Sin", "[", 
+      FractionBox["s", "\[Rho]"], "]"}]}], ",", "1"}], "}"}], "}"}]], "Output",
+ CellChangeTimes->{3.73479179858294*^9, 
+  3.734791956749752*^9},ExpressionUUID->"0856f94e-c571-47e3-a507-\
+bc925471b94b"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Berechnung der Twiss Parameter (\[Beta]-Funktionen)", "Section",
+ CellChangeTimes->{{3.734790340691185*^9, 
+  3.7347903558426323`*^9}},ExpressionUUID->"45c4c865-3081-4b31-ae62-\
+a5517d7c9d30"],
+
+Cell[BoxData[
+ RowBox[{"bmat", ":=", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"\[Beta]", ",", 
+      RowBox[{"-", "\[Alpha]"}]}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"-", "\[Alpha]"}], ",", "\[Gamma]"}], "}"}]}], "}"}]}]], "Input",
+ CellChangeTimes->{{3.734790384538519*^9, 
+  3.734790413411646*^9}},ExpressionUUID->"f77b83c7-613f-4e68-9c81-\
+ac1dfdb59ae1"]
 }, Open  ]]
 }, Open  ]]
 },
@@ -304,20 +475,46 @@ Cell[580, 22, 395, 6, 96, "Title",ExpressionUUID->"93bbad7c-f06f-43d7-9405-864be
 Cell[978, 30, 170, 3, 34, "Text",ExpressionUUID->"35f4395c-b0da-40de-80a0-494156ecd658"],
 Cell[1151, 35, 164, 3, 34, "Text",ExpressionUUID->"e0bbb0f9-3343-4c93-95ee-1e8cbd3bdece"],
 Cell[1318, 40, 1169, 30, 32, "Input",ExpressionUUID->"173db715-a89e-4256-b66b-1030d455bf48"],
-Cell[2490, 72, 198, 3, 34, "Text",ExpressionUUID->"6d78e088-7db3-4e3b-ad93-0b35ac78b486"],
-Cell[2691, 77, 750, 19, 28, "Input",ExpressionUUID->"0cb4ccb9-0f7d-400c-84d9-6c08b6f01fc3"],
-Cell[3444, 98, 1246, 32, 28, "Input",ExpressionUUID->"fa5c1aa1-077f-4d4e-a710-70f5ab4264cc"],
-Cell[4693, 132, 176, 3, 34, "Text",ExpressionUUID->"83b561ee-3ce7-48ee-bba7-cae00f425e6f"],
-Cell[4872, 137, 354, 10, 52, "Input",ExpressionUUID->"135e19f8-2e76-4538-90a9-9ca0dc14966a"],
-Cell[5229, 149, 500, 11, 28, "Input",ExpressionUUID->"375e516d-0c14-4b1b-8c45-ef136321b73c"],
-Cell[5732, 162, 156, 3, 34, "Text",ExpressionUUID->"83a6313e-6715-4f38-8ecc-cf1698180dfe"],
 Cell[CellGroupData[{
-Cell[5913, 169, 1419, 32, 28, "Input",ExpressionUUID->"ec37c16a-6c65-45f8-bfbe-77e7b3c68403"],
-Cell[7335, 203, 2119, 52, 70, "Output",ExpressionUUID->"7ca14a98-34e0-48b1-b8d9-8dbff7638283"]
+Cell[2512, 74, 180, 3, 67, "Section",ExpressionUUID->"44dec455-dd13-42df-8a37-324b210522ff"],
+Cell[2695, 79, 198, 3, 34, "Text",ExpressionUUID->"6d78e088-7db3-4e3b-ad93-0b35ac78b486"],
+Cell[2896, 84, 750, 19, 28, "Input",ExpressionUUID->"0cb4ccb9-0f7d-400c-84d9-6c08b6f01fc3"],
+Cell[3649, 105, 1332, 36, 52, "Input",ExpressionUUID->"fa5c1aa1-077f-4d4e-a710-70f5ab4264cc"],
+Cell[4984, 143, 176, 3, 34, "Text",ExpressionUUID->"83b561ee-3ce7-48ee-bba7-cae00f425e6f"],
+Cell[5163, 148, 354, 10, 52, "Input",ExpressionUUID->"135e19f8-2e76-4538-90a9-9ca0dc14966a"],
+Cell[5520, 160, 500, 11, 28, "Input",ExpressionUUID->"375e516d-0c14-4b1b-8c45-ef136321b73c"],
+Cell[6023, 173, 156, 3, 34, "Text",ExpressionUUID->"83a6313e-6715-4f38-8ecc-cf1698180dfe"],
+Cell[CellGroupData[{
+Cell[6204, 180, 1419, 32, 28, "Input",ExpressionUUID->"ec37c16a-6c65-45f8-bfbe-77e7b3c68403"],
+Cell[7626, 214, 2165, 52, 70, "Output",ExpressionUUID->"ded964c7-58e2-42d0-b8c0-17146e3886fc"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[9491, 260, 286, 7, 28, "Input",ExpressionUUID->"c1c2b73e-c8a3-4441-bcfe-a11a5a349aaf"],
-Cell[9780, 269, 489, 12, 114, "Output",ExpressionUUID->"345eaf8f-3a52-4506-b9d4-26f197969171"]
+Cell[9828, 271, 286, 7, 28, "Input",ExpressionUUID->"c1c2b73e-c8a3-4441-bcfe-a11a5a349aaf"],
+Cell[10117, 280, 537, 13, 57, "Output",ExpressionUUID->"fe47a44a-0fbc-4304-939c-e558e6793768"]
+}, Open  ]],
+Cell[10669, 296, 247, 6, 34, "Text",ExpressionUUID->"dc95be2f-45e3-4364-84ed-1f4fbfc1b72e"],
+Cell[CellGroupData[{
+Cell[10941, 306, 160, 3, 44, "Subsubsection",ExpressionUUID->"867f1970-835c-4be7-a4c2-26df64fe7817"],
+Cell[11104, 311, 286, 6, 34, "Text",ExpressionUUID->"59038713-a92c-4673-b85b-0aa287fa1328"],
+Cell[CellGroupData[{
+Cell[11415, 321, 702, 18, 28, "Input",ExpressionUUID->"aca70666-87b5-43ea-8a2c-ef4d5df146bd"],
+Cell[12120, 341, 383, 8, 32, "Output",ExpressionUUID->"eec6d776-63ab-4d88-8055-18872937f269"]
+}, Open  ]],
+Cell[12518, 352, 175, 3, 34, "Text",ExpressionUUID->"4c583fc5-1048-4fa8-8da1-3f913c3f6ba9"],
+Cell[CellGroupData[{
+Cell[12718, 359, 454, 13, 28, "Input",ExpressionUUID->"b0d51b77-eebb-445c-be70-eb14dc905b29"],
+Cell[13175, 374, 441, 12, 55, "Output",ExpressionUUID->"fc751bde-91fe-4491-b224-e0296c861b7a"]
+}, Open  ]],
+Cell[13631, 389, 409, 8, 34, "Text",ExpressionUUID->"e46b5d0b-114c-476e-a453-0dca80e17a09"],
+Cell[CellGroupData[{
+Cell[14065, 401, 414, 12, 28, "Input",ExpressionUUID->"bb478731-3d42-47e2-a9da-020b3877a610"],
+Cell[14482, 415, 439, 13, 55, "Output",ExpressionUUID->"0856f94e-c571-47e3-a507-bc925471b94b"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[14982, 435, 198, 3, 67, "Section",ExpressionUUID->"45c4c865-3081-4b31-ae62-a5517d7c9d30"],
+Cell[15183, 440, 399, 12, 61, "Input",ExpressionUUID->"f77b83c7-613f-4e68-9c81-ac1dfdb59ae1"]
 }, Open  ]]
 }, Open  ]]
 }
