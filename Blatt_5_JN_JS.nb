@@ -875,152 +875,6 @@ Cell[BoxData[
 
 Cell[BoxData[
  FormBox[
-  TemplateBox[{
-   "Part","partw",
-    "\"Part \\!\\(\\*FormBox[\\\"3\\\", TraditionalForm]\\) of \
-\\!\\(\\*FormBox[RowBox[{RowBox[{\\\"(\\\", TagBox[GridBox[{{\\\"\[Piecewise]\
-\\\", GridBox[{{RowBox[{\\\"(\\\", \\\"\[NoBreak]\\\", \
-GridBox[{{RowBox[{\\\"cos\\\", \\\"(\\\", RowBox[{\\\"Times\\\", \\\"[\\\", \
-RowBox[{\\\"\[LeftSkeleton]\\\", \\\"2\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\
-\\\"}], \\\")\\\"}], RowBox[{\\\"\[Rho]\\\", \\\" \\\", RowBox[{\\\"sin\\\", \
-\\\"(\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\
-\"}], \\\")\\\"}]}], RowBox[{\\\"\[Rho]\\\", \\\" \\\", RowBox[{\\\"Plus\\\", \
-\\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"2\\\", \\\"\[RightSkeleton]\\\
-\"}], \\\"]\\\"}]}]}, {RowBox[{RowBox[{\\\"-\\\", RowBox[{\\\"Power\\\", \
-\\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"2\\\", \\\"\[RightSkeleton]\\\
-\"}], \\\"]\\\"}]}], \\\" \\\", RowBox[{\\\"sin\\\", \\\"(\\\", RowBox[{\\\"\
-\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\")\\\"}]}], \
-RowBox[{\\\"cos\\\", \\\"(\\\", RowBox[{\\\"Times\\\", \\\"[\\\", \
-RowBox[{\\\"\[LeftSkeleton]\\\", \\\"2\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\
-\\\"}], \\\")\\\"}], RowBox[{\\\"sin\\\", \\\"(\\\", RowBox[{\\\"Times\\\", \
-\\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"2\\\", \\\"\[RightSkeleton]\\\
-\"}], \\\"]\\\"}], \\\")\\\"}]}, {\\\"0\\\", \\\"0\\\", \\\"1\\\"}}, \
-Rule[RowSpacings, 1], Rule[ColumnSpacings, 1], Rule[RowAlignments, Baseline], \
-Rule[ColumnAlignments, Center]], \\\"\[NoBreak]\\\", \\\")\\\"}], \
-RowBox[{RowBox[{RowBox[{\\\"0.0002042857142857143`\\\", \
-\\\"\[VeryThinSpace]\\\"}], \\\"-\\\", \\\"L\\\"}], \\\"<\\\", \\\"L\\\"}]}, \
-{RowBox[{\\\"(\\\", \\\"\[NoBreak]\\\", GridBox[{{RowBox[{RowBox[{\\\"Times\\\
-\", \\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"2\\\", \\\"\
-\[RightSkeleton]\\\"}], \\\"]\\\"}], \\\"+\\\", RowBox[{\\\"Times\\\", \
-\\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"3\\\", \\\"\[RightSkeleton]\\\
-\"}], \\\"]\\\"}]}], RowBox[{RowBox[{\\\"Times\\\", \\\"[\\\", RowBox[{\\\"\
-\[LeftSkeleton]\\\", \\\"3\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\\\"}], \
-\\\"+\\\", RowBox[{\\\"Times\\\", \\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
-\\\"3\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\\\"}]}], \
-RowBox[{RowBox[{\\\"Times\\\", \\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\
-\"2\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\\\"}], \\\"+\\\", \
-RowBox[{\\\"Times\\\", \\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"3\\\", \
-\\\"\[RightSkeleton]\\\"}], \\\"]\\\"}], \\\"+\\\", RowBox[{\\\"Times\\\", \\\
-\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"3\\\", \
-\\\"\[RightSkeleton]\\\"}], \\\"]\\\"}]}]}, {RowBox[{RowBox[{\\\"Times\\\", \
-\\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"2\\\", \\\"\[RightSkeleton]\\\
-\"}], \\\"]\\\"}], \\\"+\\\", RowBox[{\\\"Times\\\", \\\"[\\\", RowBox[{\\\"\
-\[LeftSkeleton]\\\", \\\"4\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\\\"}]}], \
-RowBox[{RowBox[{\\\"Times\\\", \\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\
-\"2\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\\\"}], \\\"+\\\", \
-RowBox[{\\\"Times\\\", \\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"3\\\", \
-\\\"\[RightSkeleton]\\\"}], \\\"]\\\"}]}], RowBox[{RowBox[{\\\"sin\\\", \\\"(\
-\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \
-\\\")\\\"}], \\\"+\\\", RowBox[{\\\"Times\\\", \\\"[\\\", RowBox[{\\\"\
-\[LeftSkeleton]\\\", \\\"3\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\\\"}], \
-\\\"+\\\", RowBox[{\\\"Times\\\", \\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
-\\\"2\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\\\"}]}]}, {\\\"0\\\", \\\"0\\\", \
-\\\"1\\\"}}, Rule[RowSpacings, 1], Rule[ColumnSpacings, 1], \
-Rule[RowAlignments, Baseline], Rule[ColumnAlignments, Center]], \
-\\\"\[NoBreak]\\\", \\\")\\\"}], RowBox[{\\\"L\\\", \\\"<\\\", \
-RowBox[{RowBox[{\\\"0.0002042857142857143`\\\", \\\"\[VeryThinSpace]\\\"}], \
-\\\"-\\\", \\\"L\\\"}], \\\"\[LessEqual]\\\", RowBox[{\\\"2\\\", \\\" \\\", \
-\\\"L\\\"}]}]}}, Rule[ColumnAlignments, List[Left]], Rule[ColumnSpacings, \
-1.2`], Rule[ColumnWidths, Automatic], Rule[AllowedDimensions, List[2, \
-Automatic]], Rule[Selectable, True], Rule[Editable, True]]}}, \
-Rule[ColumnAlignments, List[Left]], Rule[ColumnSpacings, 0.5`], \
-Rule[ColumnWidths, Automatic]], \\\"Piecewise\\\", Rule[SyntaxForm, Equal], \
-Rule[SelectWithContents, True], Rule[Selectable, False], Rule[Editable, \
-False], Rule[DeleteWithContents, True]], \\\")\\\"}], \\\".\\\", \
-RowBox[{\\\"{\\\", RowBox[{\\\"0\\\", \\\",\\\", \\\"0\\\", \\\",\\\", \
-\\\"1\\\"}], \\\"}\\\"}]}], TraditionalForm]\\) does not exist.\"",2,16,2,
-    25533555522174367735,"Local"},
-   "MessageTemplate"], TraditionalForm]], "Message", "MSG",
- CellChangeTimes->{3.7348644886277175`*^9, 3.734864748209134*^9, 
-  3.734866119290461*^9, 3.7348662925330067`*^9, 
-  3.7348663429371347`*^9},ExpressionUUID->"a2037ccc-bcfe-4f46-bd44-\
-a638285cc30d"],
-
-Cell[BoxData[
- FormBox[
-  TemplateBox[{
-   "Part","partw",
-    "\"Part \\!\\(\\*FormBox[\\\"3\\\", TraditionalForm]\\) of \
-\\!\\(\\*FormBox[RowBox[{RowBox[{\\\"(\\\", TagBox[GridBox[{{\\\"\[Piecewise]\
-\\\", GridBox[{{RowBox[{\\\"(\\\", \\\"\[NoBreak]\\\", \
-GridBox[{{RowBox[{\\\"cos\\\", \\\"(\\\", RowBox[{\\\"Times\\\", \\\"[\\\", \
-RowBox[{\\\"\[LeftSkeleton]\\\", \\\"2\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\
-\\\"}], \\\")\\\"}], RowBox[{\\\"\[Rho]\\\", \\\" \\\", RowBox[{\\\"sin\\\", \
-\\\"(\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\
-\"}], \\\")\\\"}]}], RowBox[{\\\"\[Rho]\\\", \\\" \\\", RowBox[{\\\"Plus\\\", \
-\\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"2\\\", \\\"\[RightSkeleton]\\\
-\"}], \\\"]\\\"}]}]}, {RowBox[{RowBox[{\\\"-\\\", RowBox[{\\\"Power\\\", \
-\\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"2\\\", \\\"\[RightSkeleton]\\\
-\"}], \\\"]\\\"}]}], \\\" \\\", RowBox[{\\\"sin\\\", \\\"(\\\", RowBox[{\\\"\
-\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\")\\\"}]}], \
-RowBox[{\\\"cos\\\", \\\"(\\\", RowBox[{\\\"Times\\\", \\\"[\\\", \
-RowBox[{\\\"\[LeftSkeleton]\\\", \\\"2\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\
-\\\"}], \\\")\\\"}], RowBox[{\\\"sin\\\", \\\"(\\\", RowBox[{\\\"Times\\\", \
-\\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"2\\\", \\\"\[RightSkeleton]\\\
-\"}], \\\"]\\\"}], \\\")\\\"}]}, {\\\"0\\\", \\\"0\\\", \\\"1\\\"}}, \
-Rule[RowSpacings, 1], Rule[ColumnSpacings, 1], Rule[RowAlignments, Baseline], \
-Rule[ColumnAlignments, Center]], \\\"\[NoBreak]\\\", \\\")\\\"}], \
-RowBox[{RowBox[{RowBox[{\\\"0.0002042857142857143`\\\", \
-\\\"\[VeryThinSpace]\\\"}], \\\"-\\\", \\\"L\\\"}], \\\"<\\\", \\\"L\\\"}]}, \
-{RowBox[{\\\"(\\\", \\\"\[NoBreak]\\\", GridBox[{{RowBox[{RowBox[{\\\"Times\\\
-\", \\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"2\\\", \\\"\
-\[RightSkeleton]\\\"}], \\\"]\\\"}], \\\"+\\\", RowBox[{\\\"Times\\\", \
-\\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"3\\\", \\\"\[RightSkeleton]\\\
-\"}], \\\"]\\\"}]}], RowBox[{RowBox[{\\\"Times\\\", \\\"[\\\", RowBox[{\\\"\
-\[LeftSkeleton]\\\", \\\"3\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\\\"}], \
-\\\"+\\\", RowBox[{\\\"Times\\\", \\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
-\\\"3\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\\\"}]}], \
-RowBox[{RowBox[{\\\"Times\\\", \\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\
-\"2\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\\\"}], \\\"+\\\", \
-RowBox[{\\\"Times\\\", \\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"3\\\", \
-\\\"\[RightSkeleton]\\\"}], \\\"]\\\"}], \\\"+\\\", RowBox[{\\\"Times\\\", \\\
-\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"3\\\", \
-\\\"\[RightSkeleton]\\\"}], \\\"]\\\"}]}]}, {RowBox[{RowBox[{\\\"Times\\\", \
-\\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"2\\\", \\\"\[RightSkeleton]\\\
-\"}], \\\"]\\\"}], \\\"+\\\", RowBox[{\\\"Times\\\", \\\"[\\\", RowBox[{\\\"\
-\[LeftSkeleton]\\\", \\\"4\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\\\"}]}], \
-RowBox[{RowBox[{\\\"Times\\\", \\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\
-\"2\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\\\"}], \\\"+\\\", \
-RowBox[{\\\"Times\\\", \\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"3\\\", \
-\\\"\[RightSkeleton]\\\"}], \\\"]\\\"}]}], RowBox[{RowBox[{\\\"sin\\\", \\\"(\
-\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \
-\\\")\\\"}], \\\"+\\\", RowBox[{\\\"Times\\\", \\\"[\\\", RowBox[{\\\"\
-\[LeftSkeleton]\\\", \\\"3\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\\\"}], \
-\\\"+\\\", RowBox[{\\\"Times\\\", \\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
-\\\"2\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\\\"}]}]}, {\\\"0\\\", \\\"0\\\", \
-\\\"1\\\"}}, Rule[RowSpacings, 1], Rule[ColumnSpacings, 1], \
-Rule[RowAlignments, Baseline], Rule[ColumnAlignments, Center]], \
-\\\"\[NoBreak]\\\", \\\")\\\"}], RowBox[{\\\"L\\\", \\\"<\\\", \
-RowBox[{RowBox[{\\\"0.0002042857142857143`\\\", \\\"\[VeryThinSpace]\\\"}], \
-\\\"-\\\", \\\"L\\\"}], \\\"\[LessEqual]\\\", RowBox[{\\\"2\\\", \\\" \\\", \
-\\\"L\\\"}]}]}}, Rule[ColumnAlignments, List[Left]], Rule[ColumnSpacings, \
-1.2`], Rule[ColumnWidths, Automatic], Rule[AllowedDimensions, List[2, \
-Automatic]], Rule[Selectable, True], Rule[Editable, True]]}}, \
-Rule[ColumnAlignments, List[Left]], Rule[ColumnSpacings, 0.5`], \
-Rule[ColumnWidths, Automatic]], \\\"Piecewise\\\", Rule[SyntaxForm, Equal], \
-Rule[SelectWithContents, True], Rule[Selectable, False], Rule[Editable, \
-False], Rule[DeleteWithContents, True]], \\\")\\\"}], \\\".\\\", \
-RowBox[{\\\"{\\\", RowBox[{\\\"0\\\", \\\",\\\", \\\"0\\\", \\\",\\\", \
-\\\"1\\\"}], \\\"}\\\"}]}], TraditionalForm]\\) does not exist.\"",2,16,3,
-    25533555522174367735,"Local"},
-   "MessageTemplate"], TraditionalForm]], "Message", "MSG",
- CellChangeTimes->{3.7348644886277175`*^9, 3.734864748209134*^9, 
-  3.734866119290461*^9, 3.7348662925330067`*^9, 
-  3.7348663429683857`*^9},ExpressionUUID->"6853df08-7ad0-4576-86ab-\
-d8e12fd1ac5a"],
-
-Cell[BoxData[
- FormBox[
   GraphicsBox[{{{}, {}, 
      TagBox[
       {RGBColor[0.368417, 0.506779, 0.709798], AbsoluteThickness[1.6], 
@@ -2637,312 +2491,6 @@ b05a1dcd26b2"],
 
 Cell[BoxData[
  FormBox[
-  TemplateBox[{
-   "Part","partw",
-    "\"Part \\!\\(\\*FormBox[\\\"3\\\", TraditionalForm]\\) of \
-\\!\\(\\*FormBox[RowBox[{RowBox[{\\\"(\\\", TagBox[GridBox[{{\\\"\[Piecewise]\
-\\\", GridBox[{{RowBox[{\\\"(\\\", \\\"\[NoBreak]\\\", \
-GridBox[{{RowBox[{\\\"cos\\\", \\\"(\\\", RowBox[{\\\"Times\\\", \\\"[\\\", \
-RowBox[{\\\"\[LeftSkeleton]\\\", \\\"2\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\
-\\\"}], \\\")\\\"}], RowBox[{\\\"\[Rho]\\\", \\\" \\\", RowBox[{\\\"sin\\\", \
-\\\"(\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\
-\"}], \\\")\\\"}]}], RowBox[{\\\"\[Rho]\\\", \\\" \\\", RowBox[{\\\"Plus\\\", \
-\\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"2\\\", \\\"\[RightSkeleton]\\\
-\"}], \\\"]\\\"}]}]}, {RowBox[{RowBox[{\\\"-\\\", RowBox[{\\\"Power\\\", \
-\\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"2\\\", \\\"\[RightSkeleton]\\\
-\"}], \\\"]\\\"}]}], \\\" \\\", RowBox[{\\\"sin\\\", \\\"(\\\", RowBox[{\\\"\
-\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\")\\\"}]}], \
-RowBox[{\\\"cos\\\", \\\"(\\\", RowBox[{\\\"Times\\\", \\\"[\\\", \
-RowBox[{\\\"\[LeftSkeleton]\\\", \\\"2\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\
-\\\"}], \\\")\\\"}], RowBox[{\\\"sin\\\", \\\"(\\\", RowBox[{\\\"Times\\\", \
-\\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"2\\\", \\\"\[RightSkeleton]\\\
-\"}], \\\"]\\\"}], \\\")\\\"}]}, {\\\"0\\\", \\\"0\\\", \\\"1\\\"}}, \
-Rule[RowSpacings, 1], Rule[ColumnSpacings, 1], Rule[RowAlignments, Baseline], \
-Rule[ColumnAlignments, Center]], \\\"\[NoBreak]\\\", \\\")\\\"}], \
-RowBox[{RowBox[{RowBox[{\\\"0.0000817142857142857`\\\", \
-\\\"\[VeryThinSpace]\\\"}], \\\"-\\\", \\\"L\\\"}], \\\"<\\\", \\\"L\\\"}]}, \
-{RowBox[{\\\"(\\\", \\\"\[NoBreak]\\\", GridBox[{{RowBox[{RowBox[{\\\"Times\\\
-\", \\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"2\\\", \\\"\
-\[RightSkeleton]\\\"}], \\\"]\\\"}], \\\"+\\\", RowBox[{\\\"Times\\\", \
-\\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"3\\\", \\\"\[RightSkeleton]\\\
-\"}], \\\"]\\\"}]}], RowBox[{RowBox[{\\\"Times\\\", \\\"[\\\", RowBox[{\\\"\
-\[LeftSkeleton]\\\", \\\"3\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\\\"}], \
-\\\"+\\\", RowBox[{\\\"Times\\\", \\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
-\\\"3\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\\\"}]}], \
-RowBox[{RowBox[{\\\"Times\\\", \\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\
-\"2\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\\\"}], \\\"+\\\", \
-RowBox[{\\\"Times\\\", \\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"3\\\", \
-\\\"\[RightSkeleton]\\\"}], \\\"]\\\"}], \\\"+\\\", RowBox[{\\\"Times\\\", \\\
-\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"3\\\", \
-\\\"\[RightSkeleton]\\\"}], \\\"]\\\"}]}]}, {RowBox[{RowBox[{\\\"Times\\\", \
-\\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"2\\\", \\\"\[RightSkeleton]\\\
-\"}], \\\"]\\\"}], \\\"+\\\", RowBox[{\\\"Times\\\", \\\"[\\\", RowBox[{\\\"\
-\[LeftSkeleton]\\\", \\\"4\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\\\"}]}], \
-RowBox[{RowBox[{\\\"Times\\\", \\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\
-\"2\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\\\"}], \\\"+\\\", \
-RowBox[{\\\"Times\\\", \\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"3\\\", \
-\\\"\[RightSkeleton]\\\"}], \\\"]\\\"}]}], RowBox[{RowBox[{\\\"sin\\\", \\\"(\
-\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \
-\\\")\\\"}], \\\"+\\\", RowBox[{\\\"Times\\\", \\\"[\\\", RowBox[{\\\"\
-\[LeftSkeleton]\\\", \\\"3\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\\\"}], \
-\\\"+\\\", RowBox[{\\\"Times\\\", \\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
-\\\"2\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\\\"}]}]}, {\\\"0\\\", \\\"0\\\", \
-\\\"1\\\"}}, Rule[RowSpacings, 1], Rule[ColumnSpacings, 1], \
-Rule[RowAlignments, Baseline], Rule[ColumnAlignments, Center]], \
-\\\"\[NoBreak]\\\", \\\")\\\"}], RowBox[{\\\"L\\\", \\\"<\\\", \
-RowBox[{RowBox[{\\\"0.0000817142857142857`\\\", \\\"\[VeryThinSpace]\\\"}], \
-\\\"-\\\", \\\"L\\\"}], \\\"\[LessEqual]\\\", RowBox[{\\\"2\\\", \\\" \\\", \
-\\\"L\\\"}]}]}}, Rule[ColumnAlignments, List[Left]], Rule[ColumnSpacings, \
-1.2`], Rule[ColumnWidths, Automatic], Rule[AllowedDimensions, List[2, \
-Automatic]], Rule[Selectable, True], Rule[Editable, True]]}}, \
-Rule[ColumnAlignments, List[Left]], Rule[ColumnSpacings, 0.5`], \
-Rule[ColumnWidths, Automatic]], \\\"Piecewise\\\", Rule[SyntaxForm, Equal], \
-Rule[SelectWithContents, True], Rule[Selectable, False], Rule[Editable, \
-False], Rule[DeleteWithContents, True]], \\\")\\\"}], \\\".\\\", \
-RowBox[{\\\"{\\\", RowBox[{\\\"0\\\", \\\",\\\", \\\"0\\\", \\\",\\\", \
-\\\"1\\\"}], \\\"}\\\"}]}], TraditionalForm]\\) does not exist.\"",2,31,4,
-    25533555522174367735,"Local"},
-   "MessageTemplate"], TraditionalForm]], "Message", "MSG",
- CellChangeTimes->{3.7348644913263226`*^9, 3.734864750869732*^9, 
-  3.734866121933595*^9, 3.734866295446765*^9, 
-  3.7348663458982725`*^9},ExpressionUUID->"7fec4b59-654b-4c3e-b59c-\
-050cbfecae40"],
-
-Cell[BoxData[
- FormBox[
-  TemplateBox[{
-   "Part","partw",
-    "\"Part \\!\\(\\*FormBox[\\\"3\\\", TraditionalForm]\\) of \
-\\!\\(\\*FormBox[RowBox[{RowBox[{\\\"(\\\", TagBox[GridBox[{{\\\"\[Piecewise]\
-\\\", GridBox[{{RowBox[{\\\"(\\\", \\\"\[NoBreak]\\\", \
-GridBox[{{RowBox[{\\\"cos\\\", \\\"(\\\", RowBox[{\\\"Times\\\", \\\"[\\\", \
-RowBox[{\\\"\[LeftSkeleton]\\\", \\\"2\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\
-\\\"}], \\\")\\\"}], RowBox[{\\\"\[Rho]\\\", \\\" \\\", RowBox[{\\\"sin\\\", \
-\\\"(\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\
-\"}], \\\")\\\"}]}], RowBox[{\\\"\[Rho]\\\", \\\" \\\", RowBox[{\\\"Plus\\\", \
-\\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"2\\\", \\\"\[RightSkeleton]\\\
-\"}], \\\"]\\\"}]}]}, {RowBox[{RowBox[{\\\"-\\\", RowBox[{\\\"Power\\\", \
-\\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"2\\\", \\\"\[RightSkeleton]\\\
-\"}], \\\"]\\\"}]}], \\\" \\\", RowBox[{\\\"sin\\\", \\\"(\\\", RowBox[{\\\"\
-\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\")\\\"}]}], \
-RowBox[{\\\"cos\\\", \\\"(\\\", RowBox[{\\\"Times\\\", \\\"[\\\", \
-RowBox[{\\\"\[LeftSkeleton]\\\", \\\"2\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\
-\\\"}], \\\")\\\"}], RowBox[{\\\"sin\\\", \\\"(\\\", RowBox[{\\\"Times\\\", \
-\\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"2\\\", \\\"\[RightSkeleton]\\\
-\"}], \\\"]\\\"}], \\\")\\\"}]}, {\\\"0\\\", \\\"0\\\", \\\"1\\\"}}, \
-Rule[RowSpacings, 1], Rule[ColumnSpacings, 1], Rule[RowAlignments, Baseline], \
-Rule[ColumnAlignments, Center]], \\\"\[NoBreak]\\\", \\\")\\\"}], \
-RowBox[{RowBox[{RowBox[{\\\"0.0000817142857142857`\\\", \
-\\\"\[VeryThinSpace]\\\"}], \\\"-\\\", \\\"L\\\"}], \\\"<\\\", \\\"L\\\"}]}, \
-{RowBox[{\\\"(\\\", \\\"\[NoBreak]\\\", GridBox[{{RowBox[{RowBox[{\\\"Times\\\
-\", \\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"2\\\", \\\"\
-\[RightSkeleton]\\\"}], \\\"]\\\"}], \\\"+\\\", RowBox[{\\\"Times\\\", \
-\\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"3\\\", \\\"\[RightSkeleton]\\\
-\"}], \\\"]\\\"}]}], RowBox[{RowBox[{\\\"Times\\\", \\\"[\\\", RowBox[{\\\"\
-\[LeftSkeleton]\\\", \\\"3\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\\\"}], \
-\\\"+\\\", RowBox[{\\\"Times\\\", \\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
-\\\"3\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\\\"}]}], \
-RowBox[{RowBox[{\\\"Times\\\", \\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\
-\"2\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\\\"}], \\\"+\\\", \
-RowBox[{\\\"Times\\\", \\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"3\\\", \
-\\\"\[RightSkeleton]\\\"}], \\\"]\\\"}], \\\"+\\\", RowBox[{\\\"Times\\\", \\\
-\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"3\\\", \
-\\\"\[RightSkeleton]\\\"}], \\\"]\\\"}]}]}, {RowBox[{RowBox[{\\\"Times\\\", \
-\\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"2\\\", \\\"\[RightSkeleton]\\\
-\"}], \\\"]\\\"}], \\\"+\\\", RowBox[{\\\"Times\\\", \\\"[\\\", RowBox[{\\\"\
-\[LeftSkeleton]\\\", \\\"4\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\\\"}]}], \
-RowBox[{RowBox[{\\\"Times\\\", \\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\
-\"2\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\\\"}], \\\"+\\\", \
-RowBox[{\\\"Times\\\", \\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"3\\\", \
-\\\"\[RightSkeleton]\\\"}], \\\"]\\\"}]}], RowBox[{RowBox[{\\\"sin\\\", \\\"(\
-\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \
-\\\")\\\"}], \\\"+\\\", RowBox[{\\\"Times\\\", \\\"[\\\", RowBox[{\\\"\
-\[LeftSkeleton]\\\", \\\"3\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\\\"}], \
-\\\"+\\\", RowBox[{\\\"Times\\\", \\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
-\\\"2\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\\\"}]}]}, {\\\"0\\\", \\\"0\\\", \
-\\\"1\\\"}}, Rule[RowSpacings, 1], Rule[ColumnSpacings, 1], \
-Rule[RowAlignments, Baseline], Rule[ColumnAlignments, Center]], \
-\\\"\[NoBreak]\\\", \\\")\\\"}], RowBox[{\\\"L\\\", \\\"<\\\", \
-RowBox[{RowBox[{\\\"0.0000817142857142857`\\\", \\\"\[VeryThinSpace]\\\"}], \
-\\\"-\\\", \\\"L\\\"}], \\\"\[LessEqual]\\\", RowBox[{\\\"2\\\", \\\" \\\", \
-\\\"L\\\"}]}]}}, Rule[ColumnAlignments, List[Left]], Rule[ColumnSpacings, \
-1.2`], Rule[ColumnWidths, Automatic], Rule[AllowedDimensions, List[2, \
-Automatic]], Rule[Selectable, True], Rule[Editable, True]]}}, \
-Rule[ColumnAlignments, List[Left]], Rule[ColumnSpacings, 0.5`], \
-Rule[ColumnWidths, Automatic]], \\\"Piecewise\\\", Rule[SyntaxForm, Equal], \
-Rule[SelectWithContents, True], Rule[Selectable, False], Rule[Editable, \
-False], Rule[DeleteWithContents, True]], \\\")\\\"}], \\\".\\\", \
-RowBox[{\\\"{\\\", RowBox[{\\\"0\\\", \\\",\\\", \\\"0\\\", \\\",\\\", \
-\\\"1\\\"}], \\\"}\\\"}]}], TraditionalForm]\\) does not exist.\"",2,31,5,
-    25533555522174367735,"Local"},
-   "MessageTemplate"], TraditionalForm]], "Message", "MSG",
- CellChangeTimes->{3.7348644913263226`*^9, 3.734864750869732*^9, 
-  3.734866121933595*^9, 3.734866295446765*^9, 
-  3.7348663459199095`*^9},ExpressionUUID->"143773b0-6f39-4f43-b1bf-\
-7f0f4c01a59f"],
-
-Cell[BoxData[
- FormBox[
-  TemplateBox[{
-   "Part","partw",
-    "\"Part \\!\\(\\*FormBox[\\\"3\\\", TraditionalForm]\\) of \
-\\!\\(\\*FormBox[RowBox[{RowBox[{\\\"(\\\", TagBox[GridBox[{{\\\"\[Piecewise]\
-\\\", GridBox[{{RowBox[{\\\"(\\\", \\\"\[NoBreak]\\\", \
-GridBox[{{RowBox[{\\\"cos\\\", \\\"(\\\", RowBox[{\\\"Times\\\", \\\"[\\\", \
-RowBox[{\\\"\[LeftSkeleton]\\\", \\\"2\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\
-\\\"}], \\\")\\\"}], RowBox[{\\\"\[Rho]\\\", \\\" \\\", RowBox[{\\\"sin\\\", \
-\\\"(\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\
-\"}], \\\")\\\"}]}], RowBox[{\\\"\[Rho]\\\", \\\" \\\", RowBox[{\\\"Plus\\\", \
-\\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"2\\\", \\\"\[RightSkeleton]\\\
-\"}], \\\"]\\\"}]}]}, {RowBox[{RowBox[{\\\"-\\\", RowBox[{\\\"Power\\\", \
-\\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"2\\\", \\\"\[RightSkeleton]\\\
-\"}], \\\"]\\\"}]}], \\\" \\\", RowBox[{\\\"sin\\\", \\\"(\\\", RowBox[{\\\"\
-\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\")\\\"}]}], \
-RowBox[{\\\"cos\\\", \\\"(\\\", RowBox[{\\\"Times\\\", \\\"[\\\", \
-RowBox[{\\\"\[LeftSkeleton]\\\", \\\"2\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\
-\\\"}], \\\")\\\"}], RowBox[{\\\"sin\\\", \\\"(\\\", RowBox[{\\\"Times\\\", \
-\\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"2\\\", \\\"\[RightSkeleton]\\\
-\"}], \\\"]\\\"}], \\\")\\\"}]}, {\\\"0\\\", \\\"0\\\", \\\"1\\\"}}, \
-Rule[RowSpacings, 1], Rule[ColumnSpacings, 1], Rule[RowAlignments, Baseline], \
-Rule[ColumnAlignments, Center]], \\\"\[NoBreak]\\\", \\\")\\\"}], \
-RowBox[{RowBox[{RowBox[{\\\"0.0000817142857142857`\\\", \
-\\\"\[VeryThinSpace]\\\"}], \\\"-\\\", \\\"L\\\"}], \\\"<\\\", \\\"L\\\"}]}, \
-{RowBox[{\\\"(\\\", \\\"\[NoBreak]\\\", GridBox[{{RowBox[{RowBox[{\\\"Times\\\
-\", \\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"2\\\", \\\"\
-\[RightSkeleton]\\\"}], \\\"]\\\"}], \\\"+\\\", RowBox[{\\\"Times\\\", \
-\\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"3\\\", \\\"\[RightSkeleton]\\\
-\"}], \\\"]\\\"}]}], RowBox[{RowBox[{\\\"Times\\\", \\\"[\\\", RowBox[{\\\"\
-\[LeftSkeleton]\\\", \\\"3\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\\\"}], \
-\\\"+\\\", RowBox[{\\\"Times\\\", \\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
-\\\"3\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\\\"}]}], \
-RowBox[{RowBox[{\\\"Times\\\", \\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\
-\"2\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\\\"}], \\\"+\\\", \
-RowBox[{\\\"Times\\\", \\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"3\\\", \
-\\\"\[RightSkeleton]\\\"}], \\\"]\\\"}], \\\"+\\\", RowBox[{\\\"Times\\\", \\\
-\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"3\\\", \
-\\\"\[RightSkeleton]\\\"}], \\\"]\\\"}]}]}, {RowBox[{RowBox[{\\\"Times\\\", \
-\\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"2\\\", \\\"\[RightSkeleton]\\\
-\"}], \\\"]\\\"}], \\\"+\\\", RowBox[{\\\"Times\\\", \\\"[\\\", RowBox[{\\\"\
-\[LeftSkeleton]\\\", \\\"4\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\\\"}]}], \
-RowBox[{RowBox[{\\\"Times\\\", \\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\
-\"2\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\\\"}], \\\"+\\\", \
-RowBox[{\\\"Times\\\", \\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"3\\\", \
-\\\"\[RightSkeleton]\\\"}], \\\"]\\\"}]}], RowBox[{RowBox[{\\\"sin\\\", \\\"(\
-\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \
-\\\")\\\"}], \\\"+\\\", RowBox[{\\\"Times\\\", \\\"[\\\", RowBox[{\\\"\
-\[LeftSkeleton]\\\", \\\"3\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\\\"}], \
-\\\"+\\\", RowBox[{\\\"Times\\\", \\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
-\\\"2\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\\\"}]}]}, {\\\"0\\\", \\\"0\\\", \
-\\\"1\\\"}}, Rule[RowSpacings, 1], Rule[ColumnSpacings, 1], \
-Rule[RowAlignments, Baseline], Rule[ColumnAlignments, Center]], \
-\\\"\[NoBreak]\\\", \\\")\\\"}], RowBox[{\\\"L\\\", \\\"<\\\", \
-RowBox[{RowBox[{\\\"0.0000817142857142857`\\\", \\\"\[VeryThinSpace]\\\"}], \
-\\\"-\\\", \\\"L\\\"}], \\\"\[LessEqual]\\\", RowBox[{\\\"2\\\", \\\" \\\", \
-\\\"L\\\"}]}]}}, Rule[ColumnAlignments, List[Left]], Rule[ColumnSpacings, \
-1.2`], Rule[ColumnWidths, Automatic], Rule[AllowedDimensions, List[2, \
-Automatic]], Rule[Selectable, True], Rule[Editable, True]]}}, \
-Rule[ColumnAlignments, List[Left]], Rule[ColumnSpacings, 0.5`], \
-Rule[ColumnWidths, Automatic]], \\\"Piecewise\\\", Rule[SyntaxForm, Equal], \
-Rule[SelectWithContents, True], Rule[Selectable, False], Rule[Editable, \
-False], Rule[DeleteWithContents, True]], \\\")\\\"}], \\\".\\\", \
-RowBox[{\\\"{\\\", RowBox[{\\\"0\\\", \\\",\\\", \\\"0\\\", \\\",\\\", \
-\\\"1\\\"}], \\\"}\\\"}]}], TraditionalForm]\\) does not exist.\"",2,31,6,
-    25533555522174367735,"Local"},
-   "MessageTemplate"], TraditionalForm]], "Message", "MSG",
- CellChangeTimes->{3.7348644913263226`*^9, 3.734864750869732*^9, 
-  3.734866121933595*^9, 3.734866295446765*^9, 
-  3.734866345951421*^9},ExpressionUUID->"59a86b5c-9598-4932-8e22-\
-500735e6a00d"],
-
-Cell[BoxData[
- FormBox[
-  TemplateBox[{
-   "General","stop",
-    "\"Further output of \\!\\(\\*FormBox[StyleBox[RowBox[{\\\"Part\\\", \
-\\\"::\\\", \\\"partw\\\"}], \\\"MessageName\\\"], TraditionalForm]\\) will \
-be suppressed during this calculation.\"",2,31,7,25533555522174367735,"Local"},
-   "MessageTemplate"], TraditionalForm]], "Message", "MSG",
- CellChangeTimes->{3.7348644913263226`*^9, 3.734864750869732*^9, 
-  3.734866121933595*^9, 3.734866295446765*^9, 
-  3.7348663459670453`*^9},ExpressionUUID->"a4191efd-8da7-4be3-9eb7-\
-06388bba4c48"],
-
-Cell[BoxData[
- FormBox[
-  TemplateBox[{
-   "Part","partd",
-    "\"Part specification \\!\\(\\*FormBox[RowBox[{RowBox[{\\\"{\\\", \
-RowBox[{FractionBox[RowBox[{\\\"L\\\", \\\" \\\", RowBox[{\\\"(\\\", RowBox[{\
-\\\"1\\\", \\\"-\\\", RowBox[{\\\"cos\\\", \\\"(\\\", \
-RowBox[{\\\"0.08089804081632757`\\\", \\\" \\\", RowBox[{\\\"Power\\\", \\\"[\
-\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"2\\\", \\\"\[RightSkeleton]\\\"}], \
-\\\"]\\\"}], \\\" \\\", \\\"\[Theta]\\\"}], \\\")\\\"}]}], \\\")\\\"}]}], \
-\\\"\[Theta]\\\"], \\\",\\\", RowBox[{\\\"sin\\\", \\\"(\\\", \
-FractionBox[RowBox[{\\\"0.08089804081632757`\\\", \\\" \\\", \
-\\\"\[Theta]\\\"}], \\\"L\\\"], \\\")\\\"}], \\\",\\\", \\\"1\\\"}], \
-\\\"}\\\"}], \\\"\[LeftDoubleBracket]\\\", RowBox[{\\\"3\\\", \\\",\\\", \
-\\\"2\\\"}], \\\"\[RightDoubleBracket]\\\"}], TraditionalForm]\\) is longer \
-than depth of object.\"",2,31,8,25533555522174367735,"Local"},
-   "MessageTemplate"], TraditionalForm]], "Message", "MSG",
- CellChangeTimes->{3.7348644913263226`*^9, 3.734864750869732*^9, 
-  3.734866121933595*^9, 3.734866295446765*^9, 
-  3.7348663460673075`*^9},ExpressionUUID->"f2231328-b9af-48e4-b827-\
-17d63243820f"],
-
-Cell[BoxData[
- FormBox[
-  TemplateBox[{
-   "Part","partd",
-    "\"Part specification \\!\\(\\*FormBox[RowBox[{RowBox[{\\\"{\\\", \
-RowBox[{FractionBox[RowBox[{\\\"L\\\", \\\" \\\", RowBox[{\\\"(\\\", RowBox[{\
-\\\"1\\\", \\\"-\\\", RowBox[{\\\"cos\\\", \\\"(\\\", \
-RowBox[{\\\"0.08089804081632757`\\\", \\\" \\\", RowBox[{\\\"Power\\\", \\\"[\
-\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"2\\\", \\\"\[RightSkeleton]\\\"}], \
-\\\"]\\\"}], \\\" \\\", \\\"\[Theta]\\\"}], \\\")\\\"}]}], \\\")\\\"}]}], \
-\\\"\[Theta]\\\"], \\\",\\\", RowBox[{\\\"sin\\\", \\\"(\\\", \
-FractionBox[RowBox[{\\\"0.08089804081632757`\\\", \\\" \\\", \
-\\\"\[Theta]\\\"}], \\\"L\\\"], \\\")\\\"}], \\\",\\\", \\\"1\\\"}], \
-\\\"}\\\"}], \\\"\[LeftDoubleBracket]\\\", RowBox[{\\\"3\\\", \\\",\\\", \
-\\\"2\\\"}], \\\"\[RightDoubleBracket]\\\"}], TraditionalForm]\\) is longer \
-than depth of object.\"",2,31,9,25533555522174367735,"Local"},
-   "MessageTemplate"], TraditionalForm]], "Message", "MSG",
- CellChangeTimes->{3.7348644913263226`*^9, 3.734864750869732*^9, 
-  3.734866121933595*^9, 3.734866295446765*^9, 
-  3.7348663460985575`*^9},ExpressionUUID->"8515e0b2-2cc2-44af-92c3-\
-ed6fc9d273dd"],
-
-Cell[BoxData[
- FormBox[
-  TemplateBox[{
-   "Part","partd",
-    "\"Part specification \\!\\(\\*FormBox[RowBox[{RowBox[{\\\"{\\\", \
-RowBox[{\\\"0.00016427990478955833`\\\", \\\",\\\", \\\"0.004061400679530959`\
-\\\", \\\",\\\", \\\"1\\\"}], \\\"}\\\"}], \\\"\[LeftDoubleBracket]\\\", \
-RowBox[{\\\"3\\\", \\\",\\\", \\\"2\\\"}], \\\"\[RightDoubleBracket]\\\"}], \
-TraditionalForm]\\) is longer than depth of object.\"",2,31,10,
-    25533555522174367735,"Local"},
-   "MessageTemplate"], TraditionalForm]], "Message", "MSG",
- CellChangeTimes->{3.7348644913263226`*^9, 3.734864750869732*^9, 
-  3.734866121933595*^9, 3.734866295446765*^9, 
-  3.7348663461201916`*^9},ExpressionUUID->"07ca68e3-3156-4bf3-a19c-\
-b4e2a7a6ef33"],
-
-Cell[BoxData[
- FormBox[
-  TemplateBox[{
-   "General","stop",
-    "\"Further output of \\!\\(\\*FormBox[StyleBox[RowBox[{\\\"Part\\\", \
-\\\"::\\\", \\\"partd\\\"}], \\\"MessageName\\\"], TraditionalForm]\\) will \
-be suppressed during this calculation.\"",2,31,11,25533555522174367735,
-    "Local"},
-   "MessageTemplate"], TraditionalForm]], "Message", "MSG",
- CellChangeTimes->{3.7348644913263226`*^9, 3.734864750869732*^9, 
-  3.734866121933595*^9, 3.734866295446765*^9, 
-  3.7348663461359034`*^9},ExpressionUUID->"b65349b5-cfd4-42c6-8eba-\
-29f5833c87de"],
-
-Cell[BoxData[
- FormBox[
   GraphicsBox[{{{}, {}, 
      TagBox[
       {RGBColor[0.368417, 0.506779, 0.709798], AbsoluteThickness[1.6], 
@@ -3246,8 +2794,6 @@ Cell["Richtige Optimierung", "Subsubsection",
   3.7348007133923197`*^9}},ExpressionUUID->"2f438008-f615-485f-9668-\
 4b83a6c75f63"],
 
-Cell[CellGroupData[{
-
 Cell[BoxData[
  RowBox[{
   RowBox[{
@@ -3380,10 +2926,10 @@ a279fceb5d6f"],
 
 Cell[BoxData[
  FormBox[
-  RowBox[{"Solve", "[", 
+  RowBox[{"{", 
    RowBox[{
-    RowBox[{
-     TagBox[
+    RowBox[{"{", 
+     RowBox[{"\[Beta]0", "\[Rule]", 
       RowBox[{
        RowBox[{"-", "2.2428074980413983`*^-8"}], " ", 
        SqrtBox[
@@ -3399,7 +2945,6 @@ Cell[BoxData[
          RowBox[{"2.242442700963775`*^15", " ", 
           SuperscriptBox["\[Alpha]0", "2"]}], "+", 
          "2.242442700925637`*^15"}]]}]}], "}"}]}], "}"}], 
-
   TraditionalForm]], "Output",
  CellChangeTimes->{{3.734801001137446*^9, 3.734801014802519*^9}, {
    3.7348011164171553`*^9, 3.7348011290277405`*^9}, 3.73480135731348*^9, 
@@ -3577,7 +3122,6 @@ Cell[18681, 465, 175, 3, 34, "Text",ExpressionUUID->"4c583fc5-1048-4fa8-8da1-3f9
 Cell[CellGroupData[{
 Cell[18881, 472, 616, 15, 45, "Input",ExpressionUUID->"b0d51b77-eebb-445c-be70-eb14dc905b29"],
 Cell[19500, 489, 1660, 30, 59, "Output",ExpressionUUID->"26933f3e-1d5c-4a72-bd4b-7213841552ca"]
-
 }, Open  ]],
 Cell[21175, 522, 457, 9, 56, "Text",ExpressionUUID->"e46b5d0b-114c-476e-a453-0dca80e17a09"],
 Cell[CellGroupData[{
@@ -3647,7 +3191,6 @@ Cell[81310, 1960, 12550, 223, 252, "Output",ExpressionUUID->"33c4cd35-8e92-477d-
 Cell[CellGroupData[{
 Cell[93897, 2188, 209, 5, 28, "Input",ExpressionUUID->"d85bee09-5139-46d0-9cd3-c10879dc8625"],
 Cell[94109, 2195, 293, 5, 32, "Output",ExpressionUUID->"0ecff2cd-bcf8-4b81-98f8-2fcb6440284f"]
-
 }, Open  ]],
 Cell[94417, 2203, 382, 7, 56, "Text",ExpressionUUID->"86a1be61-bf92-4b37-8446-7e7484ef013d"],
 Cell[CellGroupData[{
