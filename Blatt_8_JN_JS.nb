@@ -1,0 +1,330 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     11869,        320]
+NotebookOptionsPosition[     10045,        284]
+NotebookOutlinePosition[     10392,        299]
+CellTagsIndexPosition[     10349,        296]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell["Jonas Neundorf, Jan Skottke", "Text",
+ CellChangeTimes->{{3.7377157519521527`*^9, 
+  3.7377157615839577`*^9}},ExpressionUUID->"e49f3263-6c97-4080-a996-\
+d5e19db2f8c0"],
+
+Cell[CellGroupData[{
+
+Cell["Blatt 8 -- Raumladungsarbeitspunktverschiebung", "Title",
+ CellChangeTimes->{{3.7377157651845007`*^9, 
+  3.7377157824397*^9}},ExpressionUUID->"8bf34c7d-a091-4607-a062-76c3d59979f4"],
+
+Cell["\<\
+Betrachten wir zun\[ADoubleDot]chst einen unendlich langen, zylinderf\
+\[ODoubleDot]rmigen Strahl. Ein Elektron im Abstand r zur Strahlmitte sieht \
+ein elektrisches Feld. Definieren wir zun\[ADoubleDot]chst die als konstant \
+angenommene Ladungsdichte\
+\>", "Text",
+ CellChangeTimes->{{3.737721092417556*^9, 3.737721187816966*^9}, {
+  3.737722263277712*^9, 3.737722271117244*^9}, {3.737722315805826*^9, 
+  3.737722335909047*^9}},ExpressionUUID->"c7691a58-f42a-4495-8acb-\
+b874aea9f123"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"CoordinateChartData", "[", 
+  RowBox[{"{", "\"\<Cylindrical\>\"", "}"}], "]"}]], "Input",
+ CellChangeTimes->{{3.737721383767781*^9, 3.737721445954447*^9}, {
+   3.737721898863173*^9, 3.73772194503179*^9}, 
+   3.7377314355617285`*^9},ExpressionUUID->"44880cef-b709-4a52-bec5-\
+bcff2e5808dd"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"Cylindrical\"\>", ",", "\<\"Euclidean\"\>", ",", "3"}], 
+  "}"}]], "Output",
+ CellChangeTimes->{{3.737721920289304*^9, 3.7377219456302123`*^9}, 
+   3.7377234808394723`*^9, 3.737731435944885*^9, 
+   3.7377327130818963`*^9},ExpressionUUID->"47eab001-3564-4006-b7bb-\
+c3f33104cfbe"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"\[Rho]rad", "[", "r_", "]"}], " ", ":=", " ", 
+  RowBox[{"q", "*", 
+   RowBox[{"Piecewise", "[", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"e", "*", "nrad"}], ",", " ", 
+        RowBox[{"r", "\[LessEqual]", "a"}]}], "}"}], ",", " ", 
+      RowBox[{"{", 
+       RowBox[{"0", ",", " ", 
+        RowBox[{"r", ">", "a"}]}], "}"}]}], "}"}], "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.7377222805018816`*^9, 3.737722281991929*^9}, {
+  3.737722345110538*^9, 3.7377224233338203`*^9}, {3.7377225935405498`*^9, 
+  3.737722593899805*^9}, {3.73772345178594*^9, 
+  3.7377234522012453`*^9}},ExpressionUUID->"b90f645b-a974-4eaa-880a-\
+8f0f7284491c"],
+
+Cell["\<\
+Wir berechnen die Felder im Laborsystem. Aufgrund der Rotationssymmetrie und \
+der unendlichen L\[ADoubleDot]nge des Bunches gibt es keine Felder in \[Phi]- \
+und z-Richtung. Damit erhalten wir f\[UDoubleDot]r das E-Feld\
+\>", "Text",
+ CellChangeTimes->{{3.7377316838111153`*^9, 3.7377317014951468`*^9}, {
+  3.737731856486246*^9, 3.7377318667344847`*^9}, {3.737731902797929*^9, 
+  3.737731911790516*^9}, {3.7377320681268845`*^9, 
+  3.737732130709976*^9}},ExpressionUUID->"f529e285-dd8a-41da-a88f-\
+c1af5ed6333a"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"eField", "[", "r_", "]"}], " ", ":=", " ", 
+  RowBox[{
+   FractionBox["1", 
+    RowBox[{"4", "*", "\[Pi]", "*", "\[Epsilon]"}]], "*", 
+   RowBox[{"Integral", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"\[Rho]rad", "[", "r", "]"}], "*", 
+      FractionBox[
+       RowBox[{"r", "-", "x"}], 
+       SuperscriptBox[
+        RowBox[{"Abs", "[", 
+         RowBox[{"r", "-", "x"}], "]"}], "3"]], "*", "x"}], ",", " ", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", " ", "0", ",", " ", "r"}], "}"}]}], 
+    "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.737732139126607*^9, 3.7377321783971696`*^9}, {
+   3.737732215998414*^9, 3.7377322682465096`*^9}, 
+   3.7377358991264524`*^9},ExpressionUUID->"99ae3423-b539-4954-b5d9-\
+2681fabdc293"],
+
+Cell["\<\
+Da sich die Teilchen  nur in z-Richtung bewegen, folgt aus dem Ampere\
+\[CloseCurlyQuote]schen Gesetz\
+\>", "Text",
+ CellChangeTimes->{{3.7377327356849527`*^9, 3.737732760723095*^9}, {
+  3.737733897925932*^9, 
+  3.7377339029590306`*^9}},ExpressionUUID->"586192cd-25d1-47e4-b6e4-\
+d295c113669a"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"bf", " ", "=", " ", 
+  RowBox[{
+   RowBox[{"DSolve", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       FractionBox["1", "r"], 
+       RowBox[{"D", "[", 
+        RowBox[{
+         RowBox[{"r", "*", 
+          RowBox[{"bField", "[", "r", "]"}]}], ",", " ", "r"}], "]"}]}], 
+      "\[Equal]", 
+      RowBox[{"\[Mu]0", "*", "\[Rho]", "*", "v"}]}], ",", " ", "bField", ",", 
+     " ", "r"}], "]"}], " ", "//", "Flatten"}]}]], "Input",
+ CellChangeTimes->{{3.7377343624136767`*^9, 3.7377344815164576`*^9}, {
+  3.737734527574377*^9, 3.7377345544525404`*^9}, {3.737736041877161*^9, 
+  3.7377360897001147`*^9}},ExpressionUUID->"bc3863c2-f62e-4437-bd35-\
+551311de2fe3"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"bField", "\[Rule]", 
+   RowBox[{"Function", "[", 
+    RowBox[{
+     RowBox[{"{", "r", "}"}], ",", 
+     RowBox[{
+      RowBox[{
+       FractionBox["1", "2"], " ", "r", " ", "v", " ", "\[Mu]0", " ", 
+       "\[Rho]"}], "+", 
+      FractionBox[
+       RowBox[{"C", "[", "1", "]"}], "r"]}]}], "]"}]}], "}"}]], "Output",
+ CellChangeTimes->{{3.7377344319199224`*^9, 3.737734484290557*^9}, 
+   3.737734530144405*^9, 3.7377345607645855`*^9, 
+   3.737736059350314*^9},ExpressionUUID->"d2be76d9-0489-4476-a70a-\
+07543737ea4d"]
+}, Open  ]],
+
+Cell["Das Teilchen erf\[ADoubleDot]hrt also die Lorentzkraft", "Text",
+ CellChangeTimes->{{3.7377359305885515`*^9, 
+  3.737735940619939*^9}},ExpressionUUID->"11c94afd-c216-4ac0-b7a5-\
+6d8b959a2425"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"fLorentz", "[", "r_", "]"}], " ", ":=", " ", 
+  RowBox[{
+   RowBox[{"q", "*", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"eField", "[", "r", "]"}], " ", "+", " ", "bField"}], ")"}]}], 
+   " ", "//.", "bf"}]}]], "Input",
+ CellChangeTimes->{{3.7377359628360624`*^9, 3.7377360334354095`*^9}, {
+  3.737736073843505*^9, 3.737736096243472*^9}, {3.737736126356097*^9, 
+  3.7377361265574207`*^9}},ExpressionUUID->"bb45606b-08c9-437b-a901-\
+63d2378046ab"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"fLorentz", "[", 
+  FractionBox["a", "2"], "]"}]], "Input",
+ CellChangeTimes->{{3.7377360988942547`*^9, 
+  3.737736106356*^9}},ExpressionUUID->"df158358-b932-4b99-9769-ba0f44d778de"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "ReplaceRepeated","reps",
+   "\"\\!\\(\\*RowBox[{\\\"{\\\", \\\"bf\\\", \\\"}\\\"}]\\) is neither a \
+list of replacement rules nor a valid dispatch table, and so cannot be used \
+for replacing.\"",2,16,4,25552340590464697233,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{{3.7377361077543473`*^9, 
+  3.7377361300896444`*^9}},ExpressionUUID->"924c0957-81f7-4527-9087-\
+6ebbf95a2d2c"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"q", " ", 
+   RowBox[{"(", 
+    RowBox[{"bField", "+", 
+     FractionBox[
+      RowBox[{"Integral", "[", 
+       RowBox[{
+        FractionBox[
+         RowBox[{"q", " ", 
+          RowBox[{"(", 
+           RowBox[{
+            FractionBox["a", "2"], "-", "x"}], ")"}], " ", "x", " ", 
+          RowBox[{"(", 
+           TagBox[GridBox[{
+              {"\[Piecewise]", GridBox[{
+                 {
+                  RowBox[{"e", " ", "nrad"}], 
+                  RowBox[{
+                   FractionBox["a", "2"], "\[LessEqual]", "a"}]},
+                 {"0", 
+                  TagBox["True",
+                   "PiecewiseDefault",
+                   AutoDelete->True]}
+                },
+                AllowedDimensions->{2, Automatic},
+                Editable->True,
+                
+                GridBoxAlignment->{
+                 "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, 
+                  "Rows" -> {{Baseline}}, "RowsIndexed" -> {}},
+                
+                GridBoxItemSize->{
+                 "Columns" -> {{Automatic}}, "ColumnsIndexed" -> {}, 
+                  "Rows" -> {{1.}}, "RowsIndexed" -> {}},
+                GridBoxSpacings->{"Columns" -> {
+                    Offset[0.27999999999999997`], {
+                    Offset[0.84]}, 
+                    Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, 
+                  "Rows" -> {
+                    Offset[0.2], {
+                    Offset[0.4]}, 
+                    Offset[0.2]}, "RowsIndexed" -> {}},
+                Selectable->True]}
+             },
+             
+             GridBoxAlignment->{
+              "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, 
+               "Rows" -> {{Baseline}}, "RowsIndexed" -> {}},
+             
+             GridBoxItemSize->{
+              "Columns" -> {{Automatic}}, "ColumnsIndexed" -> {}, 
+               "Rows" -> {{1.}}, "RowsIndexed" -> {}},
+             GridBoxSpacings->{"Columns" -> {
+                 Offset[0.27999999999999997`], {
+                  Offset[0.35]}, 
+                 Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, 
+               "Rows" -> {
+                 Offset[0.2], {
+                  Offset[0.4]}, 
+                 Offset[0.2]}, "RowsIndexed" -> {}}],
+            "Piecewise",
+            DeleteWithContents->True,
+            Editable->False,
+            SelectWithContents->True,
+            Selectable->False], ")"}]}], 
+         SuperscriptBox[
+          RowBox[{"Abs", "[", 
+           RowBox[{
+            FractionBox["a", "2"], "-", "x"}], "]"}], "3"]], ",", 
+        RowBox[{"{", 
+         RowBox[{"x", ",", "0", ",", 
+          FractionBox["a", "2"]}], "}"}]}], "]"}], 
+      RowBox[{"4", " ", "\[Pi]", " ", "\[Epsilon]"}]]}], ")"}]}], "//.", 
+  "\[VeryThinSpace]", "bf"}]], "Output",
+ CellChangeTimes->{{3.73773610775735*^9, 
+  3.7377361301116505`*^9}},ExpressionUUID->"72e54274-aadf-437c-8091-\
+77921474b265"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{927, 1028},
+WindowMargins->{{Automatic, -7}, {Automatic, 0}},
+FrontEndVersion->"11.2 for Microsoft Windows (64-bit) (September 10, 2017)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 173, 3, 34, "Text",ExpressionUUID->"e49f3263-6c97-4080-a996-d5e19db2f8c0"],
+Cell[CellGroupData[{
+Cell[756, 27, 187, 2, 156, "Title",ExpressionUUID->"8bf34c7d-a091-4607-a062-76c3d59979f4"],
+Cell[946, 31, 497, 9, 56, "Text",ExpressionUUID->"c7691a58-f42a-4495-8acb-b874aea9f123"],
+Cell[CellGroupData[{
+Cell[1468, 44, 313, 6, 45, "Input",ExpressionUUID->"44880cef-b709-4a52-bec5-bcff2e5808dd"],
+Cell[1784, 52, 323, 7, 32, "Output",ExpressionUUID->"47eab001-3564-4006-b7bb-c3f33104cfbe"]
+}, Open  ]],
+Cell[2122, 62, 711, 18, 45, "Input",ExpressionUUID->"b90f645b-a974-4eaa-880a-8f0f7284491c"],
+Cell[2836, 82, 522, 9, 56, "Text",ExpressionUUID->"f529e285-dd8a-41da-a88f-c1af5ed6333a"],
+Cell[3361, 93, 760, 21, 56, "Input",ExpressionUUID->"99ae3423-b539-4954-b5d9-2681fabdc293"],
+Cell[4124, 116, 304, 7, 34, "Text",ExpressionUUID->"586192cd-25d1-47e4-b6e4-d295c113669a"],
+Cell[CellGroupData[{
+Cell[4453, 127, 687, 18, 67, "Input",ExpressionUUID->"bc3863c2-f62e-4437-bd35-551311de2fe3"],
+Cell[5143, 147, 557, 15, 89, "Output",ExpressionUUID->"d2be76d9-0489-4476-a70a-07543737ea4d"]
+}, Open  ]],
+Cell[5715, 165, 198, 3, 34, "Text",ExpressionUUID->"11c94afd-c216-4ac0-b7a5-6d8b959a2425"],
+Cell[5916, 170, 485, 12, 28, "Input",ExpressionUUID->"bb45606b-08c9-437b-a901-63d2378046ab"],
+Cell[CellGroupData[{
+Cell[6426, 186, 205, 4, 49, "Input",ExpressionUUID->"df158358-b932-4b99-9769-ba0f44d778de"],
+Cell[6634, 192, 437, 9, 23, "Message",ExpressionUUID->"924c0957-81f7-4527-9087-6ebbf95a2d2c"],
+Cell[7074, 203, 2943, 77, 151, "Output",ExpressionUUID->"72e54274-aadf-437c-8091-77921474b265"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
