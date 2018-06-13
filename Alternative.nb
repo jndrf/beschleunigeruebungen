@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     31764,        838]
-NotebookOptionsPosition[     29712,        766]
-NotebookOutlinePosition[     30050,        781]
-CellTagsIndexPosition[     30007,        778]
+NotebookDataLength[     33007,        877]
+NotebookOptionsPosition[     30803,        800]
+NotebookOutlinePosition[     31141,        815]
+CellTagsIndexPosition[     31098,        812]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -761,7 +761,41 @@ Cell[BoxData[
 }, Open  ]],
 
 Cell[BoxData[" "], "Input",
- CellChangeTimes->{3.7378740474569197`*^9}]
+ CellChangeTimes->{3.7378740474569197`*^9}],
+
+Cell["Einsetzen der Teilchenzahl", "Text",
+ CellChangeTimes->{{3.737886348486932*^9, 3.7378863619562387`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"tuneshiftN", "=", " ", 
+  RowBox[{"tuneshift", " ", "//.", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"i", "\[Rule]", 
+      FractionBox["charge", "time"]}], ",", " ", 
+     RowBox[{"charge", "\[Rule]", 
+      RowBox[{"e", "*", "n"}]}], ",", " ", 
+     RowBox[{"time", " ", "\[Rule]", " ", 
+      FractionBox[
+       RowBox[{"\[Pi]", "*", "2", "*", "R"}], 
+       RowBox[{"\[Beta]", "*", "c"}]]}]}], "}"}]}]}]], "Input",
+ CellChangeTimes->{{3.737886365558967*^9, 3.737886437752305*^9}}],
+
+Cell[BoxData[
+ RowBox[{"-", 
+  FractionBox[
+   RowBox[{
+    SuperscriptBox["e", "2"], " ", "l", " ", "n"}], 
+   RowBox[{"16", " ", 
+    SuperscriptBox["c", "2"], " ", "m0", " ", 
+    SuperscriptBox["\[Pi]", "3"], " ", "R", " ", "\[Beta]", " ", 
+    SuperscriptBox["\[Gamma]", "2"], " ", 
+    SubscriptBox["\[Epsilon]", "0"], " ", 
+    SubscriptBox["\[Epsilon]", "n"]}]]}]], "Output",
+ CellChangeTimes->{3.7378864397640944`*^9}]
+}, Open  ]]
 }, Open  ]]
 },
 WindowSize->{928, 1148},
@@ -836,9 +870,14 @@ Cell[26276, 676, 1031, 22, 60, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[27344, 703, 1339, 35, 123, "Input"],
-Cell[28686, 740, 924, 19, 86, "Output"]
+Cell[28686, 740, 924, 19, 53, "Output"]
 }, Open  ]],
-Cell[29625, 762, 71, 1, 32, "Input"]
+Cell[29625, 762, 71, 1, 32, "Input"],
+Cell[29699, 765, 110, 1, 33, "Text"],
+Cell[CellGroupData[{
+Cell[29834, 770, 511, 13, 56, "Input"],
+Cell[30348, 785, 427, 11, 90, "Output"]
+}, Open  ]]
 }, Open  ]]
 }
 ]
