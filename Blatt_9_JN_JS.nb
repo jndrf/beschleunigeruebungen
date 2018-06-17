@@ -1,0 +1,188 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      7177,        180]
+NotebookOptionsPosition[      6228,        155]
+NotebookOutlinePosition[      6570,        170]
+CellTagsIndexPosition[      6527,        167]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell["Jonas Neundorf, Jan Skottke", "Text",
+ CellChangeTimes->{{3.737872879871192*^9, 
+  3.737872888289988*^9}},ExpressionUUID->"c1f81241-0534-4815-9d0e-\
+20da63f72a1d"],
+
+Cell[CellGroupData[{
+
+Cell["Blatt 9 -- Resonanzen", "Title",
+ CellChangeTimes->{{3.7382433042826815`*^9, 
+  3.7382433086172504`*^9}},ExpressionUUID->"693dc860-125d-482a-b466-\
+fb270f28b4e9"],
+
+Cell[CellGroupData[{
+
+Cell["Resonanzen am Sextupol", "Section",
+ CellChangeTimes->{{3.7382433186909513`*^9, 
+  3.738243326176299*^9}},ExpressionUUID->"c4fae954-97a3-431c-b195-\
+21f7b2c03989"],
+
+Cell["Definiere Hamiltonfunktion:", "Text",
+ CellChangeTimes->{{3.738243356290513*^9, 
+  3.738243368591937*^9}},ExpressionUUID->"cab52058-24cc-48f9-8375-\
+019db0e85bd9"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"h", "[", 
+   RowBox[{"\[Psi]_", ",", "j_", ",", "\[Delta]_", ",", "a_"}], "]"}], ":=", 
+  RowBox[{
+   RowBox[{"\[Delta]", "*", "j"}], "+", 
+   RowBox[{"a", "*", 
+    SuperscriptBox["j", 
+     FractionBox["3", "2"]], 
+    RowBox[{"Cos", "[", 
+     RowBox[{"3", "*", "\[Psi]"}], "]"}], " ", 
+    RowBox[{"(*", 
+     RowBox[{
+      RowBox[{"\[Delta]", "=", 
+       RowBox[{"q", "-", 
+        FractionBox["n", "3"]}]}], ";", " ", 
+      RowBox[{"a", " ", "=", " ", "Sextupolst\[ODoubleDot]rung"}]}], 
+     "*)"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.7382433732671576`*^9, 3.7382434114900813`*^9}, {
+  3.73824348572919*^9, 3.7382435171380787`*^9}, {3.7382436626417356`*^9, 
+  3.7382436627056694`*^9}, {3.738244029843909*^9, 3.7382440313143897`*^9}, {
+  3.738244238339863*^9, 3.738244242882219*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"c3ac743e-e027-4e60-b8a7-17b85d3b0b3d"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"Plot", "[", 
+    RowBox[{
+     RowBox[{"h", "[", 
+      RowBox[{"\[Psi]", ",", "j", ",", "\[Delta]", ",", "a"}], "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"j", ",", "0", ",", "10"}], "}"}], ",", 
+     RowBox[{"PlotRange", "\[Rule]", "All"}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"a", ",", "0", ",", "0.01"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\[Delta]", ",", "0", ",", "0.1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\[Psi]", ",", 
+     RowBox[{
+      FractionBox["1", "3"], "*", "Pi"}], ",", 
+     RowBox[{
+      FractionBox["2", "3"], "*", "Pi"}], ",", 
+     RowBox[{
+      FractionBox["1", "3"], "*", "Pi"}]}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.738243772372776*^9, 3.7382438430744963`*^9}, {
+  3.738243912371925*^9, 3.7382439991382265`*^9}, {3.73824411515876*^9, 
+  3.738244117200676*^9}, {3.7382442534773874`*^9, 3.738244264530088*^9}, {
+  3.7382442963880634`*^9, 3.7382443002591057`*^9}, {3.738244388723688*^9, 
+  3.738244418771008*^9}, {3.738244540116954*^9, 3.7382445550436945`*^9}, {
+  3.7382445961160026`*^9, 3.738244599731306*^9}},
+ CellLabel->"In[9]:=",ExpressionUUID->"6515f530-1675-4e11-9e10-a53fd61c5da1"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`a$$ = 0.00406, $CellContext`\[Delta]$$ = 
+    0.0258, $CellContext`\[Psi]$$ = Rational[1, 3] Pi, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{
+      Hold[$CellContext`a$$], 0, 0.01}, {
+      Hold[$CellContext`\[Delta]$$], 0, 0.1}, {
+      Hold[$CellContext`\[Psi]$$], Rational[1, 3] Pi, Rational[2, 3] Pi, 
+      Rational[1, 3] Pi}}, Typeset`size$$ = {360., {106., 112.}}, 
+    Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
+    True, $CellContext`a$51317$$ = 0, $CellContext`\[Delta]$51318$$ = 
+    0, $CellContext`\[Psi]$51319$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`a$$ = 0, $CellContext`\[Delta]$$ = 
+        0, $CellContext`\[Psi]$$ = Rational[1, 3] Pi}, "ControllerVariables" :> {
+        Hold[$CellContext`a$$, $CellContext`a$51317$$, 0], 
+        Hold[$CellContext`\[Delta]$$, $CellContext`\[Delta]$51318$$, 0], 
+        Hold[$CellContext`\[Psi]$$, $CellContext`\[Psi]$51319$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Plot[
+        $CellContext`h[$CellContext`\[Psi]$$, $CellContext`j, $CellContext`\
+\[Delta]$$, $CellContext`a$$], {$CellContext`j, 0, 10}, PlotRange -> All], 
+      "Specifications" :> {{$CellContext`a$$, 0, 
+         0.01}, {$CellContext`\[Delta]$$, 0, 0.1}, {$CellContext`\[Psi]$$, 
+         Rational[1, 3] Pi, Rational[2, 3] Pi, Rational[1, 3] Pi}}, 
+      "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{411., {181., 187.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{
+  3.7382438464120965`*^9, {3.738243918217955*^9, 3.738243999934419*^9}, {
+   3.738244044898519*^9, 3.738244055219906*^9}, 3.738244118626215*^9, {
+   3.738244265107497*^9, 3.73824430077258*^9}, {3.7382443890563526`*^9, 
+   3.738244430297225*^9}, {3.738244555671053*^9, 3.7382445581735106`*^9}, 
+   3.7382446001469035`*^9},
+ CellLabel->"Out[9]=",ExpressionUUID->"e734d702-25d6-4775-b043-a3a0281ba41b"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{958, 1028},
+WindowMargins->{{Automatic, -7}, {Automatic, 0}},
+FrontEndVersion->"11.3 for Microsoft Windows (64-bit) (March 6, 2018)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 169, 3, 34, "Text",ExpressionUUID->"c1f81241-0534-4815-9d0e-20da63f72a1d"],
+Cell[CellGroupData[{
+Cell[752, 27, 168, 3, 96, "Title",ExpressionUUID->"693dc860-125d-482a-b466-fb270f28b4e9"],
+Cell[CellGroupData[{
+Cell[945, 34, 169, 3, 67, "Section",ExpressionUUID->"c4fae954-97a3-431c-b195-21f7b2c03989"],
+Cell[1117, 39, 169, 3, 34, "Text",ExpressionUUID->"cab52058-24cc-48f9-8375-019db0e85bd9"],
+Cell[1289, 44, 908, 22, 47, "Input",ExpressionUUID->"c3ac743e-e027-4e60-b8a7-17b85d3b0b3d"],
+Cell[CellGroupData[{
+Cell[2222, 70, 1223, 28, 51, "Input",ExpressionUUID->"6515f530-1675-4e11-9e10-a53fd61c5da1"],
+Cell[3448, 100, 2740, 50, 420, "Output",ExpressionUUID->"e734d702-25d6-4775-b043-a3a0281ba41b"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
