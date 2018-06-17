@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      7177,        180]
-NotebookOptionsPosition[      6228,        155]
-NotebookOutlinePosition[      6570,        170]
-CellTagsIndexPosition[      6527,        167]
+NotebookDataLength[     11266,        266]
+NotebookOptionsPosition[     10092,        237]
+NotebookOutlinePosition[     10434,        252]
+CellTagsIndexPosition[     10391,        249]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -149,6 +149,88 @@ Cell[BoxData[
    3.738244430297225*^9}, {3.738244555671053*^9, 3.7382445581735106`*^9}, 
    3.7382446001469035`*^9},
  CellLabel->"Out[9]=",ExpressionUUID->"e734d702-25d6-4775-b043-a3a0281ba41b"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"PolarPlot", "[", 
+    RowBox[{
+     RowBox[{"h", "[", 
+      RowBox[{"\[Psi]", ",", "j", ",", "\[Delta]", ",", "a"}], "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"j", ",", "0", ",", "\[Psi]"}], "}"}], ",", 
+     RowBox[{"PlotRange", "\[Rule]", "All"}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"a", ",", "0", ",", "0.1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\[Delta]", ",", "0", ",", "0.1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\[Psi]", ",", 
+     RowBox[{
+      FractionBox["1", "3"], "*", "Pi"}], ",", 
+     RowBox[{
+      FractionBox["2", "3"], "*", "Pi"}]}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.738243772372776*^9, 3.7382438430744963`*^9}, {
+  3.738243912371925*^9, 3.7382439991382265`*^9}, {3.73824411515876*^9, 
+  3.738244117200676*^9}, {3.7382442534773874`*^9, 3.738244264530088*^9}, {
+  3.7382442963880634`*^9, 3.7382443002591057`*^9}, {3.738244388723688*^9, 
+  3.738244418771008*^9}, {3.738244540116954*^9, 3.7382445550436945`*^9}, {
+  3.7382445961160026`*^9, 3.738244599731306*^9}, {3.7382447261486225`*^9, 
+  3.7382447954120655`*^9}, {3.7382449024686346`*^9, 3.7382449581307297`*^9}},
+ CellLabel->"In[15]:=",ExpressionUUID->"c00418e8-a269-478a-b16b-3f8b1101c2fe"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`a$$ = 
+    0.0036000000000000003`, $CellContext`\[Delta]$$ = 
+    0.0036000000000000003`, $CellContext`\[Psi]$$ = 1.1623892818282233`, 
+    Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+    Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
+    1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{
+      Hold[$CellContext`a$$], 0, 0.1}, {
+      Hold[$CellContext`\[Delta]$$], 0, 0.1}, {
+      Hold[$CellContext`\[Psi]$$], Rational[1, 3] Pi, Rational[2, 3] Pi}}, 
+    Typeset`size$$ = {360., {177., 182.}}, Typeset`update$$ = 0, 
+    Typeset`initDone$$, Typeset`skipInitDone$$ = 
+    True, $CellContext`a$71909$$ = 0, $CellContext`\[Delta]$71910$$ = 
+    0, $CellContext`\[Psi]$71911$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`a$$ = 0, $CellContext`\[Delta]$$ = 
+        0, $CellContext`\[Psi]$$ = Rational[1, 3] Pi}, "ControllerVariables" :> {
+        Hold[$CellContext`a$$, $CellContext`a$71909$$, 0], 
+        Hold[$CellContext`\[Delta]$$, $CellContext`\[Delta]$71910$$, 0], 
+        Hold[$CellContext`\[Psi]$$, $CellContext`\[Psi]$71911$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> PolarPlot[
+        $CellContext`h[$CellContext`\[Psi]$$, $CellContext`j, $CellContext`\
+\[Delta]$$, $CellContext`a$$], {$CellContext`j, 0, $CellContext`\[Psi]$$}, 
+        PlotRange -> All], 
+      "Specifications" :> {{$CellContext`a$$, 0, 
+         0.1}, {$CellContext`\[Delta]$$, 0, 0.1}, {$CellContext`\[Psi]$$, 
+         Rational[1, 3] Pi, Rational[2, 3] Pi}}, "Options" :> {}, 
+      "DefaultOptions" :> {}],
+     ImageSizeCache->{411., {252., 258.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{{3.7382447807940097`*^9, 3.7382447961772957`*^9}, {
+  3.7382449030460567`*^9, 3.7382449590957437`*^9}},
+ CellLabel->"Out[15]=",ExpressionUUID->"f3c04e86-8f35-47ce-862a-ab63c7336a5e"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
@@ -178,7 +260,11 @@ Cell[1117, 39, 169, 3, 34, "Text",ExpressionUUID->"cab52058-24cc-48f9-8375-019db
 Cell[1289, 44, 908, 22, 47, "Input",ExpressionUUID->"c3ac743e-e027-4e60-b8a7-17b85d3b0b3d"],
 Cell[CellGroupData[{
 Cell[2222, 70, 1223, 28, 51, "Input",ExpressionUUID->"6515f530-1675-4e11-9e10-a53fd61c5da1"],
-Cell[3448, 100, 2740, 50, 420, "Output",ExpressionUUID->"e734d702-25d6-4775-b043-a3a0281ba41b"]
+Cell[3448, 100, 2740, 50, 387, "Output",ExpressionUUID->"e734d702-25d6-4775-b043-a3a0281ba41b"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6225, 155, 1273, 27, 51, "Input",ExpressionUUID->"c00418e8-a269-478a-b16b-3f8b1101c2fe"],
+Cell[7501, 184, 2551, 48, 529, "Output",ExpressionUUID->"f3c04e86-8f35-47ce-862a-ab63c7336a5e"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
