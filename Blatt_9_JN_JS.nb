@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     24202,        626]
-NotebookOptionsPosition[     22548,        567]
-NotebookOutlinePosition[     22886,        582]
-CellTagsIndexPosition[     22843,        579]
+NotebookDataLength[     35547,        873]
+NotebookOptionsPosition[     33547,        801]
+NotebookOutlinePosition[     34046,        822]
+CellTagsIndexPosition[     33959,        817]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -104,8 +104,8 @@ Cell[BoxData[
 Cell[BoxData[
  TagBox[
   StyleBox[
-   DynamicModuleBox[{$CellContext`a$$ = 0, $CellContext`\[Delta]$$ = 
-    0, $CellContext`\[Psi]$$ = Rational[1, 3] Pi, Typeset`show$$ = True, 
+   DynamicModuleBox[{$CellContext`a$$ = 0.00568, $CellContext`\[Delta]$$ = 
+    0.0596, $CellContext`\[Psi]$$ = Rational[2, 3] Pi, Typeset`show$$ = True, 
     Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
     Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
     "\"untitled\"", Typeset`specs$$ = {{
@@ -114,15 +114,15 @@ Cell[BoxData[
       Hold[$CellContext`\[Psi]$$], Rational[1, 3] Pi, Rational[2, 3] Pi, 
       Rational[1, 3] Pi}}, Typeset`size$$ = {360., {116., 122.}}, 
     Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
-    True, $CellContext`a$305$$ = 0, $CellContext`\[Delta]$310$$ = 
-    0, $CellContext`\[Psi]$311$$ = 0}, 
+    True, $CellContext`a$306$$ = 0, $CellContext`\[Delta]$311$$ = 
+    0, $CellContext`\[Psi]$312$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, 
       "Variables" :> {$CellContext`a$$ = 0, $CellContext`\[Delta]$$ = 
         0, $CellContext`\[Psi]$$ = Rational[1, 3] Pi}, "ControllerVariables" :> {
-        Hold[$CellContext`a$$, $CellContext`a$305$$, 0], 
-        Hold[$CellContext`\[Delta]$$, $CellContext`\[Delta]$310$$, 0], 
-        Hold[$CellContext`\[Psi]$$, $CellContext`\[Psi]$311$$, 0]}, 
+        Hold[$CellContext`a$$, $CellContext`a$306$$, 0], 
+        Hold[$CellContext`\[Delta]$$, $CellContext`\[Delta]$311$$, 0], 
+        Hold[$CellContext`\[Psi]$$, $CellContext`\[Psi]$312$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -152,7 +152,8 @@ Cell[BoxData[
    3.738244430297225*^9}, {3.738244555671053*^9, 3.7382445581735106`*^9}, 
    3.7382446001469035`*^9, 3.73831270264548*^9, 3.738313132682523*^9, {
    3.73838914565696*^9, 3.7383891867979765`*^9}, 3.7384240596793528`*^9, 
-   3.738479936327429*^9, 3.738480722081724*^9, 3.738481143192644*^9},
+   3.738479936327429*^9, 3.738480722081724*^9, 3.738481143192644*^9, 
+   3.738481229118744*^9, 3.7384844268084097`*^9, 3.7384844993746777`*^9},
  ExpressionUUID -> "472778e1-0542-43cd-b0e2-98d67b1a1fbd"]
 }, Open  ]],
 
@@ -160,9 +161,8 @@ Cell["\<\
 Je nach dem wie gro\[SZ] a und \[Delta] sind, kann H=const bis J = 1...2 \
 angenommen werden.\
 \>", "Text",
- CellChangeTimes->{{3.738389209836206*^9, 
-  3.738389271891977*^9}},ExpressionUUID->"6e3a881c-c419-4859-881c-\
-8f2a471817b4"],
+ CellChangeTimes->{{3.738389209836206*^9, 3.738389271891977*^9}},
+ ExpressionUUID -> "6e3a881c-c419-4859-881c-8f2a471817b4"],
 
 Cell[CellGroupData[{
 
@@ -172,8 +172,14 @@ Cell[BoxData[
    RowBox[{
     RowBox[{"PolarPlot", "[", 
      RowBox[{
-      RowBox[{"h", "[", 
-       RowBox[{"\[Psi]", ",", "1", ",", "\[Delta]", ",", "a"}], "]"}], ",", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"h", "[", 
+         RowBox[{"\[Psi]", ",", "1", ",", "\[Delta]", ",", "a"}], "]"}], ",", 
+        " ", 
+        RowBox[{".02", "*", 
+         RowBox[{"(", 
+          RowBox[{"\[Psi]", "\[Equal]", "\[Pi]"}], ")"}]}]}], "}"}], ",", 
       RowBox[{"{", 
        RowBox[{"\[Psi]", ",", "0.0001", ",", 
         RowBox[{
@@ -203,7 +209,8 @@ Cell[BoxData[
    3.738389734482308*^9}, {3.738424026797167*^9, 3.73842403617278*^9}, {
    3.7384244843250475`*^9, 3.738424551713565*^9}, {3.738480239683215*^9, 
    3.738480254442198*^9}, {3.7384802959786587`*^9, 3.738480302319057*^9}, {
-   3.738480333740198*^9, 3.738480335139298*^9}, 3.73848039268393*^9},
+   3.738480333740198*^9, 3.738480335139298*^9}, 3.73848039268393*^9, {
+   3.738481425510964*^9, 3.7384815071583776`*^9}},
  ExpressionUUID -> "c00418e8-a269-478a-b16b-3f8b1101c2fe"],
 
 Cell[BoxData[
@@ -216,22 +223,23 @@ Cell[BoxData[
       Hold[$CellContext`a$$], 0, 0.01}, {
       Hold[$CellContext`\[Delta]$$], 0, 0.1}}, Typeset`size$$ = {
     360., {174., 180.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
-    Typeset`skipInitDone$$ = True, $CellContext`a$503$$ = 
-    0, $CellContext`\[Delta]$504$$ = 0}, 
+    Typeset`skipInitDone$$ = True, $CellContext`a$504$$ = 
+    0, $CellContext`\[Delta]$505$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, 
       "Variables" :> {$CellContext`a$$ = 0, $CellContext`\[Delta]$$ = 0}, 
       "ControllerVariables" :> {
-        Hold[$CellContext`a$$, $CellContext`a$503$$, 0], 
-        Hold[$CellContext`\[Delta]$$, $CellContext`\[Delta]$504$$, 0]}, 
+        Hold[$CellContext`a$$, $CellContext`a$504$$, 0], 
+        Hold[$CellContext`\[Delta]$$, $CellContext`\[Delta]$505$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
         Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
-         Typeset`skipInitDone$$}, "Body" :> PolarPlot[
-        $CellContext`h[$CellContext`\[Psi], 
-         1, $CellContext`\[Delta]$$, $CellContext`a$$], {$CellContext`\[Psi], 
-         0.0001, 2 Pi - 0.0001}, PlotRange -> All], 
+         Typeset`skipInitDone$$}, "Body" :> PolarPlot[{
+         $CellContext`h[$CellContext`\[Psi], 
+          1, $CellContext`\[Delta]$$, $CellContext`a$$], 
+         0.02 ($CellContext`\[Psi] == Pi)}, {$CellContext`\[Psi], 0.0001, 
+         2 Pi - 0.0001}, PlotRange -> All], 
       "Specifications" :> {{$CellContext`a$$, 0, 
          0.01}, {$CellContext`\[Delta]$$, 0, 0.1}}, "Options" :> {}, 
       "DefaultOptions" :> {}],
@@ -253,49 +261,39 @@ Cell[BoxData[
    3.7383896288808327`*^9, 3.738389677270954*^9, 3.738389716599687*^9, {
    3.738424059700385*^9, 3.7384241003310175`*^9}, {3.7384244948354654`*^9, 
    3.738424552574194*^9}, 3.738479936374477*^9, 3.738480335996916*^9, 
-   3.738480394052362*^9, 3.738480722185049*^9, 3.738481143318005*^9},
+   3.738480394052362*^9, 3.738480722185049*^9, 3.738481143318005*^9, 
+   3.73848122919593*^9, {3.738481440953843*^9, 3.738481458317028*^9}, 
+   3.7384815114380417`*^9, 3.738484426937565*^9, 3.738484499511248*^9},
  ExpressionUUID -> "2bb0486f-95b7-4124-be5a-225ba6ef6a9c"]
 }, Open  ]],
 
-Cell[CellGroupData[{
-
 Cell[BoxData[
  RowBox[{
-  RowBox[{"solJ", "[", 
-   RowBox[{"\[Delta]_", ",", "a_"}], "]"}], " ", "=", 
-  RowBox[{
-   RowBox[{"Solve", "[", 
-    RowBox[{
+  RowBox[{"solJ", "=", 
+   RowBox[{
+    RowBox[{"Solve", "[", 
      RowBox[{
-      RowBox[{"D", "[", 
-       RowBox[{
-        RowBox[{"h", "[", 
-         RowBox[{"\[Psi]", ",", "j", ",", "\[Delta]", ",", "a"}], "]"}], ",", 
-        "j"}], "]"}], "\[Equal]", "0"}], ",", "j"}], "]"}], " ", "//", 
-   "Flatten"}]}]], "Input",
+      RowBox[{
+       RowBox[{"D", "[", 
+        RowBox[{
+         RowBox[{"h", "[", 
+          RowBox[{"\[Psi]", ",", "j", ",", "\[Delta]", ",", "a"}], "]"}], ",",
+          "j"}], "]"}], "\[Equal]", "0"}], ",", "j"}], "]"}], " ", "//", 
+    "Flatten"}]}], ";"}]], "Input",
  CellChangeTimes->{{3.7382451520544915`*^9, 3.7382451933801327`*^9}, {
   3.7382452571709814`*^9, 3.7382452647542286`*^9}, {3.738313616655757*^9, 
-  3.738313634745419*^9}, {3.7384806695883512`*^9, 3.738480683083675*^9}},
+  3.738313634745419*^9}, {3.7384806695883512`*^9, 3.738480683083675*^9}, {
+  3.7384811804856567`*^9, 3.7384811843086777`*^9}},
  ExpressionUUID -> "70fbd058-e86e-4906-b514-8d572c196a65"],
 
 Cell[BoxData[
- RowBox[{"{", 
-  RowBox[{"j", "\[Rule]", 
-   FractionBox[
-    RowBox[{"4", " ", 
-     SuperscriptBox["\[Delta]", "2"], " ", 
-     SuperscriptBox[
-      RowBox[{"Sec", "[", 
-       RowBox[{"3", " ", "\[Psi]"}], "]"}], "2"]}], 
-    RowBox[{"9", " ", 
-     SuperscriptBox["a", "2"]}]]}], "}"}]], "Output",
- CellChangeTimes->{{3.738245183846879*^9, 3.7382451937847357`*^9}, {
-   3.7382452578193493`*^9, 3.738245265082903*^9}, 3.738312703544223*^9, 
-   3.7383136361863194`*^9, 3.7383891655900073`*^9, 3.738424059997577*^9, 
-   3.738479936726695*^9, 3.738480685970999*^9, 3.7384807222651997`*^9, 
-   3.738481143389924*^9},
- ExpressionUUID -> "62cea95f-d8cc-46a3-b31f-3800eea24baa"]
-}, Open  ]],
+ RowBox[{
+  RowBox[{
+   RowBox[{"jphase", "[", 
+    RowBox[{"\[Delta]_", ",", "a_"}], "]"}], "=", 
+   RowBox[{"j", "//.", "solJ"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.7384811931169157`*^9, 3.738481217825406*^9}, 
+   3.738481251901619*^9}],
 
 Cell[CellGroupData[{
 
@@ -305,9 +303,8 @@ Cell[BoxData[
    RowBox[{
     RowBox[{"PolarPlot", "[", 
      RowBox[{
-      RowBox[{"j", " ", "//.", 
-       RowBox[{"solJ", "[", 
-        RowBox[{"\[Delta]", ",", "a"}], "]"}]}], ",", " ", 
+      RowBox[{"jphase", "[", 
+       RowBox[{"\[Delta]", ",", "a"}], "]"}], ",", " ", 
       RowBox[{"{", 
        RowBox[{"\[Psi]", ",", " ", "0.0001", ",", " ", 
         RowBox[{
@@ -319,38 +316,38 @@ Cell[BoxData[
      RowBox[{"\[Delta]", ",", "0", ",", "0.1"}], "}"}]}], "]"}], 
   " "}]], "Input",
  CellChangeTimes->{{3.7384805961482983`*^9, 3.7384806373815813`*^9}, {
-  3.7384806987255163`*^9, 3.7384807974682617`*^9}}],
+  3.7384806987255163`*^9, 3.7384807974682617`*^9}, {3.7384812232794113`*^9, 
+  3.7384812271726837`*^9}}],
 
 Cell[BoxData[
  TagBox[
   StyleBox[
-   DynamicModuleBox[{$CellContext`a$$ = 0.01, $CellContext`\[Delta]$$ = 
-    0.0758, Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+   DynamicModuleBox[{$CellContext`a$$ = 0.00001, $CellContext`\[Delta]$$ = 0, 
+    Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
     Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
     1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{
       Hold[$CellContext`a$$], 0.00001, 0.01}, {
       Hold[$CellContext`\[Delta]$$], 0, 0.1}}, Typeset`size$$ = {
-    569., {213., 219.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
-    Typeset`skipInitDone$$ = True, $CellContext`a$566$$ = 
-    0, $CellContext`\[Delta]$567$$ = 0}, 
+    618., {174., 181.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, $CellContext`a$569$$ = 
+    0, $CellContext`\[Delta]$570$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, 
       "Variables" :> {$CellContext`a$$ = 0.00001, $CellContext`\[Delta]$$ = 
         0}, "ControllerVariables" :> {
-        Hold[$CellContext`a$$, $CellContext`a$566$$, 0], 
-        Hold[$CellContext`\[Delta]$$, $CellContext`\[Delta]$567$$, 0]}, 
+        Hold[$CellContext`a$$, $CellContext`a$569$$, 0], 
+        Hold[$CellContext`\[Delta]$$, $CellContext`\[Delta]$570$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
         Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
          Typeset`skipInitDone$$}, "Body" :> PolarPlot[
-        ReplaceRepeated[$CellContext`j, 
-         $CellContext`solJ[$CellContext`\[Delta]$$, $CellContext`a$$]], \
+        $CellContext`jphase[$CellContext`\[Delta]$$, $CellContext`a$$], \
 {$CellContext`\[Psi], 0.0001, 2 Pi - 0.0001}, PlotTheme -> "Detailed"], 
       "Specifications" :> {{$CellContext`a$$, 0.00001, 
          0.01}, {$CellContext`\[Delta]$$, 0, 0.1}}, "Options" :> {}, 
       "DefaultOptions" :> {}],
-     ImageSizeCache->{616., {269., 276.}},
+     ImageSizeCache->{665., {230., 237.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -363,79 +360,44 @@ Cell[BoxData[
   Manipulate`InterpretManipulate[1]]], "Output",
  CellChangeTimes->{
   3.7384806391212673`*^9, {3.7384807222914543`*^9, 3.738480799365415*^9}, 
-   3.738481143516377*^9}],
+   3.738481143516377*^9, 3.73848122935089*^9, 3.738484427036334*^9, 
+   3.73848449964458*^9}],
 
 Cell[BoxData[
  TemplateBox[{
   "Divide","indet",
    "\"Indeterminate expression \\!\\(\\*FractionBox[\\\"0.`\\\", \\\"0.`\\\"]\
-\\) encountered.\"",2,9,6,25390091673420302765,"Local"},
+\\) encountered.\"",2,13,10,25390113641167293036,"Local"},
   "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.738481143908081*^9}],
+ CellChangeTimes->{3.73848450026761*^9}],
 
 Cell[BoxData[
  TemplateBox[{
   "Table","iterb",
    "\"Iterator \\!\\(\\*RowBox[{\\\"{\\\", \
-RowBox[{\\\"DrawPolarAxes`DrawPolarAxesDump`r$847\\\", \\\",\\\", \\\"0\\\", \
+RowBox[{\\\"DrawPolarAxes`DrawPolarAxesDump`r$1343\\\", \\\",\\\", \\\"0\\\", \
 \\\",\\\", \\\"0.`\\\", \\\",\\\", \\\"0.`\\\"}], \\\"}\\\"}]\\) does not \
-have appropriate bounds.\"",2,9,7,25390091673420302765,"Local"},
+have appropriate bounds.\"",2,13,11,25390113641167293036,"Local"},
   "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.7384811439169893`*^9}],
+ CellChangeTimes->{3.7384845002771797`*^9}],
 
 Cell[BoxData[
  TemplateBox[{
   "Divide","indet",
    "\"Indeterminate expression \\!\\(\\*FractionBox[\\\"0.`\\\", \\\"0.`\\\"]\
-\\) encountered.\"",2,9,8,25390091673420302765,"Local"},
+\\) encountered.\"",2,13,12,25390113641167293036,"Local"},
   "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.738481143924499*^9}],
+ CellChangeTimes->{3.738484500284954*^9}],
 
 Cell[BoxData[
  TemplateBox[{
   "Table","iterb",
    "\"Iterator \\!\\(\\*RowBox[{\\\"{\\\", \
-RowBox[{\\\"DrawPolarAxes`DrawPolarAxesDump`r$847\\\", \\\",\\\", \\\"0\\\", \
+RowBox[{\\\"DrawPolarAxes`DrawPolarAxesDump`r$1343\\\", \\\",\\\", \\\"0\\\", \
 \\\",\\\", \\\"0.`\\\", \\\",\\\", \\\"0.`\\\"}], \\\"}\\\"}]\\) does not \
-have appropriate bounds.\"",2,9,9,25390091673420302765,"Local"},
+have appropriate bounds.\"",2,13,13,25390113641167293036,"Local"},
   "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.738481143931798*^9}],
-
-Cell[BoxData[
- TemplateBox[{
-  "Divide","indet",
-   "\"Indeterminate expression \\!\\(\\*FractionBox[\\\"0.`\\\", \\\"0.`\\\"]\
-\\) encountered.\"",2,9,10,25390091673420302765,"Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.738481147140626*^9}],
-
-Cell[BoxData[
- TemplateBox[{
-  "Table","iterb",
-   "\"Iterator \\!\\(\\*RowBox[{\\\"{\\\", \
-RowBox[{\\\"DrawPolarAxes`DrawPolarAxesDump`r$1520\\\", \\\",\\\", \\\"0\\\", \
-\\\",\\\", \\\"0.`\\\", \\\",\\\", \\\"0.`\\\"}], \\\"}\\\"}]\\) does not \
-have appropriate bounds.\"",2,9,11,25390091673420302765,"Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.738481147149454*^9}],
-
-Cell[BoxData[
- TemplateBox[{
-  "Divide","indet",
-   "\"Indeterminate expression \\!\\(\\*FractionBox[\\\"0.`\\\", \\\"0.`\\\"]\
-\\) encountered.\"",2,9,12,25390091673420302765,"Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.738481147157564*^9}],
-
-Cell[BoxData[
- TemplateBox[{
-  "Table","iterb",
-   "\"Iterator \\!\\(\\*RowBox[{\\\"{\\\", \
-RowBox[{\\\"DrawPolarAxes`DrawPolarAxesDump`r$1520\\\", \\\",\\\", \\\"0\\\", \
-\\\",\\\", \\\"0.`\\\", \\\",\\\", \\\"0.`\\\"}], \\\"}\\\"}]\\) does not \
-have appropriate bounds.\"",2,9,13,25390091673420302765,"Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.738481147165029*^9}]
+ CellChangeTimes->{3.73848450029233*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -445,38 +407,52 @@ Cell[BoxData[
   RowBox[{
    RowBox[{"h", "[", 
     RowBox[{"\[Psi]", ",", "j", ",", "\[Delta]", ",", "a"}], "]"}], ",", 
-   "\[Psi]"}], "]"}]], "Input",
+   "j"}], "]"}]], "Input",
  CellChangeTimes->{{3.7382451520544915`*^9, 3.73824520652969*^9}, {
-  3.738245267523398*^9, 3.7382453088352175`*^9}},
+  3.738245267523398*^9, 3.7382453088352175`*^9}, {3.738482621778377*^9, 
+  3.738482622128734*^9}},
  ExpressionUUID -> "8ab1e2a8-2f43-4a2e-bff3-eb48e12d470f"],
 
 Cell[BoxData[
- RowBox[{
-  RowBox[{"-", "3"}], " ", "a", " ", 
-  SuperscriptBox["j", 
-   RowBox[{"3", "/", "2"}]], " ", 
-  RowBox[{"Sin", "[", 
-   RowBox[{"3", " ", "\[Psi]"}], "]"}]}]], "Output",
+ RowBox[{"\[Delta]", "+", 
+  RowBox[{
+   FractionBox["3", "2"], " ", "a", " ", 
+   SqrtBox["j"], " ", 
+   RowBox[{"Cos", "[", 
+    RowBox[{"3", " ", "\[Psi]"}], "]"}]}]}]], "Output",
  CellChangeTimes->{
   3.7382452070291805`*^9, {3.7382452759987326`*^9, 3.7382453091059437`*^9}, 
    3.738312703594511*^9, 3.738389165609028*^9, 3.738424060007584*^9, 
-   3.738479936804071*^9, 3.738480722446858*^9, 3.738481143663492*^9},
+   3.738479936804071*^9, 3.738480722446858*^9, 3.738481143663492*^9, 
+   3.738481229461248*^9, 3.73848262297279*^9, 3.738484427194409*^9, 
+   3.738484499769463*^9},
  ExpressionUUID -> "4a48339f-9070-45a3-9a8c-f0ce3df55dac"]
 }, Open  ]],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[
- RowBox[{"Solve", "[", 
+ RowBox[{
+  RowBox[{"fix", "[", 
+   RowBox[{"j_", ",", "\[Delta]_", ",", "a_"}], "]"}], "=", 
   RowBox[{
-   RowBox[{"0", "\[Equal]", 
-    RowBox[{"D", "[", 
-     RowBox[{
-      RowBox[{"h", "[", 
-       RowBox[{"\[Psi]", ",", " ", "j", ",", " ", "\[Delta]", ",", " ", "a"}],
-        "]"}], ",", " ", "j"}], "]"}]}], ",", " ", "\[Psi]"}], "]"}]], "Input",\
-
- CellChangeTimes->{{3.7383933606169343`*^9, 3.7383934273740025`*^9}},
+   RowBox[{"Solve", "[", 
+    RowBox[{
+     RowBox[{"0", "\[Equal]", 
+      RowBox[{"D", "[", 
+       RowBox[{
+        RowBox[{"h", "[", 
+         RowBox[{
+         "\[Psi]", ",", " ", "j", ",", " ", "\[Delta]", ",", " ", "a"}], 
+         "]"}], ",", " ", "j"}], "]"}]}], ",", "\[Psi]"}], "]"}], " ", "//", 
+   "Normal"}]}]], "Input",
+ CellChangeTimes->{{3.7383933606169343`*^9, 3.7383934273740025`*^9}, {
+   3.738482520033387*^9, 3.738482553752965*^9}, 3.738482589970339*^9, {
+   3.738482637129773*^9, 3.7384826577613697`*^9}, {3.738482732560546*^9, 
+   3.7384827870016327`*^9}, 3.73848282188373*^9, {3.738482978173628*^9, 
+   3.738483000985529*^9}, {3.738483134765806*^9, 3.738483141617375*^9}, {
+   3.738484367678392*^9, 3.738484392477168*^9}, {3.738484483447978*^9, 
+   3.738484484173396*^9}},
  ExpressionUUID -> "e653c8c3-3b57-474f-9d1f-2153dd595b83"],
 
 Cell[BoxData[
@@ -484,62 +460,116 @@ Cell[BoxData[
   RowBox[{
    RowBox[{"{", 
     RowBox[{"\[Psi]", "\[Rule]", 
-     RowBox[{"ConditionalExpression", "[", 
-      RowBox[{
+     RowBox[{
+      FractionBox["1", "3"], " ", 
+      RowBox[{"(", 
        RowBox[{
-        FractionBox["1", "3"], " ", 
-        RowBox[{"(", 
-         RowBox[{
+        RowBox[{"-", 
+         RowBox[{"ArcCos", "[", 
           RowBox[{"-", 
-           RowBox[{"ArcCos", "[", 
-            RowBox[{"-", 
-             FractionBox[
-              RowBox[{"2", " ", "\[Delta]"}], 
-              RowBox[{"3", " ", "a", " ", 
-               SqrtBox["j"]}]]}], "]"}]}], "+", 
-          RowBox[{"2", " ", "\[Pi]", " ", 
-           RowBox[{"C", "[", "1", "]"}]}]}], ")"}]}], ",", 
-       RowBox[{
-        RowBox[{"C", "[", "1", "]"}], "\[Element]", "Integers"}]}], "]"}]}], 
-    "}"}], ",", 
+           FractionBox[
+            RowBox[{"2", " ", "\[Delta]"}], 
+            RowBox[{"3", " ", "a", " ", 
+             SqrtBox["j"]}]]}], "]"}]}], "+", 
+        RowBox[{"2", " ", "\[Pi]", " ", 
+         RowBox[{"C", "[", "1", "]"}]}]}], ")"}]}]}], "}"}], ",", 
    RowBox[{"{", 
     RowBox[{"\[Psi]", "\[Rule]", 
-     RowBox[{"ConditionalExpression", "[", 
-      RowBox[{
+     RowBox[{
+      FractionBox["1", "3"], " ", 
+      RowBox[{"(", 
        RowBox[{
-        FractionBox["1", "3"], " ", 
-        RowBox[{"(", 
-         RowBox[{
-          RowBox[{"ArcCos", "[", 
-           RowBox[{"-", 
-            FractionBox[
-             RowBox[{"2", " ", "\[Delta]"}], 
-             RowBox[{"3", " ", "a", " ", 
-              SqrtBox["j"]}]]}], "]"}], "+", 
-          RowBox[{"2", " ", "\[Pi]", " ", 
-           RowBox[{"C", "[", "1", "]"}]}]}], ")"}]}], ",", 
-       RowBox[{
-        RowBox[{"C", "[", "1", "]"}], "\[Element]", "Integers"}]}], "]"}]}], 
-    "}"}]}], "}"}]], "Output",
- CellChangeTimes->{3.738424060073631*^9, 3.738479937025496*^9, 
-  3.738480722475712*^9, 3.738481143693716*^9},
+        RowBox[{"ArcCos", "[", 
+         RowBox[{"-", 
+          FractionBox[
+           RowBox[{"2", " ", "\[Delta]"}], 
+           RowBox[{"3", " ", "a", " ", 
+            SqrtBox["j"]}]]}], "]"}], "+", 
+        RowBox[{"2", " ", "\[Pi]", " ", 
+         RowBox[{"C", "[", "1", "]"}]}]}], ")"}]}]}], "}"}]}], 
+  "}"}]], "Output",
+ CellChangeTimes->{
+  3.738424060073631*^9, 3.738479937025496*^9, 3.738480722475712*^9, 
+   3.738481143693716*^9, 3.7384812294886827`*^9, 3.738482535253385*^9, {
+   3.738482579852059*^9, 3.738482594684432*^9}, 3.73848264649055*^9, 
+   3.738482778089367*^9, {3.7384828126080627`*^9, 3.738482822663768*^9}, {
+   3.738482980972115*^9, 3.7384830021572523`*^9}, 3.738483142677134*^9, 
+   3.73848442723456*^9, 3.7384844998099337`*^9},
  ExpressionUUID -> "27ecf54b-ed05-4b12-aca6-9614db15141c"]
 }, Open  ]],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[
- RowBox[{"Solve", "[", 
+ RowBox[{
+  RowBox[{"fix2", "[", 
+   RowBox[{"j_", ",", "\[Delta]_", ",", "a_", ",", " ", "n_"}], "]"}], "=", 
   RowBox[{
-   RowBox[{"0", "\[Equal]", 
-    RowBox[{"D", "[", 
+   RowBox[{"fix", "[", 
+    RowBox[{"j", ",", "\[Delta]", ",", "a"}], "]"}], "//.", 
+   RowBox[{
+    RowBox[{"C", "[", "1", "]"}], "\[Rule]", " ", 
+    FractionBox["n", "3"]}]}]}]], "Input",
+ CellChangeTimes->{{3.738483144144527*^9, 3.738483158483574*^9}, {
+  3.73848320084411*^9, 3.73848332189821*^9}, {3.7384843982478228`*^9, 
+  3.7384844034455853`*^9}, {3.7384844855340157`*^9, 3.7384844877411127`*^9}, {
+  3.738485717649933*^9, 3.738485732392962*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"\[Psi]", "\[Rule]", 
      RowBox[{
-      RowBox[{"h", "[", 
-       RowBox[{"\[Psi]", ",", " ", "j", ",", " ", "\[Delta]", ",", " ", "a"}],
-        "]"}], ",", " ", "\[Psi]"}], "]"}]}], ",", " ", "\[Psi]"}], 
-  "]"}]], "Input",
+      FractionBox["1", "3"], " ", 
+      RowBox[{"(", 
+       RowBox[{
+        FractionBox[
+         RowBox[{"2", " ", "n", " ", "\[Pi]"}], "3"], "-", 
+        RowBox[{"ArcCos", "[", 
+         RowBox[{"-", 
+          FractionBox[
+           RowBox[{"2", " ", "\[Delta]"}], 
+           RowBox[{"3", " ", "a", " ", 
+            SqrtBox["j"]}]]}], "]"}]}], ")"}]}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\[Psi]", "\[Rule]", 
+     RowBox[{
+      FractionBox["1", "3"], " ", 
+      RowBox[{"(", 
+       RowBox[{
+        FractionBox[
+         RowBox[{"2", " ", "n", " ", "\[Pi]"}], "3"], "+", 
+        RowBox[{"ArcCos", "[", 
+         RowBox[{"-", 
+          FractionBox[
+           RowBox[{"2", " ", "\[Delta]"}], 
+           RowBox[{"3", " ", "a", " ", 
+            SqrtBox["j"]}]]}], "]"}]}], ")"}]}]}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{{3.738483304017043*^9, 3.7384833224925213`*^9}, 
+   3.7384844272393303`*^9, 3.738484499814351*^9, {3.738485726019908*^9, 
+   3.738485733071329*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"fix1", "=", 
+  RowBox[{
+   RowBox[{"Solve", "[", 
+    RowBox[{
+     RowBox[{"0", "\[Equal]", 
+      RowBox[{"D", "[", 
+       RowBox[{
+        RowBox[{"h", "[", 
+         RowBox[{
+         "\[Psi]", ",", " ", "j", ",", " ", "\[Delta]", ",", " ", "a"}], 
+         "]"}], ",", " ", "\[Psi]"}], "]"}]}], ",", " ", "\[Psi]"}], "]"}], "//",
+    "Flatten"}]}]], "Input",
  CellChangeTimes->{{3.738393403204955*^9, 3.7383934040455627`*^9}, {
-  3.738393436950759*^9, 3.7383934413648677`*^9}},
+  3.738393436950759*^9, 3.7383934413648677`*^9}, {3.7384821884563217`*^9, 
+  3.738482222446519*^9}, {3.738482405610065*^9, 3.738482423736768*^9}, {
+  3.738482473202321*^9, 3.7384825105206842`*^9}},
  ExpressionUUID -> "925e0f67-1deb-4d64-9a93-a1ac5591f69f"],
 
 Cell[BoxData[
@@ -547,20 +577,224 @@ Cell[BoxData[
   "Solve","ifun",
    "\"Inverse functions are being used by \
 \\!\\(\\*RowBox[{\\\"Solve\\\"}]\\), so some solutions may not be found; use \
-Reduce for complete solution information.\"",2,8,5,25390091673420302765,
+Reduce for complete solution information.\"",2,10,5,25390113641167293036,
    "Local"},
   "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.738424060141679*^9, 3.738479937092648*^9, 
-  3.738480722507352*^9, 3.738481143718832*^9},
- ExpressionUUID -> "d6232e94-10f1-46e3-bf17-cf2e31a41b69"],
+ CellChangeTimes->{3.738482511087653*^9, 3.7384844272805643`*^9, 
+  3.7384844998568897`*^9}],
 
 Cell[BoxData[
  RowBox[{"{", 
-  RowBox[{"{", 
-   RowBox[{"\[Psi]", "\[Rule]", "0"}], "}"}], "}"}]], "Output",
- CellChangeTimes->{3.73842406014368*^9, 3.738479937107326*^9, 
-  3.738480722515298*^9, 3.738481143727956*^9},
+  RowBox[{"\[Psi]", "\[Rule]", "0"}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.73842406014368*^9, 3.738479937107326*^9, 3.738480722515298*^9, 
+   3.738481143727956*^9, 3.7384812295273046`*^9, 3.738482192804893*^9, 
+   3.738482223543933*^9, 3.738482424476479*^9, {3.738482486130754*^9, 
+   3.738482511089179*^9}, 3.738484427290225*^9, 3.738484499866373*^9},
  ExpressionUUID -> "26d3de29-74c5-4404-acc0-3e24672dd44d"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Manipulate", "[", 
+   RowBox[{
+    RowBox[{"Show", "[", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"PolarPlot", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"h", "[", 
+           RowBox[{
+           "\[Psi]", ",", " ", "1", ",", " ", "\[Delta]", ",", " ", "a"}], 
+           "]"}], ",", " ", 
+          RowBox[{".02", "*", 
+           RowBox[{"(", 
+            RowBox[{"\[Psi]", " ", "==", " ", "\[Pi]"}], ")"}]}]}], "}"}], 
+        ",", " ", 
+        RowBox[{"{", 
+         RowBox[{"\[Psi]", ",", " ", "0.0001", ",", " ", 
+          RowBox[{
+           RowBox[{"2", "*", "Pi"}], " ", "-", " ", "0.0001"}]}], "}"}], ",", 
+        " ", 
+        RowBox[{"PlotRange", " ", "->", " ", "All"}]}], "]"}], ",", 
+      RowBox[{"ListPolarPlot", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"\[Psi]", "//.", "fix1"}], ",", " ", 
+           RowBox[{
+            RowBox[{"h", "[", 
+             RowBox[{
+             "\[Psi]", ",", " ", "1", ",", " ", "\[Delta]", ",", " ", "a"}], 
+             "]"}], "//.", "fix1"}]}], "}"}], "}"}], ",", " ", 
+        RowBox[{"PlotStyle", "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"PointSize", "[", ".025", "]"}], ",", " ", "Green"}], 
+          "}"}]}]}], "]"}], ",", "\[IndentingNewLine]", 
+      RowBox[{"ListPolarPlot", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\[Psi]", ",", " ", 
+           RowBox[{"h", "[", 
+            RowBox[{
+            "\[Psi]", ",", " ", "1", ",", " ", "\[Delta]", ",", " ", "a"}], 
+            "]"}]}], "}"}], " ", "//.", 
+         RowBox[{"fix2", "[", 
+          RowBox[{"1", ",", "0.1", ",", "0.1"}], "]"}]}], ",", " ", 
+        RowBox[{"PlotStyle", "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"PointSize", "[", ".025", "]"}], ",", " ", "Red"}], 
+          "}"}]}]}], "]"}]}], "\[IndentingNewLine]", "]"}], ",", " ", 
+    RowBox[{"{", 
+     RowBox[{"a", ",", " ", "0", ",", " ", "0.01"}], "}"}], ",", " ", 
+    RowBox[{"{", 
+     RowBox[{"\[Delta]", ",", " ", "0", ",", " ", "0.1"}], "}"}]}], "]"}], 
+  " ", 
+  RowBox[{"(*", 
+   RowBox[{
+    RowBox[{
+    "Bei", " ", "Null", " ", "und", " ", "2", "\[Pi]", " ", "wirft", " ", 
+     "er", " ", "nur", " ", "Fehler"}], "..."}], " ", "*)"}]}]], "Input",
+ CellChangeTimes->{{3.738243772372776*^9, 3.7382438430744963`*^9}, {
+   3.738243912371925*^9, 3.7382439991382265`*^9}, {3.73824411515876*^9, 
+   3.738244117200676*^9}, {3.7382442534773874`*^9, 3.738244264530088*^9}, {
+   3.7382442963880634`*^9, 3.7382443002591057`*^9}, {3.738244388723688*^9, 
+   3.738244418771008*^9}, {3.738244540116954*^9, 3.7382445550436945`*^9}, {
+   3.7382445961160026`*^9, 3.738244599731306*^9}, {3.7382447261486225`*^9, 
+   3.7382447954120655`*^9}, {3.7382449024686346`*^9, 
+   3.7382449581307297`*^9}, {3.7382450001807427`*^9, 3.7382450037161264`*^9}, 
+   3.7382450495402803`*^9, {3.738245092645228*^9, 3.7382451011885166`*^9}, {
+   3.738314753199561*^9, 3.738314756389979*^9}, {3.738314805488937*^9, 
+   3.738314815910933*^9}, {3.738389588414299*^9, 3.738389627708006*^9}, {
+   3.7383896702850285`*^9, 3.7383896760520954`*^9}, {3.7383897080276413`*^9, 
+   3.738389734482308*^9}, {3.738424026797167*^9, 3.73842403617278*^9}, {
+   3.7384244843250475`*^9, 3.738424551713565*^9}, {3.738480239683215*^9, 
+   3.738480254442198*^9}, {3.7384802959786587`*^9, 3.738480302319057*^9}, {
+   3.738480333740198*^9, 3.738480335139298*^9}, 3.73848039268393*^9, {
+   3.738481425510964*^9, 3.7384815071583776`*^9}, {3.738481849847674*^9, 
+   3.7384818740476723`*^9}, {3.738481992120821*^9, 3.738482062704187*^9}, {
+   3.7384820974818687`*^9, 3.738482115088746*^9}, {3.738482149776763*^9, 
+   3.7384822824335833`*^9}, {3.7384833836850853`*^9, 3.738483520084208*^9}, {
+   3.738483622397691*^9, 3.738483748443721*^9}, {3.738483804587839*^9, 
+   3.738483839493339*^9}, {3.738483879294622*^9, 3.738483919230008*^9}, {
+   3.738483959952976*^9, 3.7384839909177017`*^9}, {3.738484072208268*^9, 
+   3.738484074173666*^9}, {3.738484292199443*^9, 3.738484295438431*^9}, {
+   3.738484408496583*^9, 3.738484445229639*^9}, {3.7384844903047733`*^9, 
+   3.738484490534157*^9}, {3.738484544215789*^9, 3.738484544305237*^9}, {
+   3.738484594960066*^9, 3.7384845996067133`*^9}},
+ ExpressionUUID -> "c00418e8-a269-478a-b16b-3f8b1101c2fe"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`a$$ = 
+    0.007180000000000001, $CellContext`\[Delta]$$ = 0.0352, Typeset`show$$ = 
+    True, Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{
+      Hold[$CellContext`a$$], 0, 0.01}, {
+      Hold[$CellContext`\[Delta]$$], 0, 0.1}}, Typeset`size$$ = {
+    360., {170., 177.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, $CellContext`a$8384$$ = 
+    0, $CellContext`\[Delta]$8385$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`a$$ = 0, $CellContext`\[Delta]$$ = 0}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`a$$, $CellContext`a$8384$$, 0], 
+        Hold[$CellContext`\[Delta]$$, $CellContext`\[Delta]$8385$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Show[
+        PolarPlot[{
+          $CellContext`h[$CellContext`\[Psi], 
+           1, $CellContext`\[Delta]$$, $CellContext`a$$], 
+          0.02 ($CellContext`\[Psi] == Pi)}, {$CellContext`\[Psi], 0.0001, 
+          2 Pi - 0.0001}, PlotRange -> All], 
+        ListPolarPlot[{{
+           ReplaceRepeated[$CellContext`\[Psi], $CellContext`fix1], 
+           ReplaceRepeated[
+            $CellContext`h[$CellContext`\[Psi], 
+             1, $CellContext`\[Delta]$$, $CellContext`a$$], \
+$CellContext`fix1]}}, PlotStyle -> {
+           PointSize[0.025], Green}], 
+        ListPolarPlot[
+         ReplaceRepeated[{$CellContext`\[Psi], 
+           $CellContext`h[$CellContext`\[Psi], 
+            1, $CellContext`\[Delta]$$, $CellContext`a$$]}, 
+          $CellContext`fix2[1, 0.1, 0.1]], PlotStyle -> {
+           PointSize[0.025], Red}]], 
+      "Specifications" :> {{$CellContext`a$$, 0, 
+         0.01}, {$CellContext`\[Delta]$$, 0, 0.1}}, "Options" :> {}, 
+      "DefaultOptions" :> {}],
+     ImageSizeCache->{407., {226., 233.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{
+  3.738483881027424*^9, 3.738483920552711*^9, 3.738483999389031*^9, 
+   3.738484075633421*^9, 3.738484296147784*^9, {3.738484427331481*^9, 
+   3.738484445568882*^9}, 3.738484499909766*^9, 3.738484545361277*^9, 
+   3.738484600172378*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"?", "ListPolarPlot"}]], "Input",
+ CellChangeTimes->{{3.7384841044665327`*^9, 3.738484116049223*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox["\<\"\!\(\*RowBox[{\\\"ListPolarPlot\\\", \\\"[\\\", RowBox[{\\\"{\
+\\\", RowBox[{SubscriptBox[StyleBox[\\\"r\\\", \\\"TI\\\"], \
+StyleBox[\\\"1\\\", \\\"TR\\\"]], \\\",\\\", SubscriptBox[StyleBox[\\\"r\\\", \
+\\\"TI\\\"], StyleBox[\\\"2\\\", \\\"TR\\\"]], \\\",\\\", StyleBox[\\\"\
+\[Ellipsis]\\\", \\\"TR\\\"]}], \\\"}\\\"}], \\\"]\\\"}]\) plots points \
+equally spaced in angle at radii \!\(\*SubscriptBox[StyleBox[\\\"r\\\", \
+\\\"TI\\\"], StyleBox[\\\"i\\\", \
+\\\"TI\\\"]]\).\\n\!\(\*RowBox[{\\\"ListPolarPlot\\\", \\\"[\\\", \
+RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"{\\\", \
+RowBox[{SubscriptBox[StyleBox[\\\"\[Theta]\\\", \\\"TR\\\"], StyleBox[\\\"1\\\
+\", \\\"TR\\\"]], \\\",\\\", SubscriptBox[StyleBox[\\\"r\\\", \\\"TI\\\"], \
+StyleBox[\\\"1\\\", \\\"TR\\\"]]}], \\\"}\\\"}], \\\",\\\", \
+RowBox[{\\\"{\\\", RowBox[{SubscriptBox[StyleBox[\\\"\[Theta]\\\", \
+\\\"TR\\\"], StyleBox[\\\"2\\\", \\\"TR\\\"]], \\\",\\\", \
+SubscriptBox[StyleBox[\\\"r\\\", \\\"TI\\\"], StyleBox[\\\"2\\\", \
+\\\"TR\\\"]]}], \\\"}\\\"}], \\\",\\\", StyleBox[\\\"\[Ellipsis]\\\", \
+\\\"TR\\\"]}], \\\"}\\\"}], \\\"]\\\"}]\) plots points at polar coordinates \
+\!\(\*SubscriptBox[StyleBox[\\\"\[Theta]\\\", \\\"TR\\\"], \
+StyleBox[\\\"i\\\", \\\"TI\\\"]]\), \!\(\*SubscriptBox[StyleBox[\\\"r\\\", \\\
+\"TI\\\"], StyleBox[\\\"i\\\", \
+\\\"TI\\\"]]\).\\n\!\(\*RowBox[{\\\"ListPolarPlot\\\", \\\"[\\\", \
+RowBox[{\\\"{\\\", RowBox[{SubscriptBox[StyleBox[\\\"list\\\", \\\"TI\\\"], \
+StyleBox[\\\"1\\\", \\\"TR\\\"]], \\\",\\\", SubscriptBox[StyleBox[\\\"list\\\
+\", \\\"TI\\\"], StyleBox[\\\"2\\\", \\\"TR\\\"]], \\\",\\\", StyleBox[\\\"\
+\[Ellipsis]\\\", \\\"TR\\\"]}], \\\"}\\\"}], \\\"]\\\"}]\) plots several \
+lists of values.\"\>", "MSG"], "\[NonBreakingSpace]", 
+  ButtonBox[
+   StyleBox["\[RightSkeleton]", "SR"],
+   Active->True,
+   BaseStyle->"Link",
+   ButtonData->"paclet:ref/ListPolarPlot"]}]], "Print", "PrintUsage",
+ CellChangeTimes->{3.738484500078946*^9},
+ CellTags->"Info123738491700-3568302"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
@@ -574,10 +808,16 @@ StyleDefinitions->"Default.nb"
 
 (* Internal cache information *)
 (*CellTagsOutline
-CellTagsIndex->{}
+CellTagsIndex->{
+ "Info123738491700-3568302"->{
+  Cell[31479, 762, 2028, 34, 84, "Print",
+   CellTags->"Info123738491700-3568302"]}
+ }
 *)
 (*CellTagsIndex
-CellTagsIndex->{}
+CellTagsIndex->{
+ {"Info123738491700-3568302", 33851, 811}
+ }
 *)
 (*NotebookFileOutline
 Notebook[{
@@ -590,41 +830,48 @@ Cell[1117, 39, 169, 3, 33, "Text"],
 Cell[1289, 44, 889, 22, 49, "Input"],
 Cell[CellGroupData[{
 Cell[2203, 70, 1363, 31, 84, "Input"],
-Cell[3569, 103, 2889, 52, 392, "Output"]
+Cell[3569, 103, 2974, 53, 392, "Output"]
 }, Open  ]],
-Cell[6473, 158, 243, 6, 33, "Text"],
+Cell[6558, 159, 242, 5, 33, "Text"],
 Cell[CellGroupData[{
-Cell[6741, 168, 2010, 38, 79, "Input"],
-Cell[8754, 208, 2589, 48, 484, "Output"]
+Cell[6825, 168, 2243, 45, 79, "Input"],
+Cell[9071, 215, 2780, 51, 484, "Output"]
 }, Open  ]],
+Cell[11866, 269, 707, 17, 34, "Input"],
+Cell[12576, 288, 258, 7, 34, "Input"],
 Cell[CellGroupData[{
-Cell[11380, 261, 692, 17, 34, "Input"],
-Cell[12075, 280, 689, 16, 54, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[12801, 301, 780, 20, 57, "Input"],
-Cell[13584, 323, 2100, 42, 562, "Output"],
-Cell[15687, 367, 267, 6, 43, "Message"],
-Cell[15957, 375, 397, 8, 23, "Message"],
-Cell[16357, 385, 267, 6, 43, "Message"],
-Cell[16627, 393, 395, 8, 23, "Message"],
-Cell[17025, 403, 268, 6, 43, "Message"],
-Cell[17296, 411, 397, 8, 23, "Message"],
-Cell[17696, 421, 268, 6, 43, "Message"],
-Cell[17967, 429, 397, 8, 23, "Message"]
+Cell[12859, 299, 799, 20, 57, "Input"],
+Cell[13661, 321, 2125, 42, 484, "Output"],
+Cell[15789, 365, 268, 6, 43, "Message"],
+Cell[16060, 373, 400, 8, 23, "Message"],
+Cell[16463, 383, 269, 6, 43, "Message"],
+Cell[16735, 391, 397, 8, 23, "Message"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[18401, 442, 349, 8, 34, "Input"],
-Cell[18753, 452, 491, 11, 34, "Output"]
+Cell[17169, 404, 393, 9, 34, "Input"],
+Cell[17565, 415, 587, 13, 49, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[19281, 468, 429, 11, 34, "Input"],
-Cell[19713, 481, 1525, 44, 107, "Output"]
+Cell[18189, 433, 975, 22, 34, "Input"],
+Cell[19167, 457, 1474, 40, 57, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[21275, 530, 484, 12, 34, "Input"],
-Cell[21762, 544, 466, 10, 40, "Message"],
-Cell[22231, 556, 277, 6, 89, "Output"]
+Cell[20678, 502, 591, 13, 51, "Input"],
+Cell[21272, 517, 1107, 33, 114, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[22416, 555, 714, 17, 34, "Input"],
+Cell[23133, 574, 390, 9, 40, "Message"],
+Cell[23526, 585, 445, 8, 32, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[24008, 598, 4423, 93, 147, "Input"],
+Cell[28434, 693, 2881, 60, 476, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[31352, 758, 124, 2, 32, "Input"],
+Cell[31479, 762, 2028, 34, 84, "Print",
+ CellTags->"Info123738491700-3568302"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
