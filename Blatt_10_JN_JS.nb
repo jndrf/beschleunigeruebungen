@@ -1,0 +1,118 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3500,        110]
+NotebookOptionsPosition[      2900,         92]
+NotebookOutlinePosition[      3242,        107]
+CellTagsIndexPosition[      3199,        104]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Blatt 10 Luminosity und \"hour glass\" Effekt", "Title",
+ CellChangeTimes->{{3.7387485971005187`*^9, 
+  3.738748620837195*^9}},ExpressionUUID->"6d1f94c9-b134-401b-add6-\
+66e0643b19b7"],
+
+Cell["Jonas Neundorf und Jan Skottke", "Text",
+ CellChangeTimes->{{3.738748626219528*^9, 
+  3.7387486334812293`*^9}},ExpressionUUID->"1ab10012-3835-498d-8e0b-\
+2428e5e630eb"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"\[Rho]", "[", "]"}], ":=", 
+  RowBox[{
+   FractionBox["1", 
+    RowBox[{
+     SuperscriptBox[
+      RowBox[{"(", 
+       RowBox[{"2", "\[Pi]"}], ")"}], 
+      FractionBox["3", "2"]], "\[Sigma]x", " ", "\[Sigma]y", " ", 
+     "\[Sigma]s"}]], 
+   RowBox[{"Exp", "[", 
+    RowBox[{
+     RowBox[{"-", 
+      RowBox[{"(", 
+       FractionBox[
+        SuperscriptBox["x", "2"], 
+        RowBox[{"2", 
+         SuperscriptBox["\[Sigma]x", "2"]}]], ")"}]}], "-", 
+     RowBox[{"(", 
+      FractionBox[
+       SuperscriptBox["y", "2"], 
+       RowBox[{"2", 
+        SuperscriptBox["\[Sigma]y", "2"]}]], ")"}], "-", 
+     RowBox[{"(", 
+      FractionBox[
+       SuperscriptBox["s", "2"], 
+       RowBox[{"2", 
+        SuperscriptBox["\[Sigma]s", "2"]}]], ")"}]}], "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.7387494555833936`*^9, 3.73874953322709*^9}},
+ CellLabel->"In[8]:=",ExpressionUUID->"b5d4cf25-5ea1-4874-a3ab-d79fff8424be"],
+
+Cell[BoxData[
+ RowBox[{"L", ":=", 
+  RowBox[{"2", "f", " ", "n1", " ", "n2", " ", 
+   RowBox[{"Integrate", "[", 
+    RowBox[{
+     RowBox[{"Integrate", "[", 
+      RowBox[{
+       RowBox[{"Integrate", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"\[Rho]", "[", "]"}], 
+          RowBox[{"\[Rho]", "[", "]"}]}], ",", 
+         RowBox[{"{", 
+          RowBox[{"x", ",", "0", ",", 
+           RowBox[{"2", "\[Pi]"}]}], "}"}]}], "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"y", ",", "0", ",", 
+         RowBox[{"2", "\[Pi]"}]}], "}"}]}], "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"\[Beta]", " ", "c", " ", "t"}], ",", "0", ",", 
+       RowBox[{"2", "\[Pi]"}]}], "}"}]}], "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.7387486542989855`*^9, 3.7387487749375286`*^9}, {
+  3.738749444746682*^9, 3.738749450378935*^9}, {3.7387495780107827`*^9, 
+  3.7387495968427687`*^9}},
+ CellLabel->"In[9]:=",ExpressionUUID->"a32e5cd7-315b-4f1a-bc13-bc912a377035"]
+}, Open  ]]
+},
+WindowSize->{958, 1028},
+WindowMargins->{{Automatic, -7}, {Automatic, 0}},
+FrontEndVersion->"11.3 for Microsoft Windows (64-bit) (March 6, 2018)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 190, 3, 96, "Title",ExpressionUUID->"6d1f94c9-b134-401b-add6-66e0643b19b7"],
+Cell[773, 27, 174, 3, 34, "Text",ExpressionUUID->"1ab10012-3835-498d-8e0b-2428e5e630eb"],
+Cell[950, 32, 954, 30, 70, "Input",ExpressionUUID->"b5d4cf25-5ea1-4874-a3ab-d79fff8424be"],
+Cell[1907, 64, 977, 25, 61, "Input",ExpressionUUID->"a32e5cd7-315b-4f1a-bc13-bc912a377035"]
+}, Open  ]]
+}
+]
+*)
+
