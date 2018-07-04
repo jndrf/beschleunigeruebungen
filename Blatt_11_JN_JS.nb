@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       145,          7]
-NotebookDataLength[    268346,       5543]
-NotebookOptionsPosition[    264307,       5407]
-NotebookOutlinePosition[    264808,       5427]
-CellTagsIndexPosition[    264765,       5424]
+NotebookDataLength[    269707,       5572]
+NotebookOptionsPosition[    265586,       5434]
+NotebookOutlinePosition[    266087,       5454]
+CellTagsIndexPosition[    266044,       5451]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -5170,7 +5170,8 @@ Cell[BoxData[
      RowBox[{"PlotLabel", "->", "\"\<\[Sigma]-Polarisation\>\""}]}], "]"}], 
    ",", 
    RowBox[{"{", 
-    RowBox[{"\[Theta]", ",", "0", ",", "\[Pi]"}], "}"}], ",", 
+    RowBox[{"\[Theta]", ",", "0", ",", 
+     FractionBox["\[Pi]", "1000"]}], "}"}], ",", 
    RowBox[{"{", 
     RowBox[{"k", ",", "0", ",", "5"}], "}"}]}], "]"}]], "Input",
  CellChangeTimes->{{3.7395296731298275`*^9, 3.739529708343071*^9}, {
@@ -5182,27 +5183,28 @@ Cell[BoxData[
    3.739693913547058*^9, 3.7396939246430817`*^9}, {3.7396940393639297`*^9, 
    3.739694101255085*^9}, {3.739694308721321*^9, 3.739694313222857*^9}, {
    3.7396943958480797`*^9, 3.739694406901806*^9}, {3.7396948082091722`*^9, 
-   3.7396948284290543`*^9}, {3.7396949945147448`*^9, 3.7396950163837957`*^9}},
- 
+   3.7396948284290543`*^9}, {3.7396949945147448`*^9, 
+   3.7396950163837957`*^9}, {3.7396964435069513`*^9, 3.739696447671721*^9}, 
+   3.7396964961372623`*^9},
  ExpressionUUID -> "3ce92709-1a26-4b16-8e8e-e515d2677951"],
 
 Cell[BoxData[
  TagBox[
   StyleBox[
-   DynamicModuleBox[{$CellContext`k$$ = 0, $CellContext`\[Theta]$$ = 0, 
-    Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
-    Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
+   DynamicModuleBox[{$CellContext`k$$ = 5., $CellContext`\[Theta]$$ = 
+    0.0005120796025351363, Typeset`show$$ = True, Typeset`bookmarkList$$ = {},
+     Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
     1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{
-      Hold[$CellContext`\[Theta]$$], 0, Pi}, {
-      Hold[$CellContext`k$$], 0, 5}}, Typeset`size$$ = {805., {230., 236.}}, 
+      Hold[$CellContext`\[Theta]$$], 0, Rational[1, 1000] Pi}, {
+      Hold[$CellContext`k$$], 0, 5}}, Typeset`size$$ = {810., {231., 238.}}, 
     Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
-    True, $CellContext`\[Theta]$15035$$ = 0, $CellContext`k$15040$$ = 0}, 
+    True, $CellContext`\[Theta]$65877$$ = 0, $CellContext`k$65878$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, 
       "Variables" :> {$CellContext`k$$ = 0, $CellContext`\[Theta]$$ = 0}, 
       "ControllerVariables" :> {
-        Hold[$CellContext`\[Theta]$$, $CellContext`\[Theta]$15035$$, 0], 
-        Hold[$CellContext`k$$, $CellContext`k$15040$$, 0]}, 
+        Hold[$CellContext`\[Theta]$$, $CellContext`\[Theta]$65877$$, 0], 
+        Hold[$CellContext`k$$, $CellContext`k$65878$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -5220,10 +5222,10 @@ $CellContext`logInterval -> False}], All, {1, 4}], PlotRange -> {All, All},
           "\!\(\*FractionBox[\(dU\), \(d\[CapitalOmega]d\[Omega]\)]\)"}, 
         PlotLegends -> LineLegend[{$CellContext`k$$}, LegendLabel -> "K"], 
         PlotLabel -> "\[Sigma]-Polarisation"], 
-      "Specifications" :> {{$CellContext`\[Theta]$$, 0, 
+      "Specifications" :> {{$CellContext`\[Theta]$$, 0, Rational[1, 1000] 
          Pi}, {$CellContext`k$$, 0, 5}}, "Options" :> {}, 
       "DefaultOptions" :> {}],
-     ImageSizeCache->{862., {294., 302.}},
+     ImageSizeCache->{867., {323., 331.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -5243,9 +5245,34 @@ $CellContext`logInterval -> False}], All, {1, 4}], PlotRange -> {All, All},
    3.739694090585444*^9, 3.739694102117969*^9}, 3.7396943152574177`*^9, 
    3.7396944139663277`*^9, 3.739694537086389*^9, {3.7396947973908987`*^9, 
    3.7396948466762133`*^9}, 3.739694941451972*^9, 3.739695122344844*^9, 
-   3.739695210379046*^9},
+   3.739695210379046*^9, 3.73969644861901*^9, 3.739696497316546*^9},
  ExpressionUUID -> "5713220a-fd85-4661-8fe7-4f9d823d9b52"]
 }, Open  ]],
+
+Cell[TextData[{
+ "Bei ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[Theta]", "=", "0"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " ist die Verteilung der Intensit\[ADoubleDot]t auf die harmonischen \
+interessant. Die der ungeradzahligen harmonischen nimmt etwa sinc-f\
+\[ODoubleDot]rmig ab, w\[ADoubleDot]hrend die geradzahligen niedrigen \
+harmonischen praktisch verschwinden, aber man bei h\[ODoubleDot]heren ein \
+lokales Maximum ist. Die Lage der Maxima verschiebt sich mit steigendem K \
+nach rechts."
+}], "Text",
+ CellChangeTimes->{{3.7396955171051188`*^9, 3.7396955594730387`*^9}, {
+  3.7396957237943993`*^9, 3.73969579612311*^9}, {3.739695828771406*^9, 
+  3.7396958595629597`*^9}, {3.739695889899755*^9, 3.739695912060134*^9}, {
+  3.739696010364807*^9, 3.739696012187399*^9}, {3.7396961589812326`*^9, 
+  3.7396961888987007`*^9}, {3.739696432526812*^9, 3.7396964352383223`*^9}}],
+
+Cell["\<\
+Die Intensit\[ADoubleDot]t nimmt schon bei kleinen Winkelabweichungen rapide \
+ab.\
+\>", "Text",
+ CellChangeTimes->{{3.739696691887542*^9, 3.739696725616395*^9}}],
 
 Cell[CellGroupData[{
 
@@ -5536,12 +5563,14 @@ Cell[177116, 3842, 73592, 1277, 494, "Output"]
 }, Open  ]],
 Cell[250723, 5122, 370, 6, 67, "Text"],
 Cell[CellGroupData[{
-Cell[251118, 5132, 2399, 54, 272, "Input"],
-Cell[253520, 5188, 3066, 58, 616, "Output"]
+Cell[251118, 5132, 2504, 56, 281, "Input"],
+Cell[253625, 5190, 3166, 58, 674, "Output"]
 }, Open  ]],
+Cell[256806, 5251, 896, 17, 121, "Text"],
+Cell[257705, 5270, 172, 4, 40, "Text"],
 Cell[CellGroupData[{
-Cell[256623, 5251, 1520, 34, 135, "Input"],
-Cell[258146, 5287, 6121, 115, 536, "Output"]
+Cell[257902, 5278, 1520, 34, 135, "Input"],
+Cell[259425, 5314, 6121, 115, 503, "Output"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
