@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       145,          7]
-NotebookDataLength[    264423,       5456]
-NotebookOptionsPosition[    260539,       5325]
-NotebookOutlinePosition[    261040,       5345]
-CellTagsIndexPosition[    260997,       5342]
+NotebookDataLength[    264836,       5465]
+NotebookOptionsPosition[    260912,       5333]
+NotebookOutlinePosition[    261413,       5353]
+CellTagsIndexPosition[    261370,       5350]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -5064,6 +5064,14 @@ xHnsFPpSqEK3z6QauyzeT3kn/BT6xvBBvtc1ALPH/5M5iRR6b2tVIfZgCf0P
  ExpressionUUID -> "e91b27ed-a60b-4e4d-8134-b7151706164f"]
 }, Open  ]],
 
+Cell["\<\
+F\[UDoubleDot]r gro\[SZ]e K wird die Ablenkung so gro\[SZ], dass keine \
+Interferenz mehr auftritt, wodurch die h\[ODoubleDot]heren harmonischen nicht \
+unterdr\[UDoubleDot]ckt werden. Der Undulator wird nun als Wiggler bezeichnet.\
+\>", "Text",
+ CellChangeTimes->{{3.739692481326859*^9, 3.739692491878974*^9}, {
+  3.739692522847158*^9, 3.739692591855611*^9}}],
+
 Cell[CellGroupData[{
 
 Cell[BoxData[
@@ -5448,13 +5456,14 @@ Cell[CellGroupData[{
 Cell[173337, 3752, 1518, 33, 176, "Input"],
 Cell[174858, 3787, 73547, 1276, 494, "Output"]
 }, Open  ]],
+Cell[248420, 5066, 370, 6, 67, "Text"],
 Cell[CellGroupData[{
-Cell[248442, 5068, 1837, 45, 244, "Input"],
-Cell[250282, 5115, 2586, 50, 616, "Output"]
+Cell[248815, 5076, 1837, 45, 244, "Input"],
+Cell[250655, 5123, 2586, 50, 616, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[252905, 5170, 1520, 34, 135, "Input"],
-Cell[254428, 5206, 6071, 114, 503, "Output"]
+Cell[253278, 5178, 1520, 34, 135, "Input"],
+Cell[254801, 5214, 6071, 114, 503, "Output"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
